@@ -1,0 +1,65 @@
+:root{
+    --cor01: #01105D;
+    --cor02: #050840;
+    --cor03: #0713F2;
+    --cor04: #F2C307;
+    --cor05: #a68400;
+    --cor06: #081282;
+}
+
+main{
+    background-image: url("./background.png");
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    height: 90vh;
+    
+}
+
+main .cit{
+    text-align: right;
+}
+
+
+.titulo{
+    max-width: 700px;
+    width: 100%;
+}
+
+/* Principal */
+
+.principal{
+    height: 100%;
+}
+
+.principal h1{
+    color: black;
+    font-size: 3.5em;
+    font-family: sans-serif;
+}
+
+.principal p{
+    width: 90%;
+    margin: 0px auto;
+    font-size: 1.6em;
+    
+}
+
+.logo-main{
+    width: 200px;
+}
+
+.fonte-main{
+    width: 550px;
+}
+
+.button{
+    background-color: var(--cor06);
+    font-size: 1.2em;
+    color: white;
+    border: none;
+    width: 9.5em;
+    border-radius: 50px;
+    padding: 10px;
+}
