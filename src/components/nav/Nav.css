@@ -15,10 +15,10 @@
 /* Barra de navegação */
 
 .navbar.custom {
-    background: linear-gradient(to right, #01115E , #011473 50%, #022AF0 );
+    background-color: transparent;
     height: 10vh;
     color: white;
-    border-bottom: 3px solid var(--cor05);
+    
     margin: 0 auto;
     
 }

@@ -7,7 +7,7 @@ import cerebro from "./cerebro.png";
 function Nav(){
     return(
       /* <!--Barra de Navegação--> */
-      <nav class="navbar navbar-expand shadow navbar-dark justify-content-center custom ">
+      <nav class="navbar navbar-expand navbar-dark justify-content-center custom ">
         
 
         <div class="container-fluid">

@@ -1,0 +1,11 @@
+body{
+    background-color: black;
+}
+
+.upperPart{
+    background-image: url("../src/components/image/background.png");
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;    
+}

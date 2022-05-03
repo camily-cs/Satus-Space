@@ -1,0 +1,20 @@
+body{
+    background-color: black;
+}
+
+footer{
+    background-color: black;
+}
+
+.logo-img-footer{
+    width: 55px;
+}
+
+.fonte-img-footer{
+    width: 180px;
+}
+
+.line{
+    border-top: 1px solid rgb(194, 174, 174);
+    
+}

@@ -1,8 +1,8 @@
 import React from "react";
 import "../bootstrap/Bootstrap.css"
 import "./Main-homepage.css";
-import logo from "./logo.png"
-import fonteBranco from "./fonteBranco.png"
+import logo from "../image/logo.png"
+import fonteBranco from "../image/fonteBranco.png"
 
 function MainHomepage(){
     return(
@@ -20,7 +20,7 @@ function MainHomepage(){
 
                     <p className="text-white text-center responsive-font">"Ninguém educa ninguém, ninguém educa a si mesmo, os homens se educam entre si, mediatizados pelo mundo."</p>
 
-                    <p className="text-white text-right cit responsive-font ">-Paulo Freire</p>
+                    <p className="text-white text-center responsive-font ">-Paulo Freire</p>
 
                     <button className="d-block mx-auto button my-2">Confira</button>
                 </div>

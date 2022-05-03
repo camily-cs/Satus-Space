@@ -8,7 +8,7 @@
 }
 
 main{
-    background-image: url("./background.png");
+    background-color: transparent;
     background-position: left center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -63,3 +63,5 @@ main .cit{
     border-radius: 50px;
     padding: 10px;
 }
+
+
