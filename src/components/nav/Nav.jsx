@@ -1,7 +1,7 @@
 import React from "react";
 import "../bootstrap/Bootstrap.css"
 import "./Nav.css";
-import cerebro from "./cerebro.png";
+import { Link } from "react-router-dom";
 
 
 function Nav(){
@@ -12,16 +12,19 @@ function Nav(){
 
         <div class="container-fluid">
 
-          {/* <!-- Logo --> */}
+          
 
 
             <div class="navbar-nav mx-lg-auto mx-md-auto ">
 
               {/* <!--Botões de Navegação--> */}
-              <a class="nav-link button-a px-lg-4 px-md-4 px-sm-2" aria-current="page" href="./index.html">Home</a>
-              <a class="nav-link button-a px-lg-4 px-md-4 px-sm-2" href="#">Sobre nós</a>
-              <a class="nav-link button-a px-lg-4 px-md-4 px-sm-2" href="#">Entrar</a>
-              <a class="nav-link button-a px-lg-4 px-md-4 px-sm-2" href="./cadastro.html">Cadastrar-se</a>
+              <Link className="nav-link button-a px-lg-4 px-md-4 px-sm-2" to='/' >Home</Link>
+
+              <Link className="nav-link button-a px-lg-4 px-md-4 px-sm-2" to='/' >Sobre Nós</Link>
+
+              <Link className="nav-link button-a px-lg-4 px-md-4 px-sm-2" to='/Login' >Entrar</Link>
+
+              <Link to='/' className="nav-link button-a px-lg-4 px-md-4 px-sm-2">Cadastrar-se</Link>
 
             </div>
 

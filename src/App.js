@@ -1,19 +1,31 @@
-
 import './App.css';
-import Nav from './components/nav/Nav';
-import MainHomepage from './components/main-homepage/Main-homepage';
-import SectionHomepage from './components/section-homepage/Section-homepage';
-import Footer from './components/footer/Footer';
+
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route
+} from "react-router-dom";
+
+import Index from './pages/Index';
+import Login from './pages/Login';
+
 
 function App() {
   return (
-    <div className="App">
-      <main className='upperPart' ><Nav /><MainHomepage/></main>
-      
-      
-      <SectionHomepage/>
-      <Footer/>
-    </div>  
+    <Router>
+
+      <div className="App">
+        <Routes>
+
+          <Route path='/' exact element={<Index/>}/>
+
+          <Route path='/Login' exact element={<Login/>}/>
+             
+
+        </Routes>
+      </div>  
+
+    </Router>
   );
 }
 
