@@ -4,7 +4,7 @@ import "./Nav.css";
 import { Link } from "react-router-dom";
 
 
-function Nav(){
+function NavBar(){
     return(
       /* <!--Barra de Navegação--> */
       <nav class="navbar navbar-expand navbar-dark justify-content-center custom ">
@@ -24,7 +24,7 @@ function Nav(){
 
               <Link className="nav-link button-a px-lg-4 px-md-4 px-sm-2" to='/Login' >Entrar</Link>
 
-              <Link to='/' className="nav-link button-a px-lg-4 px-md-4 px-sm-2">Cadastrar-se</Link>
+              <Link className="nav-link button-a px-lg-4 px-md-4 px-sm-2" to='/'>Cadastrar-se</Link>
 
             </div>
 
@@ -35,4 +35,4 @@ function Nav(){
       </nav>
     )
 }
-export default Nav;
+export default NavBar;

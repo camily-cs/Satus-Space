@@ -28,3 +28,11 @@
 .navbar-dark .navbar-nav .nav-link {
     color: white;
 }
+
+.navbar-logo{
+    width: 50px;
+}
+
+.navbar-fonte{
+    width: 125px;
+}
