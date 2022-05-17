@@ -1,6 +1,6 @@
 import React from "react";
 import "../bootstrap/Bootstrap.css"
-import "./LoginForms.css"
+
 
 function LoginForms() {
     return(

@@ -1,6 +1,5 @@
 import React from "react";
 import '../bootstrap/Bootstrap.css'
-import './Footer.css'
 import logo from "../image/logo.png"
 import fonteBranco from "../image/fonteBranco.png"
 

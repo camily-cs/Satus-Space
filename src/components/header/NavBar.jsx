@@ -1,6 +1,6 @@
 import React from "react";
 import "../bootstrap/Bootstrap.css"
-import "./Nav.css";
+
 import { Link } from "react-router-dom";
 
 
