@@ -7,6 +7,7 @@ import {
 import Index from './pages/Index';
 import Login from './pages/Login';
 import Cadastrar from "./pages/Cadastrar";
+import Perfil from "./pages/Perfil";
 
 
 function App() {
@@ -21,6 +22,8 @@ function App() {
           <Route path='/Login' exact element={<Login/>}/>
 
           <Route path='/Cadastrar' exact element={<Cadastrar/>}/>
+
+          <Route path='/Perfil' exact element={<Perfil/>}/>
 
         </Routes>
       </div>  

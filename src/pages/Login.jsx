@@ -11,14 +11,14 @@ function Login(){
                 <div className="container-fluid">
                     <div className="row">
 
-                        <div className="col-md-4 d-md-block d-sm-none d-none bg-forms">
+                        <div className="col-md-4 d-lg-block d-md-none d-none bg-forms">
                             
                         </div>
-                        <div className="col-md-8 col-12">
+                        <div className="col-md-8 offset-md-2 col-12">
                             
                             <div className="row justify-content-center align-items-center vh-forms text-white">
 
-                                <form className="px-2 col-lg-5 col-md-12 col-12 px-4 py-5 my-5 bg-im ">
+                                <form className="px-2 col-lg-5 col-md-12  col-12 px-4 py-5 my-5 bg-im ">
                                     <h3 className="text-center mb-3">Login</h3>
                                     <label className="form-label" htmlFor="">E-mail:</label>
                                     <input className="form-control mb-3" type="email" name="" id="" />

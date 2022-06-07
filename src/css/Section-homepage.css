@@ -8,7 +8,7 @@
     --cor07: #21185E;
 }
 
-section{
+.section{
     background-image: linear-gradient(to bottom, var(--cor06) , black 40% );
     height: 100vh;
     position: relative;
