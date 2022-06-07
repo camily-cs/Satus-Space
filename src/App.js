@@ -6,6 +6,7 @@ import {
 
 import Index from './pages/Index';
 import Login from './pages/Login';
+import Cadastrar from "./pages/Cadastrar";
 
 
 function App() {
@@ -18,7 +19,8 @@ function App() {
           <Route path='/' exact element={<Index/>}/>
 
           <Route path='/Login' exact element={<Login/>}/>
-             
+
+          <Route path='/Cadastrar' exact element={<Cadastrar/>}/>
 
         </Routes>
       </div>  

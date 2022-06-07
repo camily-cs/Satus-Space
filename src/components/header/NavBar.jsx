@@ -24,7 +24,7 @@ function NavBar(){
 
               <Link className="nav-link button-a px-lg-4 px-md-4 px-sm-2" to='/Login' >Entrar</Link>
 
-              <Link className="nav-link button-a px-lg-4 px-md-4 px-sm-2" to='/'>Cadastrar-se</Link>
+              <Link className="nav-link button-a px-lg-4 px-md-4 px-sm-2" to='/Cadastrar'>Cadastrar-se</Link>
 
             </div>
 

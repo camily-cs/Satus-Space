@@ -9,3 +9,8 @@ body{
     background-size: cover;
     height: 100vh;    
 }
+
+.red{
+    height: 100px;
+    background-color: red;
+}

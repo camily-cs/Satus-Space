@@ -18,7 +18,7 @@ function Login(){
                             
                             <div className="row justify-content-center align-items-center vh-forms text-white">
 
-                                <form className="px-2 col-md-5 col-12 px-4 py-5 my-5 bg-im ">
+                                <form className="px-2 col-lg-5 col-md-12 col-12 px-4 py-5 my-5 bg-im ">
                                     <h3 className="text-center mb-3">Login</h3>
                                     <label className="form-label" htmlFor="">E-mail:</label>
                                     <input className="form-control mb-3" type="email" name="" id="" />

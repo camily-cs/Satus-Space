@@ -6,7 +6,7 @@ import fonteBranco from "../image/fonteBranco.png"
 
 function NavBarLogo() {
     return(
-        <nav class="navbar navbar-expand navbar-dark fixed-top custom ">
+        <nav class="navbar navbar-expand navbar-dark fixed-top custom pt-3">
         
 
             <div class="container-fluid">

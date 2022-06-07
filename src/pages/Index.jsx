@@ -10,8 +10,9 @@ function Index(){
         <div>
             <main className="upperPart">  <NavBar/> <MainHomepage/>   </main>
 
-
+            
             <SectionHomepage/>
+            <div className="red"></div>
             <Footer/>
             
         </div>
