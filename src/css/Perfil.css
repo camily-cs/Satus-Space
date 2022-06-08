@@ -3,3 +3,19 @@
     border-radius: 14px;
     
 }
+
+.sectcion-perfil-footer{
+    border-top: 2px solid black;
+}
+
+.card-icons{
+    background-color: red;
+    border-radius: 100%;
+    width: 125px;
+    height:95px;
+    padding: 5px;
+}
+
+.card-footer > h3{
+    color: var(--cor03);
+}

@@ -1,12 +1,11 @@
 import React from "react";
 
-function Login(){
+function Empresa(){
     return(
         <>
-            Login
+            Empresa
         </>
     );
 };
 
-export default Login;
-
+export default Empresa;

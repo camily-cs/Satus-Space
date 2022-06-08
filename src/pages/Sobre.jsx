@@ -1,12 +1,11 @@
 import React from "react";
 
-function Login(){
+function Sobre(){
     return(
         <>
-            Login
+            Sobre nós 
         </>
     );
 };
 
-export default Login;
-
+export default Sobre; 

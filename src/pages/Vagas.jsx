@@ -1,12 +1,11 @@
 import React from "react";
 
-function Login(){
+function Vagas(){
     return(
         <>
-            Login
+            Vagas
         </>
     );
 };
 
-export default Login;
-
+export default Vagas;
