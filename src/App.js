@@ -12,6 +12,7 @@ import Perfil from "./pages/Perfil";
 import Sobre from "./pages/Sobre";
 import Vagas from "./pages/Vagas";
 import Empresa from "./pages/Empresa";
+import Bootcamp  from "./pages/Bootcamps";
 
 
 function App() {
@@ -37,6 +38,7 @@ function App() {
 
           <Route path='/Vagas' exact element={<Vagas/>}/>
 
+          <Route path='/Bootcamp' exact element={<Bootcamp/>}/>
 
         </Routes>
       </div>  
