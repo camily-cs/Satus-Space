@@ -17,16 +17,24 @@ function Login() {
                         <p>Qual será o tipo de cadastro?</p>
 
                         <div className="col-5">
-                                <div className="button-cadastro">
-                                    <img src={student} alt="Imagem de um ícone em formato de estudante" className="imagem"/>
-                                    <h4>Aluno</h4>
+                                <div className="d-flex align-items-center justify-content-center button-cadastro">
+
+                                    <div>
+                                        <img src={student} alt="Imagem de um ícone em formato de estudante" className="imagem"/>
+                                        <h4>Aluno</h4>
+                                    </div>
+
                                 </div>
                         </div>
 
                         <div className="col-5">
-                            <div className="button-cadastro">
-                                <img src={empresa} alt="Imagem de um ícone em formato de uma empresa" className="imagem"/>
-                                <h4>Empresa</h4>
+                            <div className="d-flex align-items-center justify-content-center button-cadastro">
+
+                                <div>
+                                    <img src={empresa} alt="Imagem de um ícone em formato de uma empresa" className="imagem"/>
+                                    <h4>Empresa</h4>
+                                </div>
+
                             </div>
 
                         </div>

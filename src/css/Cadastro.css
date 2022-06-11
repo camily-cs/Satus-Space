@@ -1,6 +1,6 @@
 .button-cadastro{
     background: #090835;
-    height: 330px; 
+    min-height: 330px; 
     border-radius: 20px;
     /* box-shadow: 10px red; */
 }
@@ -14,9 +14,7 @@ h4{
     font-size: 50px;
     font-weight: 400;
 }
-.imagem{
-    margin-top: 50px;
-}
+
 
 
 
