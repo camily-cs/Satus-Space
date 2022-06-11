@@ -8,9 +8,7 @@ import "../css/App.css"
 function Index(){
     return (
         <div>
-            <main className="upperPart">  <NavBar/> <MainHomepage/>   </main>
-
-            
+            <main className="upperPart">  <NavBar/> <MainHomepage/>   </main>            
             <SectionHomepage/>
             <div className="red"></div>
             <Footer/>

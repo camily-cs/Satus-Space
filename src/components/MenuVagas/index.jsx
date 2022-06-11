@@ -5,7 +5,6 @@ import "./style.css"
 
 import { AiFillHome } from "react-icons/ai";
 
-
 export const MenuVagas = () => {
     return(
         <div className="container col-md-3 ">
