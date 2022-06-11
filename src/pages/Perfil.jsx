@@ -10,8 +10,8 @@ import { BsGithub } from "react-icons/bs";
 import { MdEmail } from "react-icons/md";
 import { FaFacebookSquare } from "react-icons/fa";
 import { BsInstagram } from "react-icons/bs";
-import {BsFillPersonFill} from "react-icons/bs"
-import {IoIosArrowForward} from "react-icons/io"
+import { BsFillPersonFill } from "react-icons/bs"
+import { IoIosArrowForward } from "react-icons/io"
 
 function Perfil() {
     return (
@@ -26,16 +26,16 @@ function Perfil() {
                             <div className="card-header px-4">
                                 <h2>Sobre mim</h2>
                             </div>
-                            
+
                             <div className="card-body d-flex justify-content-between px-4">
                                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex tempora ipsum error, temporibus libero repellendus atque? Nesciunt hic placeat impedit quas, alias ducimus unde officiis temporibus beatae, cumque adipisci totam.</p>
-                                <BsFillPersonFill className="card-icons"/>
+                                <BsFillPersonFill className="card-icons" />
                             </div>
 
                             <div className="card-footer px-4">
                                 <h3>Editar dados</h3>
                             </div>
-                        
+
                         </div>
 
                     </section>
@@ -54,7 +54,7 @@ function Perfil() {
                             <div className="card-footer">
                                 <h3>Personalizar perfil</h3>
                             </div>
-                            
+
                         </div>
                     </section>
 
@@ -82,7 +82,7 @@ function Perfil() {
                             <div className="card-header">
                                 <h2> Candidaturas</h2>
                             </div>
-                            
+
                             <div className="card-body">
 
                             </div>
@@ -115,7 +115,7 @@ function Perfil() {
                             <div className="card-footer">
 
                             </div>
-                            
+
 
                         </div>
 
@@ -170,21 +170,21 @@ function Perfil() {
 
                                 <div className="d-flex align-items-center justify-content-between border-bottom">
                                     <div className="d-flex align-items-center perfil-icons">
-                                        <FiSearch className="me-2"/><h2>Procurar Vagas</h2>
+                                        <FiSearch className="me-2" /><h2>Procurar Vagas</h2>
                                     </div>
-                                    
-                                     <IoIosArrowForward/>
-                                     
+
+                                    <IoIosArrowForward />
+
                                 </div>
-                                
+
                                 <div className="d-flex align-items-center justify-content-between">
                                     <div className="d-flex align-items-center perfil-icons">
                                         <BiBookAlt className="me-2" /><h2>Minha Agenda</h2>
                                     </div>
 
-                                    <IoIosArrowForward/>
+                                    <IoIosArrowForward />
 
-                                </div> 
+                                </div>
                             </div>
 
                             <div className="card-footer"></div>
@@ -196,7 +196,7 @@ function Perfil() {
 
             </div>
 
-            <Footer/>
+            <Footer />
         </>
     )
 }
