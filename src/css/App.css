@@ -1,3 +1,11 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+
 @import "Footer.css";
 @import "LoginForms.css";
 @import "Nav.css";
