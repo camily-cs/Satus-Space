@@ -1,8 +1,8 @@
 import React from "react";
-import NavBar from "../components/header/NavBar";
-import MainHomepage from "../components/main-homepage/Main-homepage";
-import SectionHomepage from "../components/section-homepage/Section-homepage";
-import Footer from "../components/footer/Footer";
+import NavBar from "../components/Header/NavBar";
+import MainHomepage from "../components/MainHome";
+import SectionHomepage from "../components/SectionHome";
+import Footer from "../components/Footer/index.jsx";
 import "../css/App.css"
 
 function Index(){
@@ -10,9 +10,8 @@ function Index(){
         <div>
             <main className="upperPart">  <NavBar/> <MainHomepage/>   </main>            
             <SectionHomepage/>
-            <div className="red"></div>
-            <Footer/>
-            
+            {/* <div className="red"> */}
+            <Footer/>            
         </div>
     )
 }

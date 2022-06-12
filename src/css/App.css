@@ -6,8 +6,8 @@
 }
 
 
-@import "Footer.css";
-@import "LoginForms.css";
+@import "../components/Footer/style.css";
+@import "../components/Forms/style.css";
 @import "Nav.css";
 @import "Main-homepage.css";
 @import "Section-homepage.css";

@@ -1,5 +1,5 @@
 import React from "react";
-import NavBarLogo from "../components/header/NavBarLogo";
+import NavBarLogo from "../components/Header/NavBarLogo";
 import "../components/bootstrap/Bootstrap.css";
 
 function Cadastrar(){

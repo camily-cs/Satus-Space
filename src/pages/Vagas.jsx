@@ -1,15 +1,16 @@
 import React from "react";
-import { MenuVagas } from "../components/MenuVagas";
+/* import Sidebar from "../components/Sidebar"; */
 import { BsSearch } from "react-icons/bs";
 import { MdRoom } from "react-icons/md";
 import { MdOutlinePaid } from "react-icons/md";
 
 import "../css/vagas.css";
 
+
 function Vagas() {
   return (
     <div>
-      <MenuVagas />
+      {/* <Sidebar /> */}
       <div className="container bg-dark col-md-9">
         <div className="topContainer">
           <h1>Vagas</h1>
@@ -54,10 +55,10 @@ function Vagas() {
           {/* <Vaga/> */}
         </div>
 
-        <div class="form-check form-switch">
-  <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault"/>
-  <label class="form-check-label" for="flexSwitchCheckDefault">Default switch checkbox input</label>
-</div>
+        <div className="form-check form-switch ">
+          <input className=" teste form-check-input checkbox" type="checkbox" role="switch" id="flexSwitchCheckDefault"/>
+          <label className="form-check-label" for="flexSwitchCheckDefault"/>
+        </div>
       </div>
     </div>
   );

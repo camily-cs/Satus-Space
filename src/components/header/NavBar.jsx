@@ -1,6 +1,5 @@
 import React from "react";
 import "../bootstrap/Bootstrap.css"
-
 import { Link } from "react-router-dom";
 
 
@@ -9,7 +8,7 @@ function NavBar(){
       /* <!--Barra de Navegação--> */
       <nav class="navbar navbar-expand navbar-dark justify-content-center custom ">
         
-
+        
         <div class="container-fluid">
 
           
@@ -36,3 +35,19 @@ function NavBar(){
     )
 }
 export default NavBar;
+
+{/* <nav class="navbar navbar-expand navbar-dark fixed-top custom pt-3">
+        
+
+        <div class="container-fluid">
+
+            <Link className="" to="/">
+                <img className="my-1 navbar-logo d-block mx-auto" src={logo} alt="Logo" />
+                <img className="navbar-fonte d-block" src={fonteBranco} alt="Logo" />
+            </Link>
+            
+      
+
+        </div>
+
+    </nav> */}
