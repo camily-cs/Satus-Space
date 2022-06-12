@@ -4,15 +4,16 @@ import {
   Route
 } from "react-router-dom";
 
-import Index from './pages/Index';
-import Login from "./pages/Login";
-import LoginAluno from './pages/LoginAluno';
-import Cadastrar from "./pages/Cadastrar";
-import Perfil from "./pages/Perfil";
-import Sobre from "./pages/Sobre";
-import Vagas from "./pages/Vagas";
-import Empresa from "./pages/Empresa";
-import Bootcamp  from "./pages/Bootcamps";
+/* pages */
+import Index from './pages/Index/index';
+import Login from "./pages/Login/login";
+import LoginAluno from './pages/LoginAluno/loginAluno';
+import Cadastrar from "./pages/Cadastrar/cadastrar";
+import Perfil from "./pages/Perfil/perfil";
+import Sobre from "./pages/Sobre/sobre";
+import Vagas from "./pages/Vagas/vagas";
+import Empresa from "./pages/Empresa/empresa";
+import Bootcamp  from "./pages/Bootcamps/bootcamps";
 
 
 

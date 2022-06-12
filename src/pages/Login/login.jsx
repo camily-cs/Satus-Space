@@ -1,5 +1,5 @@
 import React from "react";
-import NaveBarLogo from "../components/Header/NavBarLogo";
+import NaveBarLogo from "../../components/Header/NavBarLogo";
 import student from "../components/image/student.png"
 import empresa from "/image/empresa.png"
 
