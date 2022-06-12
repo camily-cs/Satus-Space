@@ -1,8 +1,8 @@
 import React from "react";
 import "./style.css";
 
-import logo from "../image/logo.png"
-import fonteBranco from "../image/fonteBranco.png"
+import logo from "../../../src/assets/image/logo.png"
+import fonteBranco from "../../../src/assets/image/fonteBranco.png"
 
 import { AiFillHome } from "react-icons/ai"
 import { RiSuitcaseLine } from "react-icons/ri"
@@ -12,12 +12,11 @@ import { FiSun } from "react-icons/fi"
 import { BsGear } from "react-icons/bs"
 import { HiOutlineLogout } from "react-icons/hi"
 
-export const Sidebar = () => {
+function Sidebar() {
     return (
         <>
             <div className="d-flex justify-content-between flex-column flex-shrink-0 p-3 teste fonte ">
-                <a href="/" className="">
-
+                <a href="/">
                     <img className="my-1 navbar-logo d-block mx-auto" src={logo} alt="Logo" />
                     <img className="navbar-fonte d-block mx-auto" src={fonteBranco} alt="Logo" />
                 </a>
@@ -72,3 +71,4 @@ export const Sidebar = () => {
         </>
     );
 };
+export default Sidebar;

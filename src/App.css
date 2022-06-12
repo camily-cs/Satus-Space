@@ -6,11 +6,12 @@
 }
 
 /* css components */
-@import "../src/components/Footer/style.css";
+/* @import "../src/components/Footer/style.css";
 @import "../src/components/Forms/style.css";
 @import "../src/components/Header/Nav.css";
 @import "../src/components/MainHome/style.css";
-@import "../src/components/SectionHome/Section-homepage.css";
+@import "../src/components/SectionHome/Section-homepage.css"; */
+@import "../src/components/Bootstrap/Bootstrap.css";
 
 /* css pages */
 @import "../src/pages/Index/index.style.css";

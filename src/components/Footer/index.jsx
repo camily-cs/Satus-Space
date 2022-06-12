@@ -1,6 +1,7 @@
 import React from "react";
 import '../Bootstrap/Bootstrap.css';
 import logo from "../../assets/image/logo.png";
+import fonte from "../../assets/image/fonteBranco.png"
 
 
 import { FaGithub } from 'react-icons/fa'
@@ -42,7 +43,8 @@ function Footer(){
                 <div className="col-3 col-lg-3 col-sm-6 col-12">
                     
                     <img src={logo} className='logo-img-footer d-block py-1 mx-auto' alt="Logo" />
-                    <img src="/assets/image/fonteBranco.png" className='fonte-img-footer d-block py-1 mx-auto' alt="Logo" />
+
+                    <img src={fonte} className='fonte-img-footer d-block py-1 mx-auto' alt="Fonte" />
                     <p className="text-center">Satus Space é uma plataforma de aprendizado na área de tecnologia para pessoas com mais de 40 anos. Para que elas possam iniciar o sonho de trabalhar no ramo de tecnologia. Somos o seu espaço para um novo começo.</p>
                 </div>
 

@@ -1,9 +1,11 @@
 import React from "react";
+import Sidebar from "../../components/SideBar";
 
 function Bootcamp (){
     return(
         <>
-        Bootcamp
+        <Sidebar/>
+        
         </>
     )
 }

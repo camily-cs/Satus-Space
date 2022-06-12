@@ -1,6 +1,7 @@
 import React from "react";
 import Footer from "../../components/Footer/index.jsx"
 
+
 import { FiSearch } from "react-icons/fi";
 import { BiBookAlt } from "react-icons/bi";
 import { BsLinkedin } from "react-icons/bs";
