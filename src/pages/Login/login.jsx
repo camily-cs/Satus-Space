@@ -1,7 +1,7 @@
 import React from "react";
 import NaveBarLogo from "../../components/Header/NavBarLogo";
-import student from "../components/image/student.png"
-import empresa from "/image/empresa.png"
+import estudante from "../../../src/assets/image/student.png"
+import empresa from "../../../src/assets/image/empresa.png";
 
 
 function Login() {
@@ -21,7 +21,7 @@ function Login() {
                                 <div className="d-flex align-items-center justify-content-center button-cadastro">
 
                                     <div>
-                                        <img src={student} alt="Imagem de um ícone em formato de estudante" className="imagem"/>
+                                        <img src={estudante} alt="Imagem de um ícone em formato de estudante" className="imagem"/>
                                         <h4>Aluno</h4>
                                     </div>
 

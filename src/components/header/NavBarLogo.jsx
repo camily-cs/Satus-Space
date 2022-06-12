@@ -1,7 +1,7 @@
 import React from "react";
 import "../Bootstrap/Bootstrap.css"
 import { Link } from "react-router-dom";
-import logo from "../image/logo.png"
+import logo from "../../../src/assets/image/logo.png";
 
 
 function NavBarLogo() {

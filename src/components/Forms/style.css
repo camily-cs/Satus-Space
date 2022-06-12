@@ -3,7 +3,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
-    background-image: url("../../../public/assets/img/backgroundForms.jpg");
+    background-image: url("../../../src/assets/image/backgroundForms.jpg");
 }
 
 .vh-forms{

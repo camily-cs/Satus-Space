@@ -1,6 +1,6 @@
 import React from "react";
-import '../Bootstrap/Bootstrap.css'
-import logo from "../image/logo.png"
+import '../Bootstrap/Bootstrap.css';
+import logo from "../../assets/image/logo.png";
 
 
 import { FaGithub } from 'react-icons/fa'

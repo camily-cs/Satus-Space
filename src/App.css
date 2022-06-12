@@ -6,16 +6,16 @@
 }
 
 /* css components */
-@import "../components/Footer/style.css";
-@import "../components/Forms/style.css";
-@import "../components/Header/Nav.css";
-@import "../components/MainHome/style.css";
-@import "../components/SectionHome/Section-homepage.css";
+@import "../src/components/Footer/style.css";
+@import "../src/components/Forms/style.css";
+@import "../src/components/Header/Nav.css";
+@import "../src/components/MainHome/style.css";
+@import "../src/components/SectionHome/Section-homepage.css";
 
 /* css pages */
-@import "../pages/Index/index.style.css";
-@import "../pages/Perfil/perfil.style.css";
-@import "../pages/Cadastrar/cadastrar.style.css";
-@import "../pages/Vagas/vagas.style.css";
+@import "../src/pages/Index/index.style.css";
+@import "../src/pages/Perfil/perfil.style.css";
+@import "../src/pages/Cadastrar/cadastrar.style.css";
+@import "../src/pages/Vagas/vagas.style.css";
 
 

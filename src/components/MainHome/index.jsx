@@ -1,6 +1,6 @@
 import React from "react";
 import "../Bootstrap/Bootstrap.css"
-import logo from "../image/logo.png"
+import logo from "../../../src/assets/image/logo.png"
 
 
 function MainHomepage(){
