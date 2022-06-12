@@ -7,7 +7,7 @@ function Cadastrar(){
         <>
             <main className="upperPart">
 
-                {/* <!--Barra de Navegação--> */}
+                {/* <!--Barra de Navegação   OLÁ  --> */}
                 <NavBarLogo/>
 
                 <div className="container-fluid">
