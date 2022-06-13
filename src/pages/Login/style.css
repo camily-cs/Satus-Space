@@ -1,0 +1,27 @@
+.button-cadastro{
+    background: #090835;
+    min-height: 330px; 
+    border-radius: 20px;
+    /* box-shadow: 10px red; */
+}
+h3{
+  font-size: 60px;
+}
+
+.vh-forms{
+    height: 100vh;
+}
+
+.vh-forms h3{
+    font-size: 3.0em;
+}
+.vh-forms h4 {
+    font-size: 1.8em;
+    font-weight: 400;
+}
+
+
+
+
+
+

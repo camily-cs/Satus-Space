@@ -15,6 +15,9 @@ import Vagas from "./pages/Vagas/vagas";
 import Empresa from "./pages/Empresa/empresa";
 import Bootcamp  from "./pages/Bootcamps/bootcamps";
 
+/* CSS global */
+import "./App.css"
+
 
 
 function App() {

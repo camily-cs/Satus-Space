@@ -1,7 +1,7 @@
 import React from "react";
-import '../Bootstrap/Bootstrap.css';
 import logo from "../../assets/image/logo.png";
 import fonte from "../../assets/image/fonteBranco.png"
+import "./style.css";
 
 
 import { FaGithub } from 'react-icons/fa'

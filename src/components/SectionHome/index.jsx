@@ -1,5 +1,5 @@
 import React from "react";
-import "../Bootstrap/Bootstrap.css"
+import "./style.css";
 
 
 function SectionHomepage(){

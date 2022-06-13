@@ -1,7 +1,7 @@
 import React from "react";
-import "../bootstrap/Bootstrap.css"
 
 
+/* Apagar */
 function LoginForms() {
     return(
         <div className="col-md-4 offset-md-7 green ">

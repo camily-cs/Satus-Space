@@ -4,7 +4,7 @@ import { BsSearch } from "react-icons/bs";
 import { MdRoom } from "react-icons/md";
 import { MdOutlinePaid } from "react-icons/md";
 
-import "../Vagas/vagas.style.css";
+import "./style.css";
 
 
 function Vagas() {

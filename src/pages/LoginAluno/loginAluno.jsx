@@ -1,7 +1,8 @@
 import React from "react";
 import NavBarLogo from "../../components/Header/NavBarLogo";
-import "../../components/Bootstrap/Bootstrap.css"
 import { Link } from "react-router-dom";
+
+import "./style.css";
 
 function LoginAluno() {
     return (

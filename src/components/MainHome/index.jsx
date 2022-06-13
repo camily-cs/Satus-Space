@@ -1,6 +1,8 @@
 import React from "react";
-import "../Bootstrap/Bootstrap.css"
+import "./style.css";
+
 import logo from "../../../src/assets/image/logo.png"
+import fonte from "../../../src/assets/image/fonteBranco.png"
 
 
 function MainHomepage(){
@@ -14,7 +16,7 @@ function MainHomepage(){
 
                     {/* Imagen da logo e da fonte */}
                         <img src={logo} className="my-2 img-fluid logo-main d-block mx-auto" alt="Logo da Satus Space"/>
-                        <img src="assets/image/fonteBranco.png" className="img-fluid fonte-main d-block mx-auto" alt="Satus Space"/>
+                        <img src={fonte} className="img-fluid fonte-main d-block mx-auto" alt="Satus Space"/>
                     </div>
 
                     <p className="text-white text-center responsive-font">"Se você pensa que não tem mais idade para certas coisas, queremos te dizer que talvez este seja o melhor momento para fazer algumas escolhas."</p>

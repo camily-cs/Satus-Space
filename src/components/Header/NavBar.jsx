@@ -1,5 +1,4 @@
 import React from "react";
-import "../Bootstrap/Bootstrap.css"
 import { Link } from "react-router-dom";
 
 
@@ -10,7 +9,7 @@ function NavBar(){
         
         
         <div class="container-fluid">
-          <h1>Olá</h1>
+          
 
           
 

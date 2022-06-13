@@ -1,0 +1,22 @@
+.bg-forms{
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    background-image: url("../../../src/assets/image/backgroundForms.jpg");
+}
+
+.vh-forms{
+    height: 100vh;
+}
+.bg-im{
+    background-color: var(--cor02);
+}
+.btn-form{
+    background-color: var(--cor01);
+    color: white;
+    font-weight: bolder;
+    width: 35%;
+    padding: 0.3rem;
+    border: none;
+}

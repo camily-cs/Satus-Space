@@ -3,6 +3,8 @@ import NaveBarLogo from "../../components/Header/NavBarLogo";
 import estudante from "../../../src/assets/image/student.png"
 import empresa from "../../../src/assets/image/empresa.png";
 
+import "./style.css";
+
 
 function Login() {
     return (
@@ -14,8 +16,12 @@ function Login() {
                 <div className="container">
 
                     <div className="row gx-5 justify-content-center align-items-center vh-forms text-white text-center">
-                        <h3 className="text-center mb-2">Bem-Vindo a Satus Space!</h3>
-                        <p>Qual será o tipo de cadastro?</p>
+                        
+
+                        <div className="col-8" >
+                            <h3 className="text-center mb-2">Bem-Vindo a Satus Space!</h3>
+                            <h4>Qual será o tipo de cadastro?</h4>
+                        </div>
 
                         <div className="col-5">
                                 <div className="d-flex align-items-center justify-content-center button-cadastro">
