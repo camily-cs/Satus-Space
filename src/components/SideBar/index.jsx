@@ -15,7 +15,7 @@ import { HiOutlineLogout } from "react-icons/hi"
 function Sidebar() {
     return (
         <>
-            <div className="d-flex justify-content-between flex-column flex-shrink-0 p-3 teste fonte ">
+            <div className="d-flex justify-content-between flex-column flex-shrink-0 p-3 side-bar fonte ">
                 <a href="/">
                     <img className="my-1 navbar-logo d-block mx-auto" src={logo} alt="Logo" />
                     <img className="navbar-fonte d-block mx-auto" src={fonteBranco} alt="Logo" />

@@ -1,4 +1,4 @@
-.section{
+.section-index{
     background-image: linear-gradient(to bottom, var(--cor06) , black 40% );
     height: 100vh;
     position: relative;
@@ -11,7 +11,7 @@
     font-size: 1.4em;
 }
 
-strong{
+.section-index strong{
     color: var(--cor04);
     
 }

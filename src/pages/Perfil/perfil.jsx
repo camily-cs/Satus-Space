@@ -17,12 +17,22 @@ import { IoIosArrowForward } from "react-icons/io"
 function Perfil() {
     return (
         <>
+
+            <div className="d-flex justify-content-center align-items-center perfil">
+
+                <div className="text-center">
+                    <img src="https://media-exp1.licdn.com/dms/image/C4D03AQEt1RmPk_o_Aw/profile-displayphoto-shrink_400_400/0/1648495115377?e=1660780800&v=beta&t=9ATeY8jmCSuPhhUZ-8wXqMXwdtE4yM9UCOs0Ddgi1y0" alt="matheus" />
+                    <strong className="mt-2 d-block" >Matheus de França Cardoso</strong>
+                    <p>Inscrito desde Fevereiro de 2022</p>
+                </div>
+            </div>
+
             <div className="container text-white ">
 
-                <div className="row gx-2 gy-2">
+                <div className="row justify-content-center gx-2 gy-2">
 
-                    <section className="col-lg-12">
-                        <div className="card section-perfil">
+                    <section className="col-lg-10">
+                        <div className="section-perfil">
 
                             <div className="card-header px-4">
                                 <h2>Sobre mim</h2>
@@ -41,7 +51,7 @@ function Perfil() {
 
                     </section>
 
-                    <section className="col-lg-6">
+                    <section className="col-lg-5">
                         <div className="section-perfil">
 
                             <div className="card-header">
@@ -59,7 +69,7 @@ function Perfil() {
                         </div>
                     </section>
 
-                    <section className="col-lg-6">
+                    <section className="col-lg-5">
                         <div className="section-perfil">
 
                             <div className="card-header">
@@ -76,7 +86,7 @@ function Perfil() {
                         </div>
                     </section>
 
-                    <section className="col-lg-6">
+                    <section className="col-lg-5">
 
                         <div className="section-perfil">
 
@@ -97,7 +107,7 @@ function Perfil() {
                     </section>
 
 
-                    <section className="col-lg-6">
+                    <section className="col-lg-5">
 
                         <div className="section-perfil">
 
@@ -105,12 +115,19 @@ function Perfil() {
                                 <h2>Minhas Redes</h2>
                             </div>
 
-                            <div className="card-body">
-                                <BsLinkedin />
-                                <BsGithub />
-                                <MdEmail />
-                                <FaFacebookSquare />
-                                <BsInstagram />
+                            <div className="card-body px-5">
+
+                                <ul className="d-flex justify-content-around">
+                                    <li><BsLinkedin /></li>
+                                    <li><BsGithub /></li>
+                                    <li><MdEmail /></li>
+                                     
+                                </ul>
+                                <ul className="mx-5 d-flex justify-content-around">
+                                    <li><FaFacebookSquare /></li>
+                                    <li><BsInstagram /></li> 
+                                </ul>
+
                             </div>
 
                             <div className="card-footer">
@@ -122,7 +139,7 @@ function Perfil() {
 
                     </section>
 
-                    <section className="col-lg-6">
+                    <section className="col-lg-5">
                         <div className="section-perfil">
 
                             <div className="card-header">
@@ -140,7 +157,7 @@ function Perfil() {
 
                     </section>
 
-                    <section className="col-lg-6">
+                    <section className="col-lg-5">
                         <div className="section-perfil">
 
                             <div className="card-header">
@@ -160,15 +177,13 @@ function Perfil() {
                     </section>
 
 
-                    <section className="col-lg-12">
-                        <div className="section-perfil">
+                    <section className="col-lg-10">
+                        <div className="section-perfil info mb-5">
 
                             <div className="card-header">
                                 <h2>Mais informações</h2>
                             </div>
                             <div className="card-body">
-
-
                                 <div className="d-flex align-items-center justify-content-between border-bottom">
                                     <div className="d-flex align-items-center perfil-icons">
                                         <FiSearch className="me-2" /><h2>Procurar Vagas</h2>

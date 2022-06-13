@@ -1,7 +1,42 @@
+.perfil{
+    height: 50vh;
+    background-image: url("../../../src/assets/image/background.png");
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.perfil img{
+    border-radius: 50%;
+    height: 160px;
+    border: 4px solid white;
+}
+
+.perfil{
+    color: white;
+    
+}
+
 .section-perfil{
     background-color: var(--bgcolor) ;
     border-radius: 14px;
     
+}
+
+.section-perfil ul svg{
+    
+    font-size: 3.4em;
+    cursor: pointer;
+    
+}
+
+.section-perfil ul{
+    list-style: none;
+    
+}
+
+.section-perfil li{
+    display: inline;
 }
 
 .section-perfil > .card-body{
@@ -16,10 +51,15 @@
     padding: 5px;
 }
 
+.info div:nth-child( 2 ){
+    cursor: pointer;
+} 
+
 .card-footer > h3{
     color: var(--cor03);
     cursor: pointer;
 }
+
 
 .perfil-icons{
     font-size: 1.2em;
