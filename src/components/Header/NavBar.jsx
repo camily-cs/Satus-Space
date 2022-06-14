@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 function NavBar(){
     return(
       /* <!--Barra de Navegação--> */
-      <nav class="navbar navbar-expand navbar-dark justify-content-center custom ">
+      <nav class="navbar navbar-expand navbar-dark justify-content-center transparent ">
         
         
         <div class="container-fluid">

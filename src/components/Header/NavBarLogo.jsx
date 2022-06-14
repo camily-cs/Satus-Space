@@ -1,22 +1,17 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logo from "../../../src/assets/image/logo.png";
-import fonte from "../../../src/assets/image/fonteBranco.png"
+
+import Logo from "../Logo";
 
 
 function NavBarLogo() {
     return(
-        <nav class="navbar navbar-expand navbar-dark fixed-top custom pt-3">
+        <nav class="navbar navbar-expand navbar-dark fixed-top transparent pt-1">
         
 
             <div class="container-fluid">
 
-                <Link className="" to="/">
-                    <img className="my-1 navbar-logo d-block mx-auto" src={logo} alt="Logo" />
-                    <img className="navbar-fonte d-block" src={fonte} alt="Logo" />
-                </Link>
-                
-          
+                <Logo/>
 
             </div>
 

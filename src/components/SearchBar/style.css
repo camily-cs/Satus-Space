@@ -1,0 +1,17 @@
+.transparent input{
+    background-color: #E1DDDD;
+    border-radius: 10px;
+    width: 320px;
+    color: black;
+}
+
+.nav-icon{
+    font-size: 2.2em;
+}
+
+.perfil-navbar{
+    width: 65px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+

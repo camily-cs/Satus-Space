@@ -14,7 +14,7 @@
 
 /* Barra de navegação */
 
-.navbar.custom {
+.transparent {
     background-color: transparent;
     height: 10vh;
     color: white;
@@ -29,10 +29,3 @@
     color: white;
 }
 
-.navbar-logo{
-    width: 50px;
-}
-
-.navbar-fonte{
-    width: 125px;
-}

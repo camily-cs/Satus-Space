@@ -1,6 +1,9 @@
 import React from "react";
-import Footer from "../../components/Footer/index.jsx"
 
+import SearchBar from "../../components/SearchBar/index.jsx";
+import Footer from "../../components/Footer/index.jsx";
+
+/* CSS da página */
 import "./style.css"
 
 
@@ -18,7 +21,11 @@ function Perfil() {
     return (
         <>
 
+            <SearchBar/>
+            
             <div className="d-flex justify-content-center align-items-center perfil">
+
+                
 
                 <div className="text-center">
                     <img src="https://media-exp1.licdn.com/dms/image/C4D03AQEt1RmPk_o_Aw/profile-displayphoto-shrink_400_400/0/1648495115377?e=1660780800&v=beta&t=9ATeY8jmCSuPhhUZ-8wXqMXwdtE4yM9UCOs0Ddgi1y0" alt="matheus" />
@@ -115,7 +122,7 @@ function Perfil() {
                                 <h2>Minhas Redes</h2>
                             </div>
 
-                            <div className="card-body px-5">
+                            <div className="card-body px-md-5">
 
                                 <ul className="d-flex justify-content-around">
                                     <li><BsLinkedin /></li>
