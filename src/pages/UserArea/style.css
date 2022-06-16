@@ -1,3 +1,50 @@
-.perfil-area{
-    margin-left: 300px;
+/* .b{
+    border: 1px solid red;
+} */
+
+.vagas{
+    height: 70vh; 
+}
+
+
+
+.vagas-section{
+    background-color: var(--bgcolor);
+    border-radius: 14px;
+}
+
+
+.welcome-section{
+    height: 30vh;
+    background-color: var(--cor02);
+    border-radius: 14px;
+}
+
+.agenda-section{
+    background-color: var(--bgcolor);
+    border-radius: 14px;
+    height: 100vh; 
+}
+
+.agenda-section ul{
+    list-style: none;
+    padding: 0;
+}
+.agenda-section ul li{
+    border-radius: 14px;
+    border: 2px solid #A7A4A4  /* Passar como variavel no CSS */;
+    max-width: 260px ;
+}
+
+.agenda-section ul li p{
+    margin: 0px;
+    font-weight: bold;
+    
+}
+
+.agenda-section ul li svg{
+    font-size: 2.2em;
+    background-color: var(--cor04);
+    border-radius: 50%;
+    padding: 5px;
 }
