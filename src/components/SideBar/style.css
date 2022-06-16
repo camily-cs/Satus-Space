@@ -1,7 +1,26 @@
+.navbar-bottom{
+    background-color: var(--cor02) ;
+    color: white;
+    height: 65px;
+    
+    
+}
+
+.navbar-bottom img{
+    height: 45px;
+    border-radius: 100%;
+    border: 2px solid white;
+}
+
+.navbar-bottom svg{
+    font-size: 2.0em;
+}
+
 .side-bar{
-    width: 600px;
+    width: 230px;
     height: 100vh;
     background-color: var(--cor02);
+    margin-right: 0px;
 }
 
 .sider-bar-ul > li > a{
@@ -11,6 +30,10 @@
     text-decoration: none;
     margin: 5px 0px;
     
+}
+
+.nav-input-form{
+    margin-left: 230px;
 }
 
 .exit-button{

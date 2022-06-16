@@ -1,7 +1,8 @@
 import React from "react";
 
-import SearchBar from "../../components/SearchBar/index.jsx";
+
 import Footer from "../../components/Footer/index.jsx";
+import PerfilBar from "../../components/PerfilBar/index.jsx";
 
 /* CSS da página */
 import "./style.css"
@@ -21,9 +22,12 @@ function Perfil() {
     return (
         <>
 
-            <SearchBar/>
+        <PerfilBar/>
+            
             
             <div className="d-flex justify-content-center align-items-center perfil">
+
+            
 
                 
 
