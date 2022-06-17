@@ -3,8 +3,11 @@ import React from "react";
 import "./style.css";
 
 import Sidebar from "../../components/SideBar";
+import VagaBox from "../../components/VagaBox";
+import AgendaBox from "../../components/AgendaBox";
 
 import { RiSuitcaseLine } from "react-icons/ri"
+
 
 
 function UserArea() {
@@ -49,8 +52,11 @@ function UserArea() {
 
                                     </div>
                                     
-                                    <div className="card-body">
+                                    <div className="card-body p-4">
 
+                                        
+                                        <VagaBox/>
+                                        <VagaBox/>
                                         {/* Componentizar */}
 
                                     </div>
@@ -78,16 +84,10 @@ function UserArea() {
                             <ul className=" justify-content-center">
 
                                 {/* Componetizar */}
-                                <li className="mx-auto d-flex align-items-center justify-content-center">
-                                    
-                                    <RiSuitcaseLine/>
+                                <AgendaBox/>        
+                                <AgendaBox/>
 
-                                    <div className="ms-4 text-center">
-                                        <p>Exntrevisa Empresa X</p>
-                                        <span>22 Julho - 10:00</span>
-                                    </div>
 
-                                </li>
                             </ul>
 
                         </div>
