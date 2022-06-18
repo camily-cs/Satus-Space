@@ -1,20 +1,25 @@
-/* .container{
-    margin-left: 350px;
-    margin-top: 20px;
+.containerVagas{
+    z-index: 1;
+    margin-left: 260px;
+    margin-top: -740px;
     border-radius: 10px;
-} */
+    width: 82%;
+    height: 730px;
+}
+
+
 
 .topContainer{
     display: flex;
     flex-direction: row;
 }
 
-/* h1{
+h1{
     color: white;
     padding-top: 20px;
     margin-left: 20px;
     margin-bottom: 30px;
-} */
+}
 
 .imgUsuario{
     border-radius: 50%;
@@ -24,6 +29,7 @@
     display: flex;
     flex-direction: row;
     margin-left: 20px;
+    margin-top: 30px;
     gap: 30px;
 }
 
@@ -76,8 +82,33 @@ button{
     padding-inline: 20px;
 }
 
+button:hover{
+    background-color: white;
+    color: #050840;
+    cursor: pointer;
+}
+
 .teste{
     top: 20px;
     width: 40px!important;
     height: 20px;
+}
+
+
+.inputCheckBox{
+   margin-top: 30px;
+   margin-left: 20px;
+}
+
+.descCheckBox{
+    color: white;
+    margin-left: 80px;
+    margin-top: -25px;
+}
+
+.componentVaga{
+    margin-top: 30px;
+    margin-left: 30px;
+    width: 1075px;
+    color: white;
 }

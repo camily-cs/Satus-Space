@@ -77,7 +77,7 @@ function Sidebar() {
                 </div>
             </div>
 
-            <nav className="navbar navbar-expand-lg navbar-bottom d-flex d-md-none shadow-sm fixed-bottom px-3">
+            {/* <nav className="navbar navbar-expand-lg navbar-bottom d-flex d-md-none shadow-sm fixed-bottom px-3">
 
 
                 <RiSuitcaseLine />
@@ -101,7 +101,7 @@ function Sidebar() {
                 <img src="https://media-exp1.licdn.com/dms/image/C4D03AQEt1RmPk_o_Aw/profile-displayphoto-shrink_400_400/0/1648495115377?e=1660780800&v=beta&t=9ATeY8jmCSuPhhUZ-8wXqMXwdtE4yM9UCOs0Ddgi1y0" className="me-3 d-none d-md-flex perfil-navbar" alt="" />
                 <FaSearch className="nav-icon me-3 d-md-none" />
 
-            </nav>
+            </nav> */}
         </>
     );
 };
