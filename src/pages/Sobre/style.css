@@ -1,0 +1,23 @@
+.sobre{
+    height: 100vh;
+}
+
+.sobre p{
+    max-width: 500px;
+}
+
+.mvv{
+    width: 100px;
+    height: 100px;
+}
+.mvv-cont{
+    background-color:#202024;
+    border-color: #ececf5;
+    border-style: solid; 
+}
+
+
+
+
+
+
