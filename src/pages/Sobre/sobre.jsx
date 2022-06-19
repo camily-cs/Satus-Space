@@ -4,10 +4,13 @@ import missao from "../../../src/assets/image/missao.png";
 import visao from "../../../src/assets/image/visao.png"
 import valores from "../../../src/assets/image/valores.png"
 
+import NavBarLogo2 from "../../components/Header/NavBarLogo2";
+
 function Sobre() {
     return (
         <>
-
+            
+            <NavBarLogo2/>
             <div className="container">
                 <div className="row d-flex justify-content-center align-items-center sobre">
                     <div className="text-white text-center">

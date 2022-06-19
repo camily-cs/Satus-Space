@@ -6,7 +6,7 @@ import Logo from "../Logo";
 
 function NavBarLogo() {
     return(
-        <nav class="navbar navbar-expand navbar-dark fixed-top transparent pt-1">
+        <nav class="navbar navbar-expand navbar-dark fixed-top nav-bar-top pt-1">
         
 
             <div class="container-fluid">
