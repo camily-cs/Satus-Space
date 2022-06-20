@@ -14,6 +14,7 @@ import Sobre from "./pages/Sobre/sobre";
 import Vagas from "./pages/Vagas/vagas";
 import Empresa from "./pages/Empresa/empresa";
 import Bootcamp  from "./pages/Bootcamps/bootcamps";
+import BootcampsAndamento from "./pages/BootcampsAndamento/bootcampsandamentos";
 import UserArea from "./pages/UserArea/UserArea";
 /* CSS global */
 import "./App.css"
@@ -44,6 +45,8 @@ function App() {
           <Route path='/Vagas' exact element={<Vagas/>}/>
 
           <Route path='/Bootcamp' exact element={<Bootcamp/>}/>
+
+          <Route path='/Bootcamp/Andamento' exact element={<BootcampsAndamento/>}/>
 
           <Route path='/User/Area' exact element={<UserArea/>}/>
 
