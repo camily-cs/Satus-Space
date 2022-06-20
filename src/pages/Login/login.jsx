@@ -15,15 +15,15 @@ function Login() {
                 <NaveBarLogo />
                 <div className="container">
 
-                    <div className="row gx-5 justify-content-center align-items-center vh-forms text-white text-center">
+                    <div className="row gx-4 gy-1 justify-content-center align-items-center vh-forms text-white text-center">
                         
 
-                        <div className="col-8" >
+                        <div className="col-md-8" >
                             <h3 className="text-center mb-2">Bem-Vindo a Satus Space!</h3>
                             <h4>Qual será o tipo de cadastro?</h4>
                         </div>
 
-                        <div className="col-5">
+                        <div className="col-md-5">
                                 <div className="d-flex align-items-center justify-content-center button-cadastro">
 
                                     <div>
@@ -34,7 +34,7 @@ function Login() {
                                 </div>
                         </div>
 
-                        <div className="col-5">
+                        <div className="col-md-5">
                             <div className="d-flex align-items-center justify-content-center button-cadastro">
 
                                 <div>
