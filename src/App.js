@@ -6,9 +6,21 @@ import {
 
 /* pages */
 import Index from './pages/Index/index';
+
+
+/* Páginas de login */
 import Login from "./pages/Login/login";
 import LoginAluno from './pages/LoginAluno/loginAluno';
+import LoginEmpresa from "./pages/LoginEmpresa/loginEmpresa";
+
+
+/* Páginas de cadastro */
 import Cadastrar from "./pages/Cadastrar/cadastrar";
+import CadAluno from "./pages/CadAluno/cadAluno";
+import CadEmpresa from "./pages/CadEmpresa/cadEmpresa";
+
+
+
 import Perfil from "./pages/Perfil/perfil";
 import Sobre from "./pages/Sobre/sobre";
 import Vagas from "./pages/Vagas/vagas";
@@ -31,11 +43,22 @@ function App() {
 
           <Route path='/' exact element={<Index/>}/>
 
+          {/* Páginas de Login */}
           <Route path='/Login' exact element={<Login/>}/>
-
           <Route path='/Login/Aluno' exact element={<LoginAluno/>}/>
+          <Route path='/Login/Empresa' exact element={<LoginEmpresa/>}/>
 
+          {/* Páginas de cadastro */}
           <Route path='/Cadastrar' exact element={<Cadastrar/>}/>
+          <Route path='/Cadastrar/Aluno' exact element={<CadAluno/>}/>
+          <Route path='/Cadastrar/Empresa' exact element={<CadEmpresa/>}/>
+         
+
+
+
+
+
+
 
           <Route path='/Perfil' exact element={<Perfil/>}/>
 

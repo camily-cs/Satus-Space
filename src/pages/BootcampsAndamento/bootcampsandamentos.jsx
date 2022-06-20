@@ -1,7 +1,10 @@
 import React from "react";
-import SearchBar from "../../components/SearchBar/index";
-import { AiOutlineLeft } from "react-icons/ai"
 
+import { Link } from "react-router-dom";
+
+import SearchBar from "../../components/SearchBar/index";
+
+import { AiOutlineLeft } from "react-icons/ai"
 import {FiPlay} from "react-icons/fi"
 
 import "./style.css";
@@ -11,12 +14,12 @@ function BootcampsAndamento() {
         <>
             <SearchBar/>
             <div className="container text-white">
-
-            <div className="d-flex my-5">
+                <Link className="link" to="/Perfil">
+                <div className="d-flex my-5">
                     <AiOutlineLeft className="my-auto"/>
                     <h2 className="ms-3">Bootcamps em Andamento</h2>
                 </div>
-
+                </Link>
                 <div className="row g-5">
             
                     <div className="col-md-4 ">

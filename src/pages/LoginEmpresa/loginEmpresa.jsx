@@ -1,10 +1,9 @@
 import React from "react";
 import NavBarLogo from "../../components/Header/NavBarLogo";
 import { Link } from "react-router-dom";
-
 import "./style.css";
 
-function LoginAluno() {
+function LoginEmpresa() {
     return (
         <>
             <main className="upperPart">
@@ -20,7 +19,7 @@ function LoginAluno() {
                             <div className="row justify-content-center align-items-center vh-forms text-white">
 
                                 <form className="px-2 col-lg-5 col-md-12 col-12 px-4 py-5 my-5 bg-im ">
-                                    
+
                                     <h3 className="text-center mb-3">Login</h3>
                                     <label className="form-label" htmlFor="">E-mail:</label>
                                     <input className="form-control mb-3" type="email" name="" id="" />
@@ -44,4 +43,4 @@ function LoginAluno() {
     )
 }
 
-export default LoginAluno;
+export default LoginEmpresa;

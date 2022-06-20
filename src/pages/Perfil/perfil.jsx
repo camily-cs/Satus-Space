@@ -1,5 +1,6 @@
 import React from "react";
 
+import { Link } from "react-router-dom";
 
 import Footer from "../../components/Footer/index.jsx";
 import PerfilBar from "../../components/PerfilBar/index.jsx";
@@ -23,14 +24,14 @@ function Perfil() {
     return (
         <>
 
-        <PerfilBar/>
-            
-            
+            <PerfilBar />
+
+
             <div className="d-flex justify-content-center align-items-center perfil">
 
-            
 
-                <AiOutlineLeft className="back-arrow"/>   
+
+                <AiOutlineLeft className="back-arrow" />
 
                 <div className="text-center">
                     <img src="https://media-exp1.licdn.com/dms/image/C4D03AQEt1RmPk_o_Aw/profile-displayphoto-shrink_400_400/0/1648495115377?e=1660780800&v=beta&t=9ATeY8jmCSuPhhUZ-8wXqMXwdtE4yM9UCOs0Ddgi1y0" alt="matheus" />
@@ -133,11 +134,11 @@ function Perfil() {
                                     <li><BsLinkedin /></li>
                                     <li><BsGithub /></li>
                                     <li><MdEmail /></li>
-                                     
+
                                 </ul>
                                 <ul className="mx-5 d-flex justify-content-around">
                                     <li><FaFacebookSquare /></li>
-                                    <li><BsInstagram /></li> 
+                                    <li><BsInstagram /></li>
                                 </ul>
 
                             </div>
@@ -161,10 +162,12 @@ function Perfil() {
                             <div className="card-body">
                                 <p>Veja os bootcamps que você está cursando no momento.</p>
                             </div>
+                            <Link className="link" to="/Bootcamp/Andamento">
+                                <div className="card-footer">
+                                    <h3>Acessar</h3>
+                                </div>
+                            </Link>
 
-                            <div className="card-footer">
-                                <h3>Acessar</h3>
-                            </div>
                         </div>
 
                     </section>
@@ -180,10 +183,13 @@ function Perfil() {
                             <div className="card-body">
                                 <p>Veja os bootcamps que você já concluiu e os seus certificados.</p>
                             </div>
-
+                            
+                            <Link className="link" to="/Bootcamp">
                             <div className="card-footer">
                                 <h3>Acessar</h3>
                             </div>
+                            </Link>
+
                         </div>
 
                     </section>

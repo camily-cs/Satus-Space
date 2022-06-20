@@ -19,11 +19,11 @@ function UserArea() {
                 <div className="row gx-2 gy-2">
 
 
-                    <div className="col-9 b">
+                    <div className="col-9 ">
 
                         <div className="row gx-2 gy-2 ">
 
-                            <div className="col-12 welcome b">
+                            <div className="col-12 welcome ">
 
                                 <div className="d-flex align-items-center welcome-section px-3">
 
@@ -42,7 +42,7 @@ function UserArea() {
 
 
                            {/*  Seção vagas */}
-                            <div className="col-12 vagas b">
+                            <div className="col-12 vagas ">
 
                                 <div className="vagas-section">
                                     <div className="d-flex justify-content-between card-header">
@@ -76,7 +76,7 @@ function UserArea() {
 
                     </div>
 
-                    <div className="col-3 b">
+                    <div className="col-3 ">
 
                         <div className="agenda-section px-3">
                             

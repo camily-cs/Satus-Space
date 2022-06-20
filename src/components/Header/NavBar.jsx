@@ -17,13 +17,13 @@ function NavBar(){
             <div class="navbar-nav mx-lg-auto mx-md-auto ">
 
               {/* <!--Botões de Navegação--> */}
-              <Link className="nav-link button-a px-lg-4 px-md-4 px-sm-2" to='/' >Home</Link>
+              <Link className="nav-link button-a px-lg-4 px-md-4 px-sm-2 nav" to='/' >Home</Link>
 
-              <Link className="nav-link button-a px-lg-4 px-md-4 px-sm-2" to='/' >Sobre Nós</Link>
+              <Link className="nav-link button-a px-lg-4 px-md-4 px-sm-2 nav" to='/Sobre' >Sobre Nós</Link>
 
-              <Link className="nav-link button-a px-lg-4 px-md-4 px-sm-2" to='/Login' >Entrar</Link>
+              <Link className="nav-link button-a px-lg-4 px-md-4 px-sm-2 nav" to='/Login' >Entrar</Link>
 
-              <Link className="nav-link button-a px-lg-4 px-md-4 px-sm-2" to='/Cadastrar'>Cadastrar-se</Link>
+              <Link className="nav-link button-a px-lg-4 px-md-4 px-sm-2 nav" to='/Cadastrar'>Cadastrar-se</Link>
 
             </div>
 

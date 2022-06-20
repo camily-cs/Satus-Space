@@ -4,6 +4,24 @@
     border-radius: 20px;
     /* box-shadow: 10px red; */
 }
+
+.link{
+    color: white;
+    text-decoration: none;
+}
+
+.link:hover .button-cadastro{
+    transform: scale(1.07);
+    transition: all 0.3s ease;
+    color: white;
+}
+
+.link:hover{
+    color: white;
+}
+
+
+
 h3{
   font-size: 60px;
 }
