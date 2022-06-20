@@ -12,6 +12,7 @@ import Cadastrar from "./pages/Cadastrar/cadastrar";
 import Perfil from "./pages/Perfil/perfil";
 import Sobre from "./pages/Sobre/sobre";
 import Vagas from "./pages/Vagas/vagas";
+import DetalheVaga from "./pages/DetalheVaga/detalheVaga";
 import Empresa from "./pages/Empresa/empresa";
 import Bootcamp  from "./pages/Bootcamps/bootcamps";
 import UserArea from "./pages/UserArea/UserArea";
@@ -42,6 +43,8 @@ function App() {
           <Route path='/Sobre' exact element={<Sobre/>}/>
 
           <Route path='/Vagas' exact element={<Vagas/>}/>
+
+          <Route path='/DetalheVaga' exact element={<DetalheVaga/>}/>
 
           <Route path='/Bootcamp' exact element={<Bootcamp/>}/>
 

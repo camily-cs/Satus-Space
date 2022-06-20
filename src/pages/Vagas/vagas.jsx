@@ -1,4 +1,5 @@
 import React from "react";
+import "./style.css";
 import Sidebar from "../../components/SideBar";
 import Vaga from "../../components/VagaBox";
 import { BsSearch } from "react-icons/bs";
@@ -6,7 +7,7 @@ import { MdRoom } from "react-icons/md";
 import { MdOutlinePaid } from "react-icons/md";
 
 
-import "./style.css";
+
 
 
 function Vagas() {
