@@ -20,7 +20,7 @@ function BootcampsAndamento() {
                 <div className="row g-5">
             
                     <div className="col-md-4 ">
-                        <div>
+                        <div className="video-box">
                            <img src="https://i.ytimg.com/vi/Ejkb_YpuHWs/maxresdefault.jpg?v=5f8061fa" className="img-fluid" alt="" />
                             <div className="d-flex align-items-center justify-content-between footer-video p-3">
                                 <div>
@@ -32,7 +32,7 @@ function BootcampsAndamento() {
                         </div>
                     </div>
                     <div className="col-md-4 ">
-                        <div>
+                        <div className="video-box">
                            <img src="https://i.ytimg.com/vi/jgQjeqGRdgA/maxresdefault.jpg" className="img-fluid" alt="" />
                             <div className="d-flex align-items-center justify-content-between footer-video p-3">
                                 <div>
@@ -43,7 +43,7 @@ function BootcampsAndamento() {
                             </div>
                         </div>
                     </div><div className="col-md-4 ">
-                        <div>
+                        <div className="video-box">
                            <img src="https://i.ytimg.com/vi/xS2D9x8odoE/maxresdefault.jpg" className="img-fluid" alt="" />
                             <div className="d-flex align-items-center justify-content-between footer-video p-3">
                                 <div>
@@ -53,8 +53,9 @@ function BootcampsAndamento() {
                                 <FiPlay className=""/>
                             </div>
                         </div>
-                    </div><div className="col-md-4 ">
-                        <div>
+                    </div>
+                    <div className="col-md-4 ">
+                        <div className="video-box">
                            <img src="https://images.passeidireto.com/thumbnails/video/93566925/thumb.jpg.large" className="img-fluid" alt="" />
                             <div className="d-flex align-items-center justify-content-between footer-video p-3">
                                 <div>
@@ -65,7 +66,7 @@ function BootcampsAndamento() {
                             </div>
                         </div>
                     </div><div className="col-md-4 ">
-                        <div>
+                        <div className="video-box">
                            <img src="https://i.ytimg.com/vi/I_vi2q6sC1k/maxresdefault.jpg" className="img-fluid" alt="" />
                             <div className="d-flex align-items-center justify-content-between footer-video p-3">
                                 <div>
@@ -75,8 +76,9 @@ function BootcampsAndamento() {
                                 <FiPlay className=""/>
                             </div>
                         </div>
-                    </div><div className="col-md-4 ">
-                        <div>
+                    </div>
+                    <div className="col-md-4 ">
+                        <div className="video-box">
                            <img src="https://i.ytimg.com/vi/reFQrqxOzsg/maxresdefault.jpg" className="img-fluid" alt="" />
                             <div className="d-flex align-items-center justify-content-between footer-video p-3">
                                 <div>

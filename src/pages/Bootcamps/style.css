@@ -7,6 +7,10 @@
     background-color: var(--bgcolor);
 }
 
-.bootcamp p, h4 {
-    text-align: center;    
+.bootcamp p {
+    text-align: center;     
+}
+
+.bootcamp h4 {
+    text-align: center;     
 }
