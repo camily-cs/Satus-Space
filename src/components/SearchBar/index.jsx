@@ -9,7 +9,7 @@ import "./style.css"
 function SearchBar() {
     return (
         <>
-            <nav class="navbar  fixed-top d-flex justify-content-between transparent  pt-1">
+            <nav class="navbar  d-flex justify-content-between transparent  pt-1">
             
                     
                     <div className="ms-3 d-flex align-items-center">
