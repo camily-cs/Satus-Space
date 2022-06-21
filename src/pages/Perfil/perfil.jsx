@@ -16,9 +16,11 @@ import { BsGithub } from "react-icons/bs";
 import { MdEmail } from "react-icons/md";
 import { FaFacebookSquare } from "react-icons/fa";
 import { BsInstagram } from "react-icons/bs";
-import { BsFillPersonFill } from "react-icons/bs"
-import { IoIosArrowForward } from "react-icons/io"
-import { AiOutlineLeft } from "react-icons/ai"
+import { BsFillPersonFill } from "react-icons/bs";
+import { IoIosArrowForward } from "react-icons/io";
+import { AiOutlineLeft } from "react-icons/ai";
+import { BiPencil } from "react-icons/bi";
+import { BiMedal } from "react-icons/bi"
 
 function Perfil() {
     return (
@@ -27,7 +29,7 @@ function Perfil() {
             <PerfilBar />
 
 
-            <div className="d-flex justify-content-center align-items-center perfil">
+            <div className="perfil">
 
 
 
@@ -48,16 +50,30 @@ function Perfil() {
                         <div className="section-perfil">
 
                             <div className="card-header px-4">
-                                <h2>Sobre mim</h2>
+                                <h3>Sobre mim</h3>
                             </div>
 
                             <div className="card-body d-flex justify-content-between px-4">
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex tempora ipsum error, temporibus libero repellendus atque? Nesciunt hic placeat impedit quas, alias ducimus unde officiis temporibus beatae, cumque adipisci totam.</p>
-                                <BsFillPersonFill className="card-icons" />
+                                <div className="row">
+                                    <div className="col-md-9 col-7">
+
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex tempora ipsum error, temporibus libero repellendus atque? Nesciunt hic placeat impedit quas, alias ducimus unde officiis temporibus beatae, cumque adipisci totam.</p>
+
+                                    </div>
+
+                                    <div className="col-md-3 col-5 card-icon">
+
+                                        <div>
+                                            <BsFillPersonFill />
+                                        </div>
+
+                                    </div>
+                                </div>
+
                             </div>
 
                             <div className="card-footer px-4">
-                                <h3>Editar dados</h3>
+                                <h4>Editar dados</h4>
                             </div>
 
                         </div>
@@ -68,15 +84,26 @@ function Perfil() {
                         <div className="section-perfil">
 
                             <div className="card-header">
-                                <h2>Personalização</h2>
+                                <h3>Personalização</h3>
                             </div>
 
-                            <div className="card-body">
-                                <p> Personalize o seu perfil de forma simples, fácil e rápida da forma que você desejar.</p>
+                            <div className="card-body personalize">
+                                <div className="row">
+
+                                    <div className="col-md-6 col-7">
+                                        <p>Personalize o seu perfil de forma simples, fácil e rápida da forma que você desejar.</p>
+                                    </div>
+
+                                    <div className="col-md-6 col-5 card-icon">
+                                        <div>
+                                            <BiPencil />
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
 
                             <div className="card-footer">
-                                <h3>Personalizar perfil</h3>
+                                <h4>Personalizar perfil</h4>
                             </div>
 
                         </div>
@@ -86,15 +113,34 @@ function Perfil() {
                         <div className="section-perfil">
 
                             <div className="card-header">
-                                <h2>Nível de Perfil</h2>
+                                <h3>Nível de Perfil</h3>
                             </div>
-                            <div className="card-body">
-                                <p> Suba o nível de seu perfíl preenchendo algumas informações que iremos pedir para facilitar sua busca por emprego e bootcamps</p>
+                            <div className="card-body personalize">
+
+                                <div className="row">
+                                    <div className="col-md-6 col-7">
+                                        <p> Suba o nível de seu perfíl preenchendo algumas informações que iremos pedir para facilitar sua busca por emprego e bootcamps</p>
+                                    </div>
+
+                                    <div className="col-md-6 col-5 card-icon">
+                                        <div>
+                                            <BiMedal />
+                                        </div>
+                                        
+
+                                        
+                                    </div>
+                                    
+
+                                </div>
+
+
                             </div>
 
                             <div className="card-footer">
-                                <h3>Aumente seu nível</h3>
+                                <h4>Aumente seu nível</h4>
                             </div>
+
 
                         </div>
                     </section>
@@ -104,14 +150,18 @@ function Perfil() {
                         <div className="section-perfil">
 
                             <div className="card-header">
-                                <h2> Candidaturas</h2>
+                                <h3> Candidaturas</h3>
                             </div>
 
-                            <div className="card-body">
+                            <div className="card-body candidatura personalize ">
 
-                            </div>
+                            
+                                <ol>
+                                    <li><span>10</span>Enviados</li>
+                                    <li><span>5</span>Em processo</li>
+                                    <li><span>1</span>Finalista</li>
+                                </ol>
 
-                            <div className="card-footer">
 
                             </div>
 
@@ -125,10 +175,10 @@ function Perfil() {
                         <div className="section-perfil">
 
                             <div className="card-header">
-                                <h2>Minhas Redes</h2>
+                                <h3>Minhas Redes</h3>
                             </div>
 
-                            <div className="card-body px-md-5">
+                            <div className="card-body personalize px-md-5">
 
                                 <ul className="d-flex justify-content-around">
                                     <li><BsLinkedin /></li>
@@ -143,9 +193,6 @@ function Perfil() {
 
                             </div>
 
-                            <div className="card-footer">
-
-                            </div>
 
 
                         </div>
@@ -156,7 +203,7 @@ function Perfil() {
                         <div className="section-perfil">
 
                             <div className="card-header">
-                                <h2>Bootcamps em Andamento</h2>
+                                <h3>Bootcamps em Andamento</h3>
                             </div>
 
                             <div className="card-body">
@@ -164,7 +211,7 @@ function Perfil() {
                             </div>
                             <Link className="link" to="/Bootcamp/Andamento">
                                 <div className="card-footer">
-                                    <h3>Acessar</h3>
+                                    <h4>Acessar</h4>
                                 </div>
                             </Link>
 
@@ -176,18 +223,16 @@ function Perfil() {
                         <div className="section-perfil">
 
                             <div className="card-header">
-                                <h2>Bootcamps Realizados</h2>
+                                <h3>Bootcamps Realizados</h3>
                             </div>
-
 
                             <div className="card-body">
                                 <p>Veja os bootcamps que você já concluiu e os seus certificados.</p>
                             </div>
-                            
-                            <Link className="link" to="/Bootcamp">
-                            <div className="card-footer">
-                                <h3>Acessar</h3>
-                            </div>
+                            <Link className="link" to="/Bootcamp/Andamento">
+                                <div className="card-footer">
+                                    <h4>Acessar</h4>
+                                </div>
                             </Link>
 
                         </div>
@@ -199,29 +244,29 @@ function Perfil() {
                         <div className="section-perfil info mb-5">
 
                             <div className="card-header">
-                                <h2>Mais informações</h2>
+                                <h3>Mais informações</h3>
                             </div>
                             <div className="card-body">
-                                <div className="d-flex align-items-center justify-content-between border-bottom">
-                                    <div className="d-flex align-items-center perfil-icons">
-                                        <FiSearch className="me-2" /><h2>Procurar Vagas</h2>
+                                <div className="more-info">
+                                    <div>
+                                        <FiSearch className="" /><h4>Procurar Vagas</h4>
                                     </div>
 
-                                    <IoIosArrowForward />
+                                    <IoIosArrowForward className="ms-auto" />
 
                                 </div>
 
-                                <div className="d-flex align-items-center justify-content-between">
-                                    <div className="d-flex align-items-center perfil-icons">
-                                        <BiBookAlt className="me-2" /><h2>Minha Agenda</h2>
+                                <div className="more-info">
+                                    <div>
+                                        <BiBookAlt className="me-2" /><h4>Minha Agenda</h4>
                                     </div>
 
-                                    <IoIosArrowForward />
+                                    <IoIosArrowForward className="ms-auto" />
 
                                 </div>
                             </div>
 
-                            <div className="card-footer"></div>
+                            
                         </div>
 
                     </section>

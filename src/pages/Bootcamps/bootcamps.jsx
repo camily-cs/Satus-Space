@@ -24,11 +24,11 @@ function Bootcamp() {
                
                 <div className="row d-flex justify-content-center">
 
-                    <div className="col-3 p-2 py-4 bootcamp">
+                    <div className="col-lg-4 col-md-5 p-2 py-4 bootcamp">
                         <img src="https://i.ytimg.com/vi/Ejkb_YpuHWs/maxresdefault.jpg?v=5f8061fa" className="img-fluid" alt="" srcset="" />
                     </div>
 
-                    <div className="d-flex justify-content-center align-items-center col-6 py-4 bootcamp">
+                    <div className="d-flex justify-content-center align-items-center  col-lg-6 col-md-7 py-4 bootcamp">
                         <div>
                         <h4>Curso de CSS</h4>
                         <p>100% Concluído</p>

@@ -1,9 +1,13 @@
 .perfil{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 60vh;
     background-image: url("../../../src/assets/image/background.png");
     background-position: left center;
     background-repeat: no-repeat;
     background-size: cover;
+    margin-bottom: 20px;
 }
 
 .perfil img{
@@ -47,29 +51,112 @@
     display: inline;
 }
 
-.section-perfil > .card-body{
+.section-perfil .card-body{
     min-height: 100px;
 }
 
-.card-icons{
-    background-color: red;
-    border-radius: 100%;
-    width: 125px;
-    height:95px;
-    padding: 5px;
+.personalize{
+    height: 170px;
+}
+.section-perfil .col-md-6{
+    min-height: 140PX;
+}
+
+.card-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-icon div:nth-child(1) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cor03);
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    border: 2px solid var(--cor08);  
+}
+
+
+
+.card-icon svg{
+    font-size: 3.6em;
 }
 
 .info div:nth-child( 2 ){
     cursor: pointer;
 } 
 
-.card-footer > h3{
+.card-footer > h4{
     color: var(--cor03);
     cursor: pointer;
 }
 
-
-.perfil-icons{
-    font-size: 1.2em;
+.candidatura{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+.candidatura ul{
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+.candidatura li{
+    display: flex;
+    align-items: center;
+    margin: 15px 0px;  
+}
+
+.candidatura li:nth-child(odd){
+    margin: 0px;
+}
+
+.candidatura span{
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    background-color: #5057CF;
+    margin-right: 10px ;
+    border-radius: 50px;
+
+    width: 2.5em;
+    height: 2.5em;
+
+    font-weight: bold;
+
+    
+}
+
+.more-info{
+    display: flex;
+    align-items: center;
+    
+}
+
+.more-info div{
+    display: flex;
+    align-items: center;
+}
+
+.more-info h4{
+    margin: 5px 0;
+    font-size: 1.4em;
+}
+
+.more-info:nth-child(1) {
+    border-bottom: 1px solid white;
+}
+
+.more-info svg{
+    font-size: 1.3em;
+    margin-right: 10px;
+}
+
+
 

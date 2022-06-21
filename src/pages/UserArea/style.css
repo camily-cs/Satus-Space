@@ -20,6 +20,14 @@
     border-radius: 14px;
 }
 
+.welcome-section h1{
+    margin: 0px;
+}
+
+.welcome-img{
+    width: 230px;
+}
+
 .agenda-section{
     background-color: var(--bgcolor);
     border-radius: 14px;
