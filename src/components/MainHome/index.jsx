@@ -1,6 +1,7 @@
 import React from "react";
 import "./style.css";
 
+
 import logo from "../../../src/assets/image/logo.png"
 import fonte from "../../../src/assets/image/fonteBranco.png"
 
@@ -21,9 +22,13 @@ function MainHomepage(){
 
                     <p className="text-white text-center responsive-font">"Se você pensa que não tem mais idade para certas coisas, queremos te dizer que talvez este seja o melhor momento para fazer algumas escolhas."</p>
 
-                    <p className="text-white text-center responsive-font ">................</p>
+                    <p className="text-white text-center responsive-font "></p>
 
-                    <button className="d-block mx-auto button my-2">Confira</button>
+                    <a className="link" href="#section">
+                        <button className="d-block mx-auto button my-2">Confira</button>
+                    </a>
+                   
+
                 </div>
             </div>
         </main>

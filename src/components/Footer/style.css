@@ -32,6 +32,26 @@ footer{
     padding: 0px;
 }
 
+.ul-footer-icons a{
+    color: white;
+    
+}
+
+.ul-footer-icons a:hover{
+    color: white;
+    
+}
+
+.ul-footer-icons svg{
+    transition: all 0.3s ease;
+}
+
+.ul-footer-icons svg:hover{
+    transform: scale(1.17);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
 .ul-footer-icons li{
     list-style: none;
     display: inline;

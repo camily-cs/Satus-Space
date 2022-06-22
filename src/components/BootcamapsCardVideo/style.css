@@ -1,0 +1,16 @@
+.footer-video{
+    background-color: var(--bgcolor2);
+    height: 60px;
+    color: white;
+}
+
+.footer-video p {
+    margin: 0;
+}
+
+
+.video-box:hover{
+    transform: scale(1.07);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}

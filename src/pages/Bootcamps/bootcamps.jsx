@@ -1,14 +1,32 @@
 import React from "react";
+import { useState } from "react";
+import SearchBar from "../../components/SearchBar/index";
+import BootcampCard from "../../components/BootcampCard";
 
 import { Link } from "react-router-dom";
 
 import "./style.css";
 
-import SearchBar from "../../components/SearchBar/index";
+
 
 import { AiOutlineLeft } from "react-icons/ai"
 
+
 function Bootcamp() {
+
+    const [bootcampDados] = useState([
+        {
+            curso: "Curso de HTML e CSS",
+            concluido: 100,
+            empresa: "Satus Space",
+            vaga: "desenvolvedor web",
+            prof: "Gustavo Guanabara",
+            button: "Continuar"
+        },
+        
+
+    ])
+
     return (
         <>
             <SearchBar />
@@ -21,23 +39,18 @@ function Bootcamp() {
                 </div>
                 </Link>
                 
-               
-                <div className="row d-flex justify-content-center">
+               {bootcampDados.map((bootcamp)=>(
+                <BootcampCard
 
-                    <div className="col-lg-4 col-md-5 p-2 py-4 bootcamp">
-                        <img src="https://i.ytimg.com/vi/Ejkb_YpuHWs/maxresdefault.jpg?v=5f8061fa" className="img-fluid" alt="" srcset="" />
-                    </div>
+                curso={bootcamp.curso}
+                concluido={bootcamp.concluido}
+                empresa={bootcamp.empresa}
+                vaga={bootcamp.vaga}
+                prof={bootcamp.prof}
+                button={bootcamp.button}
 
-                    <div className="d-flex justify-content-center align-items-center  col-lg-6 col-md-7 py-4 bootcamp">
-                        <div>
-                        <h4>Curso de CSS</h4>
-                        <p>100% Concluído</p>
-                        <p>Nome da empresa, vaga, nome do curso e professores</p>
-                        <button className="mx-auto d-block">Certificado</button>
-                        </div>
-                    </div>
-                    
-                </div>
+                />))}
+                
             
             </div>
 

@@ -1,9 +1,10 @@
 import React from "react";
-
+import { useState } from "react";
 import { Link } from "react-router-dom";
 
 import Footer from "../../components/Footer/index.jsx";
 import PerfilBar from "../../components/PerfilBar/index.jsx";
+import PerfilLevel from "../../components/PerfilLevel/index.jsx";
 
 /* CSS da página */
 import "./style.css"
@@ -20,9 +21,19 @@ import { BsFillPersonFill } from "react-icons/bs";
 import { IoIosArrowForward } from "react-icons/io";
 import { AiOutlineLeft } from "react-icons/ai";
 import { BiPencil } from "react-icons/bi";
-import { BiMedal } from "react-icons/bi"
+
+
 
 function Perfil() {
+
+    const [levelDados] = useState([
+        {
+            nivel: "prata"
+        }
+    ])
+
+
+
     return (
         <>
 
@@ -63,7 +74,7 @@ function Perfil() {
 
                                     <div className="col-md-3 col-5 card-icon">
 
-                                        <div>
+                                        <div className="circle-icon">
                                             <BsFillPersonFill />
                                         </div>
 
@@ -95,7 +106,7 @@ function Perfil() {
                                     </div>
 
                                     <div className="col-md-6 col-5 card-icon">
-                                        <div>
+                                        <div className="circle-icon">
                                             <BiPencil />
                                         </div>
                                     </div>
@@ -122,14 +133,14 @@ function Perfil() {
                                         <p> Suba o nível de seu perfíl preenchendo algumas informações que iremos pedir para facilitar sua busca por emprego e bootcamps</p>
                                     </div>
 
-                                    <div className="col-md-6 col-5 card-icon">
-                                        <div>
-                                            <BiMedal />
-                                        </div>
+                                    {levelDados.map((nivel)=>(
+                                        <PerfilLevel
                                         
+                                        level= {nivel.nivel}
 
-                                        
-                                    </div>
+                                        />
+                                    ))}
+                                    
                                     
 
                                 </div>
@@ -229,7 +240,7 @@ function Perfil() {
                             <div className="card-body">
                                 <p>Veja os bootcamps que você já concluiu e os seus certificados.</p>
                             </div>
-                            <Link className="link" to="/Bootcamp/Andamento">
+                            <Link className="link" to="/Bootcamp">
                                 <div className="card-footer">
                                     <h4>Acessar</h4>
                                 </div>
