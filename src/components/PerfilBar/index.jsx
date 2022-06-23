@@ -13,10 +13,12 @@ function PerfilBar() {
         <>
             <nav class="navbar  fixed-top d-flex justify-content-between transparent  pt-1">
 
+                <Link to="/user/area">
+                    <div className="ms-3 d-flex align-items-center">
+                        <Logo />
+                    </div>
+                </Link>
 
-                <div className="ms-3 d-flex align-items-center">
-                    <Logo />
-                </div>
                 <Link to='/perfil'>
                     <img src="https://media-exp2.licdn.com/dms/image/C4D03AQERFmUysyUMXQ/profile-displayphoto-shrink_800_800/0/1569545019530?e=1661385600&v=beta&t=pctslMBGgaLu4Ng5r7a9qQ5APo-1YLzHz0OnK4rjBQg" className="me-3 d-none d-md-flex perfil-navbar" alt="" />
                 </Link>

@@ -3,7 +3,7 @@ body{
 }
 
 footer{
-    background-color: black;
+    background-color: var(--cor50);
 }
 
 .logo-img-footer{

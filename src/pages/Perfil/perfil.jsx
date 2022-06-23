@@ -19,7 +19,6 @@ import { FaFacebookSquare } from "react-icons/fa";
 import { BsInstagram } from "react-icons/bs";
 import { BsFillPersonFill } from "react-icons/bs";
 import { IoIosArrowForward } from "react-icons/io";
-import { AiOutlineLeft } from "react-icons/ai";
 import { BiPencil } from "react-icons/bi";
 
 
@@ -41,13 +40,6 @@ function Perfil() {
 
 
             <div className="perfil">
-
-                <Link to="/user/area">
-                    <AiOutlineLeft className="back-arrow" />
-                </Link>
-
-
-
                 <div className="text-center">
                     <img src="https://media-exp2.licdn.com/dms/image/C4D03AQERFmUysyUMXQ/profile-displayphoto-shrink_800_800/0/1569545019530?e=1661385600&v=beta&t=pctslMBGgaLu4Ng5r7a9qQ5APo-1YLzHz0OnK4rjBQg" alt="matheus" />
                     <strong className="mt-2 d-block" >Aurora Maria Seles</strong>

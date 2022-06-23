@@ -11,8 +11,13 @@ body{
 }
 
 .red{
-    height: 100px;
-    background-color: red;
+    background-image: url("../../../src/assets/image/backgroundMain.png");
+    height: 100vh;
+    background-position: right top;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+    margin-bottom: 20px;
 }
 
 .nav{
