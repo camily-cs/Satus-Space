@@ -48,7 +48,7 @@ function Sidebar() {
                             </Link>
                         </li>
                         <li className="">
-                            <Link to="/">
+                            <Link to="/vagas">
                                 <RiSuitcaseLine className="mx-2" />
                                 Vagas
                             </Link>
