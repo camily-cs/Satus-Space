@@ -5,17 +5,15 @@ import Logo from "../Logo";
 
 
 function NavBarLogo() {
-    return (
+    return(
         <nav class="navbar navbar-expand transparent fixed-top pt-3">
+        
 
-            <Link to="/">
-                <div class="container-fluid">
+            <div class="container-fluid">
 
-                    <Logo />
+                <Logo/>
 
-                </div>
-            </Link>
-
+            </div>
 
         </nav>
     )

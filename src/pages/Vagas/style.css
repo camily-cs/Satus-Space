@@ -1,11 +1,7 @@
-.vagas-main{
-    height: 100vh;
-    background-color: var(--bgcolor);
-}
-
- .containerVagas{
+.containerVagas{
     z-index: 1;
-    
+    margin-left: 260px;
+    margin-top: -740px;
     border-radius: 10px;
     width: 82%;
     height: 730px;
@@ -69,14 +65,14 @@ select{
     display: flex;
     align-items: center;
     padding-inline: 10px;
-} 
+}
 
 /* svg{
     font-size: 20px;
     color: white;
 } */
 
- button{
+button{
     background-color: #050840;
     color: white;
     height: 39px;
