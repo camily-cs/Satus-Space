@@ -58,7 +58,7 @@ function Footer(){
                     <img src={logo} className='logo-img-footer d-block py-1 mx-auto' alt="Logo" />
 
                     <img src={fonte} className='fonte-img-footer d-block py-1 mx-auto' alt="Fonte" />
-                    <p className="text-center">Satus Space é uma plataforma de aprendizado na área de tecnologia para pessoas com mais de 40 anos. Para que elas possam iniciar o sonho de trabalhar no ramo de tecnologia. Somos o seu espaço para um novo começo.</p>
+                    <p className="text-justify">Satus Space é uma plataforma de aprendizado na área de tecnologia para pessoas com mais de 40 anos. Para que elas possam iniciar o sonho de trabalhar no ramo de tecnologia. Somos o seu espaço para um novo começo.</p>
                 </div>
 
             </div>

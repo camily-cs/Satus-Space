@@ -15,64 +15,74 @@ import { AiFillHome } from "react-icons/ai"
 import { RiSuitcaseLine } from "react-icons/ri"
 import { FaRegCompass } from "react-icons/fa"
 import { HiOutlineMail } from "react-icons/hi"
-import { FiSun } from "react-icons/fi"
 import { BsGear } from "react-icons/bs"
 import { HiOutlineLogout } from "react-icons/hi"
-import { FaSearch } from "react-icons/fa"
+import {BsFillPersonFill} from "react-icons/bs"
+
 
 function Sidebar() {
     return (
         <>
-            <div className="d-none d-md-flex justify-content-between flex-column = p-3 side-bar fonte ">
-                <Link to='/'>
-                    <img className="my-1 navbar-logo d-block mx-auto" src={logo} alt="Logo" />
-                    <img className="navbar-fonte d-block mx-auto" src={fonteBranco} alt="Logo" />
-                </Link>
+            <div className="d-lg-flex d-md-none col-lg-2">
 
-                <ul className="ps-2 nav nav-pills flex-column sider-bar-ul">
-                    <li className="">
-                        <Link className="text-white " to='/'>
-                            <AiFillHome className="me-2" />
-                            Home
-                        </Link>
-                    </li>
-                    <li className="">
-                        <a href="#" className="text-white ">
-                            <RiSuitcaseLine className="me-2" />
-                            Vagas
-                        </a>
-                    </li>
-                    <li className="">
-                        <a href="#" className="text-white ">
-                            <FaRegCompass className="me-2" />
-                            Explorar
-                        </a>
-                    </li>
-                    <li className="">
-                        <a href="#" className="text-white ">
-                            <HiOutlineMail className="me-2" />
-                            Mensagens
-                        </a>
-                    </li>
-                    <li className="">
-                        <a href="#" className="text-white ">
-                            <FiSun className="me-2" />
-                            Alterar o modo
-                        </a>
-                    </li>
-                    <li className="">
-                        <a href="#" className="text-white ">
-                            <BsGear className="me-2" />
-                            Configurações
-                        </a>
-                    </li>
-                </ul>
+                <div className="side-bar py-4">
+                    <Link to="/">
+                        <div className="logo">
+                            <img src={logo} className="navbar-logo" />
+                            <img src={fonteBranco} className="navbar-fonte" />
+                        </div>
+                    </Link>
 
-                <div className="d-flex justify-content-center">
-                    <a href="#" className="exit-button">
-                        <HiOutlineLogout className="me-1" />
+
+                    <ul>
+                        <li className="">
+                            <Link to='/'>
+                                <AiFillHome className="mx-2" />
+                                Home
+                            </Link>
+                        </li>
+                        <li className="">
+                            <Link to='/perfil'>
+                                <BsFillPersonFill className="mx-2" />
+                                Perfil
+                            </Link>
+                        </li>
+                        <li className="">
+                            <Link to="/">
+                                <RiSuitcaseLine className="mx-2" />
+                                Vagas
+                            </Link>
+                        </li>
+                        <li className="">
+                            <Link to="/">
+                                <FaRegCompass className="mx-2" />
+                                Explorar
+                            </Link>
+                        </li>
+                        <li className="">
+                            <Link to="/">
+                                <HiOutlineMail className="mx-2" />
+                                Mensagens
+                            </Link>
+                        </li>
+
+
+                        <li className="">
+                            <Link to="/">
+                                <BsGear className="mx-2" />
+                                Configurações
+                            </Link>
+                        </li>
+                    </ul>
+
+                    <Link className="mx-auto" to="/">
+                        <HiOutlineLogout />
                         Sair
-                    </a>
+                    </Link>
+
+
+
+
 
                 </div>
             </div>

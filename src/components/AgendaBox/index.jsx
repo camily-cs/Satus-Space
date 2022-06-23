@@ -7,16 +7,39 @@ import { RiSuitcaseLine } from "react-icons/ri"
 function AgendaBox() {
     return (
         <>
-            <li className="mx-auto mt-2 d-flex align-items-center justify-content-center">
 
-                <RiSuitcaseLine />
+            <div className="col-md-12 col-6 mt-3">
+                <div className="agenda-box py-1">
 
-                <div className="ms-4 text-center">
-                    <p>Exntrevisa Empresa X</p>
-                    <span>22 Julho - 10:00</span>
+
+
+
+                    <div className="col-3 d-flex justify-content-center">
+
+                        <div className="agenda-icon">
+                            <RiSuitcaseLine />
+                        </div>
+
+                    </div>
+
+                    <div className="col-9">
+                        <p>Entrevista Empresa X</p>
+                        <p>20 Julho - 9:30</p>
+                    </div>
+
+
+
                 </div>
 
-            </li>
+
+            </div>
+
+
+
+
+
+
+
         </>
     )
 }

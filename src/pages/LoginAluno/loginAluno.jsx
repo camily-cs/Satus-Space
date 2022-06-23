@@ -20,7 +20,7 @@ function LoginAluno() {
                             <div className="row justify-content-center align-items-center vh-forms text-white">
 
                                 <form className="px-2 col-lg-5 col-md-12 col-12 px-4 py-5 my-5 bg-im ">
-                                    
+
                                     <h3 className="text-center mb-3">Login</h3>
                                     <label className="form-label" htmlFor="">E-mail:</label>
                                     <input className="form-control mb-3" type="email" name="" id="" />
@@ -29,7 +29,10 @@ function LoginAluno() {
                                     <input className="form-control" type="password" name="" id="" />
 
                                     <Link className="d-block my-3 mx-auto text-center link" to='/'>Esqueceu a senha ?</Link>
-                                    <button className="d-block mx-auto mt-3 btn-form">Entrar</button>
+                                    <Link className="link" to="/User/Area">
+                                        <button className="d-block mx-auto mt-3 btn-form">Entrar</button>
+                                    </Link>
+
 
                                 </form>
 

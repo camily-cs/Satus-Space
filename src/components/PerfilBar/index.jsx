@@ -18,7 +18,7 @@ function PerfilBar() {
                     <Logo />
                 </div>
                 <Link to='/perfil'>
-                    <img src="https://media-exp1.licdn.com/dms/image/C4D03AQEt1RmPk_o_Aw/profile-displayphoto-shrink_400_400/0/1648495115377?e=1660780800&v=beta&t=9ATeY8jmCSuPhhUZ-8wXqMXwdtE4yM9UCOs0Ddgi1y0" className="me-3 d-none d-md-flex perfil-navbar" alt="" />
+                    <img src="https://media-exp2.licdn.com/dms/image/C4D03AQERFmUysyUMXQ/profile-displayphoto-shrink_800_800/0/1569545019530?e=1661385600&v=beta&t=pctslMBGgaLu4Ng5r7a9qQ5APo-1YLzHz0OnK4rjBQg" className="me-3 d-none d-md-flex perfil-navbar" alt="" />
                 </Link>
 
                 <GiHamburgerMenu className="nav-icon me-3 d-md-none" />
