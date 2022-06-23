@@ -3,23 +3,29 @@ import "./style.css";
 import missao from "../../../src/assets/image/missao.png";
 import visao from "../../../src/assets/image/visao.png"
 import valores from "../../../src/assets/image/valores.png"
-
+import equipe from "../../../src/assets/image/equipe.png"
 import NavBarLogo2 from "../../components/Header/NavBarLogo2";
 
 function Sobre() {
     return (
         <>
-            
-            <NavBarLogo2/>
-            <div className="container">
-                <div className="row d-flex justify-content-center align-items-center sobre">
-                    <div className="text-white text-center">
+            <NavBarLogo2 />
+            <div className="container-fluid">
+
+                <div className="row sobre">
+
+                    <div className="col-md-6">
                         <h1>Sobre nós</h1>
-                        <p className="mx-auto" >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis voluptate quia ratione aperiam dolor, est iure mollitia, aliquam inventore explicabo cumque quos voluptas in perspiciatis voluptatem magni corrupti quam consequatur.</p>
+                        <p className="mx-auto" >
+                            A Satus Space tem o propósito de gerar oportunidades e capacitar pessoas de 40 anos ou mais através da educação e da tecnologia ajudando-os a se reinserir no mercado de trabalho.
+                        </p>
                     </div>
+                    <div className="col-md-6">
+                        <img src={equipe} alt="Imagem da equipe" />
+                    </div>
+
                 </div>
             </div>
-
             <div className="container text-white ">
                 <div className="row g-5">
                     <div className="col-md-4">

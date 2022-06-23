@@ -1,20 +1,31 @@
 .sobre{
     height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #050840;
+    color: var(--cor08);
 }
-
+.sobre h1{
+    text-align: center;
+}
 .sobre p{
     max-width: 500px;
+    font-size: 20px;
+    text-align: justify;
 }
-
 .mvv{
     width: 100px;
     height: 100px;
 }
+
 .mvv-cont{
     background-color:#202024;
     border-color: #ececf5;
     border-style: solid; 
+    height: 400px;
 }
+
 
 
 

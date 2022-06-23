@@ -1,12 +1,3 @@
-:root{
-    --cor01: #01105D;
-    --cor02: #050840;
-    --cor03: #0713F2;
-    --cor04: #F2C307;
-    --cor05: #a68400;
-    --cor06: #081282;
-}
-
 *{
     margin: 0;
     padding: 0;
@@ -39,7 +30,8 @@
 }
 
 .nav-bar-top .nav-link:hover{
-    color: red;
+    font-weight: bold ;
+    color: var(--cor08);
     /* A DEFINIR */
 }
 
