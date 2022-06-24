@@ -21,7 +21,7 @@ function Bootcamp() {
             empresa: "Satus Space",
             vaga: "desenvolvedor web",
             prof: "Gustavo Guanabara",
-            button: "Continuar"
+            button: "Certificado"
         },
         
 

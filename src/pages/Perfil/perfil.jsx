@@ -253,9 +253,12 @@ function Perfil() {
                             </div>
                             <div className="card-body">
                                 <div className="more-info">
-                                    <div>
-                                        <FiSearch className="" /><h4>Procurar Vagas</h4>
-                                    </div>
+                                    <Link className="link" to="/vagas">
+                                        <div>
+                                            <FiSearch className="" /><h4>Procurar Vagas</h4>
+                                        </div>
+                                    </Link>
+
 
                                     <IoIosArrowForward className="ms-auto" />
 

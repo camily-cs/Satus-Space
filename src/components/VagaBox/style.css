@@ -1,3 +1,12 @@
 .vaga-box{
     background-color: var(--bgcolor2);
+    display: flex;
+    align-items: center;
+}
+
+.vaga-box button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
 }

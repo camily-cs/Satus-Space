@@ -116,3 +116,28 @@ button:hover{
     width: 1075px;
     color: white;
 }
+
+
+.vagas-main .card-body{
+    overflow-y: scroll;
+    height: 82%;
+}
+
+.vagas-main .card-body::-webkit-scrollbar{
+  background-color: transparent;  
+  width: 5px;
+}
+
+.vagas-main .card-body::-webkit-scrollbar:hover{
+    width: 10px;
+}
+
+.vagas-main .card-body::-webkit-scrollbar-thumb{
+    background-color: var(--bgcolor2);
+    border-radius: 15px;
+    
+}
+
+.vagas-main .card-body::-webkit-scrollbar-thumb:hover{
+    background-color: var(--cor03);
+}
