@@ -5,6 +5,7 @@ import "./style.css";
 import Sidebar from "../../components/SideBar";
 import AgendaBox from "../../components/AgendaBox";
 import BootcampCard from "../../components/BootcampCard";
+import Footer from "../../components/Footer/index"
 
 
 import { RiSuitcaseLine } from "react-icons/ri"
@@ -59,9 +60,9 @@ function UserArea() {
 
 
                             {/*  Seção vagas */}
-                            <div className="col-lg-12 vagas ">
+                            <div className="col-lg-12 bootcamp-section ">
 
-                                <div className="vagas-section">
+                                <div className="bootcamp-section">
                                     <div className="d-flex justify-content-between card-header">
 
                                         <h3>Bootcamps em andamento</h3>
@@ -84,6 +85,20 @@ function UserArea() {
 
                                             />))}
 
+                                        {bootcampDados.map((bootcamp) => (
+                                            <BootcampCard
+
+                                                curso={bootcamp.curso}
+                                                concluido={bootcamp.concluido}
+                                                empresa={bootcamp.empresa}
+                                                vaga={bootcamp.vaga}
+                                                prof={bootcamp.prof}
+                                                button={bootcamp.button}
+
+                                            />))}
+
+
+
 
                                         {/* Componentizar */}
 
@@ -93,11 +108,11 @@ function UserArea() {
 
 
 
-                                    <div className="card-header">
+                                    {/* <div className="card-header">
                                         <h3>Bootcamps recomendados</h3>
-                                    </div>
+                                    </div> */}
 
-                                    <div className="card-body">
+                                    {/* <div className="card-body">
 
                                         {bootcampDados.map((bootcamp) => (
                                             <BootcampCard
@@ -111,7 +126,7 @@ function UserArea() {
 
                                             />))}
 
-                                    </div>
+                                    </div> */}
 
                                     <div className="card-footer">
 
@@ -155,6 +170,8 @@ function UserArea() {
 
                 </div>
             </div>
+
+            <Footer/>
 
         </>
     )

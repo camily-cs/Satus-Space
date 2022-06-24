@@ -16,7 +16,7 @@ function Vagas() {
       <div className="container-fluid">
         <div className="row">
           <Sidebar />
-          <div className="col-9 vagas-main text-white">
+          <div className="col-md-10 vagas-main text-white">
             <div className="card-header">
               <h3>Vagas</h3>
               <div className="inputs">

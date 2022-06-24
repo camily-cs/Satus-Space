@@ -3,6 +3,7 @@ body{
 }
 
 footer{
+    margin-top: 50px;
     background-color: var(--cor50);
 }
 
@@ -25,7 +26,12 @@ footer{
 
 .ul-footer li{
     list-style: none;
+    cursor: pointer;
     
+}
+
+.ul-footer li:hover{
+    text-decoration: underline;
 }
 
 .ul-footer-icons{
