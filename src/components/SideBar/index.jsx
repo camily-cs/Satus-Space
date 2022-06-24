@@ -60,7 +60,7 @@ function Sidebar() {
                             </Link>
                         </li>
                         <li className="">
-                            <Link to="/">
+                            <Link to="/mensagens">
                                 <HiOutlineMail className="mx-2" />
                                 Mensagens
                             </Link>
