@@ -29,6 +29,7 @@ import Empresa from "./pages/Empresa/empresa";
 import Bootcamp  from "./pages/Bootcamps/bootcamps";
 import BootcampsAndamento from "./pages/BootcampsAndamento/bootcampsandamentos";
 import UserArea from "./pages/UserArea/UserArea";
+import Mensagens from "./pages/Mensagens/mensagens";
 /* CSS global */
 import "./App.css"
 
@@ -75,6 +76,8 @@ function App() {
           <Route path='/Bootcamp/Andamento' exact element={<BootcampsAndamento/>}/>
 
           <Route path='/User/Area' exact element={<UserArea/>}/>
+
+          <Route path= '/Mensagens' exact element={<Mensagens/>}/>
 
 
         </Routes>
