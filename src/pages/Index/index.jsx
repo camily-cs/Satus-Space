@@ -12,7 +12,7 @@ function Index(){
         <div>
             <main className="upperPart">  <NavBar/> <MainHomepage/>   </main>            
             <SectionHomepage/>
-            <div className="red"></div>
+            <div className="background-index"></div>
             <Footer/>            
         </div>
     )

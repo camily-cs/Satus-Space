@@ -20,15 +20,19 @@ function Sobre() {
                             A Satus Space tem o propósito de gerar oportunidades e capacitar pessoas de 40 anos ou mais através da educação e da tecnologia ajudando-os a se reinserir no mercado de trabalho.
                         </p>
                     </div>
+
                     <div className="col-md-6">
+
                         <img src={equipe} alt="Imagem da equipe" />
+                        
                     </div>
+                    
 
                 </div>
             </div>
-            <div className="container text-white ">
-                <div className="row g-5">
-                    <div className="col-md-4">
+            <div className="container mt-5 mt-md-1 text-white ">
+                <div className="row sobre-section g-4">
+                    <div className="col-lg-3 col-md-4">
 
                         <div className="mvv-cont">
 
@@ -37,22 +41,22 @@ function Sobre() {
                                 <h2>Missão</h2>
                             </div>
 
-                            <p className="px-3 mt-5">Nossa missão é desenvolver pessoas com mais de 40 anos que almejam trabalhar no ramo da tecnologia.</p>
+                            <p className="px-3">Nossa missão é desenvolver pessoas com mais de 40 anos que almejam trabalhar no ramo da tecnologia.</p>
                         </div>
                     </div>
 
-                    <div className="col-md-4 ">
+                    <div className="col-lg-3 col-md-4">
                         <div className="mvv-cont">
 
                             <div className="text-center">
                                 <img src={visao} alt="Logo" className="mvv mt-5" />
                                 <h2>Visão</h2>
                             </div>
-                            <p className="px-3 mt-5">Ser a plataforma que possibilite o início de uma nova trajetória profissional no mercado da tecnologia para incluir pessoas com baixas oportunidades.</p>
+                            <p className="px-3">Ser a plataforma que possibilite o início de uma nova trajetória profissional no mercado da tecnologia para incluir pessoas com baixas oportunidades.</p>
                         </div>
                     </div>
 
-                    <div className="col-md-4 mb-5 ">
+                    <div className="col-lg-3 col-md-4 mb-5 ">
                         <div className="mvv-cont">
                             <div className="text-center">
 
@@ -60,7 +64,7 @@ function Sobre() {
 
                                 <h2>Valores</h2>
                             </div>
-                            <p className="px-3 mt-5">Inclusão digital, comprometimento, pessoas, inovação, educação, diversidade, ética, transparência.</p>
+                            <p className="px-3">Inclusão digital, comprometimento, pessoas, inovação, educação, diversidade, ética, transparência.</p>
                         </div>
 
                     </div>

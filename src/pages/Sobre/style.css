@@ -14,16 +14,43 @@
     font-size: 20px;
     text-align: justify;
 }
+
+.sobre-section{
+    display: flex;
+    justify-content: center;
+}
+
+
 .mvv{
     width: 100px;
     height: 100px;
 }
 
 .mvv-cont{
+    margin-top: 100px;
     background-color:#202024;
     border-color: #ececf5;
     border-style: solid; 
-    height: 400px;
+    height: 500px;
+}
+
+.mvv-cont p{
+    margin-top: 100px;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .mvv-cont{
+        margin-top: 10px;
+        height: 350px;
+    }
+
+    .mvv-cont p{
+        margin-top: 50px;
+        text-align: center;
+    }
+
+    
 }
 
 

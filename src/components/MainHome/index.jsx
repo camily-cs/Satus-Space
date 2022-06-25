@@ -11,7 +11,7 @@ function MainHomepage(){
         /* <!--Conteúdo Princípal--> */
 
         <main className="container-fluid text-white">
-            <div className="row justify-content-center align-items-center principal ">
+            <div className="row principal ">
                 <div className="col-lg-6 col-md-6 col-sm-12">
                     <div className="">
 
@@ -20,7 +20,7 @@ function MainHomepage(){
                         <img src={fonte} className="img-fluid fonte-main d-block mx-auto" alt="Satus Space"/>
                     </div>
 
-                    <p className="text-white text-center responsive-font">"Se você pensa que não tem mais idade para certas coisas, queremos te dizer que talvez este seja o melhor momento para fazer algumas escolhas."</p>
+                    <p>"Se você pensa que não tem mais idade para certas coisas, queremos te dizer que talvez este seja o melhor momento para fazer algumas escolhas."</p>
 
                     <p className="text-white text-center responsive-font "></p>
 
