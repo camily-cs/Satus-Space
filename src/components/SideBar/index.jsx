@@ -23,7 +23,7 @@ import {BsFillPersonFill} from "react-icons/bs"
 function Sidebar() {
     return (
         <>
-            <div className="d-lg-flex d-md-none col-lg-2">
+            <div className="d-none d-lg-flex col-lg-2">
 
                 <div className="side-bar py-4">
                     <Link to="/">

@@ -6,6 +6,7 @@ import Sidebar from "../../components/SideBar";
 import AgendaBox from "../../components/AgendaBox";
 import BootcampCard from "../../components/BootcampCard";
 import Footer from "../../components/Footer/index"
+import NavBarUser from "../../components/Header/NavBarUser";
 
 
 import { RiSuitcaseLine } from "react-icons/ri"
@@ -31,8 +32,7 @@ function UserArea() {
 
     return (
         <>
-
-
+            <NavBarUser/>
 
             <div className="container-fluid text-white">
                 <div className="row gx-2 gy-2">

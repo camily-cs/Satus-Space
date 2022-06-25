@@ -1,0 +1,49 @@
+.hiden-side-bar{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.171);
+    z-index: 10;
+
+    transition: all 0.9s ease;
+    
+    
+}
+
+.hiden-side-bar .side-bar-nav{
+    background-color: var(--cor01);
+    height: 100%;
+    width: 200px;
+    display: flex;
+    
+    flex-direction: column;
+
+    
+    border-radius: 0 15px 15px 0;
+    
+}
+
+.side-bar-header{
+    padding-top: 0.5em;
+    margin: 0 auto;
+    
+}
+
+.side-bar-nav ul{
+    margin-top: 150px;
+    list-style: none;
+    padding: 0;
+    margin-left: 20px;
+    
+}
+
+.side-bar-nav ul li{
+    margin: 5px 0;
+    font-size: 1.2em;
+}
+
+.side-bar-nav ul li:hover{
+    font-weight: bold;
+}

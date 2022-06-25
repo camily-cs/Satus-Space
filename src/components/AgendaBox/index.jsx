@@ -8,7 +8,7 @@ function AgendaBox() {
     return (
         <>
 
-            <div className="col-md-12 col-6 mt-3">
+            <div className="col-md-12 col-sm-6 mt-3">
                 <div className="agenda-box py-1">
 
 
