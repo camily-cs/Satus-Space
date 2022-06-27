@@ -13,7 +13,6 @@ import Login from "./pages/Login/login";
 import LoginAluno from './pages/LoginAluno/loginAluno';
 import LoginEmpresa from "./pages/LoginEmpresa/loginEmpresa";
 
-
 /* Páginas de cadastro */
 import Cadastrar from "./pages/Cadastrar/cadastrar";
 import CadAluno from "./pages/CadAluno/cadAluno";
@@ -23,6 +22,10 @@ import CadEmpresa from "./pages/CadEmpresa/cadEmpresa";
 import Bootcamp  from "./pages/Bootcamps/bootcamps";
 import BootcampsAndamento from "./pages/BootcampsAndamento/bootcampsandamentos";
 import ExploreBootcamps from "./pages/ExploreBootcamps/exploreBootcamps";
+
+/* Video aulas */
+import VideoAula from "./pages/VideoAula/videoAula";
+
 
 import Perfil from "./pages/Perfil/perfil";
 import Sobre from "./pages/Sobre/sobre";
@@ -61,7 +64,7 @@ function App() {
           <Route path='/Bootcamp/Andamento' exact element={<BootcampsAndamento/>}/>
           <Route path='/Bootcamp/Explorar' exact element={<ExploreBootcamps/>}/>
 
-
+          <Route path='/Video' exact element={<VideoAula/>}/>
 
           <Route path='/Perfil' exact element={<Perfil/>}/>
 
