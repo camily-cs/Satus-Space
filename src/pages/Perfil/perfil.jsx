@@ -6,6 +6,12 @@ import Footer from "../../components/Footer/index.jsx";
 import PerfilBar from "../../components/PerfilBar/index.jsx";
 import PerfilLevel from "../../components/PerfilLevel/index.jsx";
 
+import HtmlMedal from "../../components/Medal/htmlMedal.jsx";
+import JavaMedal from "../../components/Medal/javaMedal.jsx";
+import CssMedal from "../../components/Medal/cssMedal.jsx";
+import JsMedal from "../../components/Medal/jsMedal.jsx";
+import ReactMedal from "../../components/Medal/reactMedal.jsx";
+
 /* CSS da página */
 import "./style.css"
 
@@ -20,6 +26,8 @@ import { BsInstagram } from "react-icons/bs";
 import { BsFillPersonFill } from "react-icons/bs";
 import { IoIosArrowForward } from "react-icons/io";
 import { BiPencil } from "react-icons/bi";
+
+
 
 
 
@@ -71,6 +79,36 @@ function Perfil() {
                                         <div className="circle-icon">
                                             <BsFillPersonFill />
                                         </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div className="card-footer px-4">
+                                <h4>Editar dados</h4>
+                            </div>
+
+                        </div>
+
+                    </section>
+
+                    <section className="col-lg-10">
+                        <div className="section-perfil">
+
+                            <div className="card-header px-4">
+                                <h3>Sobre mim</h3>
+                            </div>
+
+                            <div className="card-body px-4">
+                                <div className="row">
+                                    <div className="col-12 medal-icons">
+                                        
+                                        <HtmlMedal/>
+                                        <JavaMedal/>
+                                        <CssMedal/>
+                                        <JsMedal/>
+                                        <ReactMedal/>
 
                                     </div>
                                 </div>

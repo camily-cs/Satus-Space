@@ -61,6 +61,27 @@
     justify-content: center;
 }
 
+.medal-icons{
+    display: flex;
+    justify-content: center;
+}
+
+.medal-icons div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    border: 2px solid var(--cor08); 
+    margin: 0 10px;
+}
+
+.medal-icons svg{
+    font-size: 3.6em;
+}
+
 .card-icon div {
     display: flex;
     justify-content: center;

@@ -1,0 +1,46 @@
+.html-medal{
+    flex-direction: column;
+    background-color: #FF5722;
+    font-weight: bold;
+    
+}
+
+.java-medal{
+    flex-direction: column;
+    color: #006BA9;
+    background-color: white;
+}
+
+.java-medal span{
+    font-weight: bold;
+    color: #E01E23;
+}
+
+.css-medal{
+    flex-direction: column;
+    background-color: #264DE4 ;
+    font-weight: bold;
+}
+
+.js-medal{
+    flex-direction: column;
+    background-color: #F7DF1E;
+    font-weight: bold;
+    color: black;
+}
+
+.js-medal span{
+    font-size: 0.8em;
+}
+
+.react-medal{
+    flex-direction: column;
+    background-color: #222222;
+    font-weight: bold;
+    color: #61DAFB;
+}
+
+.react-medal span{
+    color: white;
+}
+
