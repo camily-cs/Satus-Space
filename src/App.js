@@ -19,15 +19,17 @@ import Cadastrar from "./pages/Cadastrar/cadastrar";
 import CadAluno from "./pages/CadAluno/cadAluno";
 import CadEmpresa from "./pages/CadEmpresa/cadEmpresa";
 
-
+/* Páginas de bootcamp */
+import Bootcamp  from "./pages/Bootcamps/bootcamps";
+import BootcampsAndamento from "./pages/BootcampsAndamento/bootcampsandamentos";
+import ExploreBootcamps from "./pages/ExploreBootcamps/exploreBootcamps";
 
 import Perfil from "./pages/Perfil/perfil";
 import Sobre from "./pages/Sobre/sobre";
 import Vagas from "./pages/Vagas/vagas";
 import DetalheVaga from "./pages/DetalheVaga/detalheVaga";
 import Empresa from "./pages/Empresa/empresa";
-import Bootcamp  from "./pages/Bootcamps/bootcamps";
-import BootcampsAndamento from "./pages/BootcampsAndamento/bootcampsandamentos";
+
 import UserArea from "./pages/UserArea/UserArea";
 import Mensagens from "./pages/Mensagens/mensagens";
 /* CSS global */
@@ -54,10 +56,10 @@ function App() {
           <Route path='/Cadastrar/Aluno' exact element={<CadAluno/>}/>
           <Route path='/Cadastrar/Empresa' exact element={<CadEmpresa/>}/>
          
-
-
-
-
+          {/* Páginas de bootcamp */}
+          <Route path='/Bootcamp' exact element={<Bootcamp/>}/>
+          <Route path='/Bootcamp/Andamento' exact element={<BootcampsAndamento/>}/>
+          <Route path='/Bootcamp/Explorar' exact element={<ExploreBootcamps/>}/>
 
 
 
@@ -70,10 +72,6 @@ function App() {
           <Route path='/Vagas' exact element={<Vagas/>}/>
 
           <Route path='/DetalheVaga' exact element={<DetalheVaga/>}/>
-
-          <Route path='/Bootcamp' exact element={<Bootcamp/>}/>
-
-          <Route path='/Bootcamp/Andamento' exact element={<BootcampsAndamento/>}/>
 
           <Route path='/User/Area' exact element={<UserArea/>}/>
 

@@ -16,46 +16,48 @@ function Cadastrar() {
                 <NaveBarLogo />
                 <div className="container">
 
-                    <div className="row gx-4 gy-1 justify-content-center align-items-center vh-forms text-white text-center">
+                    <div className="vh-forms text-white d-flex justify-content-center align-items-center">
 
+                        <div className="row gy-2 button-cad">
 
-                        <div className="col-md-8" >
                             <h3 className="text-center mb-2">Bem-Vindo a Satus Space!</h3>
                             <h4>Quem está se cadastrando?</h4>
-                        </div>
+
+                            <div className="col-md-5">
 
 
+                                <Link className="link" to='/login/aluno'>
+                                    <div className="d-flex align-items-center justify-content-center button-cadastro">
 
-                        <div className="col-md-5">
-                        <Link className="link" to='/cadastrar/aluno'>
-                            <div className="d-flex align-items-center justify-content-center button-cadastro">
-                                
-                                    <div>
-                                        <img src={estudante} alt="Imagem de um ícone em formato de estudante" className="imagem" />
-                                        <h4>Aluno</h4>
+                                        <div>
+                                            <img src={estudante} alt="Imagem de um ícone em formato de estudante" className="imagem" />
+                                            <h4>Aluno</h4>
+                                        </div>
+
                                     </div>
-                                
+                                </Link>
                             </div>
-                            </Link>
+
+
+                            <div className="col-md-5">
+                                <Link className="link" to='/login/empresa'>
+                                    <div className="d-flex align-items-center justify-content-center button-cadastro">
+
+                                        <div>
+                                            <img src={empresa} alt="Imagem de um ícone em formato de uma empresa" className="imagem" />
+                                            <h4>Empresa</h4>
+                                        </div>
+
+                                    </div>
+                                </Link>
+                            </div>
+
                         </div>
 
 
-                        <div className="col-md-5">
-                            <Link className="link" to='/cadastrar/empresa'>
-                            <div className="d-flex align-items-center justify-content-center button-cadastro">
-                            
-                                <div>
-                                    <img src={empresa} alt="Imagem de um ícone em formato de uma empresa" className="imagem" />
-                                    <h4>Empresa</h4>
-                                </div>
-
-                            </div>
-                            </Link>
-                        </div>
                     </div>
                 </div>
             </div>
-
         </>
     );
 };
