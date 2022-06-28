@@ -3,7 +3,20 @@ import "./style.css";
 import missao from "../../../src/assets/image/missao.png";
 import visao from "../../../src/assets/image/visao.png"
 import valores from "../../../src/assets/image/valores.png"
-import equipe from "../../../src/assets/image/equipe.png"
+import sobrenos from "../../../src/assets/image/sobrenos.png"
+import franca from "../../../src/assets/image/franca.png"
+import almeida from "../../../src/assets/image/almeida.png"
+import iago from "../../../src/assets/image/iago.png"
+import sara from "../../../src/assets/image/sara.png"
+import cami from "../../../src/assets/image/cami.png"
+import noelia from "../../../src/assets/image/noelia.png"
+import lucas from "../../../src/assets/image/lucas.png"
+import rian from "../../../src/assets/image/rian.png"
+
+
+import { FaGithub } from 'react-icons/fa'
+import { FaLinkedin } from 'react-icons/fa'
+
 import NavBarLogo2 from "../../components/Header/NavBarLogo2";
 
 function Sobre() {
@@ -23,15 +36,16 @@ function Sobre() {
 
                     <div className="col-md-6">
 
-                        <img src={equipe} alt="Imagem da equipe" />
-                        
+                        <img src={sobrenos} alt="Imagem da equipe" className="img-equipe" />
+
                     </div>
-                    
+
 
                 </div>
             </div>
             <div className="container mt-5 mt-md-1 text-white ">
                 <div className="row sobre-section g-4">
+
                     <div className="col-lg-3 col-md-4">
 
                         <div className="mvv-cont">
@@ -68,6 +82,183 @@ function Sobre() {
                         </div>
 
                     </div>
+
+
+
+
+                    <h2 className="text-center sub-equipe">Equipe</h2>
+
+
+                    <div className="col-lg-3 col-md-4">
+
+                        <div className="imagem-equipe">
+
+                            <div className=" text-center">
+                                <img src={rian} alt="Logo" className=" imagem-equipe mt-5" />
+                            </div>
+                            <p className="px-3">Rian Paiva</p>
+
+                            <a className="lista" target="blank" href="https://github.com/RianPaiva">
+                                <li><FaGithub /></li>
+                            </a>
+                            
+                            <a className="lista" target="blank" href="https://www.linkedin.com/in/paivarian/">
+                                <li><FaLinkedin /></li>
+                            </a>
+
+
+
+                        </div>
+                    </div>
+
+                    <div className="col-lg-3 col-md-4">
+
+                        <div className="imagem-equipe">
+
+                            <div className=" text-center">
+                                <img src={almeida} alt="Logo" className=" imagem-equipe mt-5" />
+                            </div>
+                            <p className="px-3">Matheus Almeida</p>
+                            <a className="lista" target="blank" href="https://github.com/MTHS-ALMD/">
+                                <li><FaGithub /></li>
+                            </a>
+
+                            <a className="lista" target="blank" href="https://www.linkedin.com/in/matheus-almeida-td4/">
+                                <li><FaLinkedin /></li>
+                            </a>
+
+                        </div>
+                    </div>
+                    <div className="col-lg-3 col-md-4">
+
+                        <div className="imagem-equipe">
+
+                            <div className=" text-center">
+                                <img src={franca} alt="Logo" className=" imagem-equipe mt-5" />
+                            </div>
+                            <p className="px-3">Matheus França</p>
+                            <a className="lista" target="blank" href="https://github.com/MatheusFCardoso">
+                                <li><FaGithub /></li>
+                            </a>
+
+                            <a className="lista" target="blank" href="https://www.linkedin.com/in/matheusfrancacardoso/">
+                                <li><FaLinkedin /></li>
+                            </a>
+
+
+
+                        </div>
+                    </div>
+                    <div className="col-lg-3 col-md-4">
+
+                        <div className="imagem-equipe">
+
+                            <div className=" text-center">
+                                <img src={cami} alt="Logo" className=" imagem-equipe mt-5" />
+                            </div>
+                            <p className="px-3">Camilly Cruz</p>
+
+                            <a className="lista" target="blank" href="https://github.com/camily-cs">
+                                <li><FaGithub /></li>
+                            </a>
+
+                            <a className="lista" target="blank" href="https://www.linkedin.com/in/camilycruzsilva/">
+                                <li><FaLinkedin /></li>
+                            </a>
+
+
+
+                        </div>
+                    </div>
+                    <div className="col-lg-3 col-md-4">
+
+                        <div className="imagem-equipe">
+
+                            <div className=" text-center">
+                                <img src={iago} alt="Logo" className=" imagem-equipe mt-5" />
+                            </div>
+                            <p className="px-3">Iago Paiva</p>
+
+                            <a className="lista" target="blank" href="https://github.com/IagoPaiva19">
+                                <li><FaGithub /></li>
+                            </a>
+
+                            <a className="lista" target="blank" href="https://www.linkedin.com/in/iago-paiva-21534a233/">
+                                <li><FaLinkedin /></li>
+                            </a>
+
+
+
+                        </div>
+                    </div>
+
+                    <div className="col-lg-3 col-md-4">
+
+                        <div className="imagem-equipe">
+
+                            <div className=" text-center">
+                                <img src={sara} alt="Logo" className=" imagem-equipe mt-5" />
+                            </div>
+                            <p className="px-3">Sara Morais</p>
+
+                            <a className="lista" target="blank" href="https://github.com/saram0rais">
+                                <li><FaGithub /></li>
+                            </a>
+
+                            <a className="lista" target="blank" href="https://www.linkedin.com/in/saramoraisdsantos/">
+                                <li><FaLinkedin /></li>
+                            </a>
+
+
+
+
+
+                        </div>
+                    </div>
+                    <div className="col-lg-3 col-md-4">
+
+                        <div className="imagem-equipe">
+
+                            <div className=" text-center">
+                                <img src={noelia} alt="Logo" className=" imagem-equipe mt-5" />
+                            </div>
+                            <p className="px-3">Noelia Mariana</p>
+
+                            <a className="lista" target="blank" href="https://github.com/noeliamariana">
+                                <li><FaGithub /></li>
+                            </a>
+
+                            <a className="lista" target="blank" href="https://www.linkedin.com/in/noelia-mariana-vasquez-nina/">
+                                <li><FaLinkedin /></li>
+                            </a>
+
+
+
+                        </div>
+                    </div>
+                    <div className="col-lg-3 col-md-4">
+
+                        <div className="imagem-equipe">
+
+                            <div className=" text-center">
+                                <img src={lucas} alt="Logo" className=" imagem-equipe mt-5" />
+                            </div>
+                            <p className="px-3">Lucas Alencar</p>
+
+                            <a className="lista" target="blank" href="https://github.com/Lusquinhasoa">
+                                <li><FaGithub /></li>
+                            </a>
+
+                            <a className="lista" target="blank" href="https://www.linkedin.com/in/lucasalencar2/">
+                                <li><FaLinkedin /></li>
+                            </a>
+
+
+
+                        </div>
+                    </div>
+
+
                 </div>
             </div>
 
