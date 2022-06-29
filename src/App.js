@@ -26,12 +26,14 @@ import ExploreBootcamps from "./pages/ExploreBootcamps/exploreBootcamps";
 /* Video aulas */
 import VideoAula from "./pages/VideoAula/videoAula";
 
-
+/* Áreas de Perfil */
 import Perfil from "./pages/Perfil/perfil";
 import Sobre from "./pages/Sobre/sobre";
 import Vagas from "./pages/Vagas/vagas";
 import DetalheVaga from "./pages/DetalheVaga/detalheVaga";
+
 import Empresa from "./pages/Empresa/empresa";
+import EmpresaArea from "./pages/EmpresaArea/EmpresaArea";
 
 import UserArea from "./pages/UserArea/UserArea";
 import Mensagens from "./pages/Mensagens/mensagens";
@@ -74,6 +76,8 @@ function App() {
           
 
           <Route path='/Empresa' exact element={<Empresa/>}/>
+
+          <Route path='/Empresa/Area' exact element={<EmpresaArea/>}/>
 
           <Route path='/Sobre' exact element={<Sobre/>}/>
 

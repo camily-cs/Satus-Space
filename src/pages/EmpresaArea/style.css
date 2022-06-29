@@ -1,0 +1,134 @@
+.b{
+    border: 1px solid red;
+}
+
+
+
+
+.vagas-section{
+    background-color: var(--bgcolor);
+    border-radius: 14px;
+    height: 70vh;
+}
+
+.vagas-section .card-body{
+    overflow-y: scroll;
+    height: 80%;
+}
+
+.vagas-section .card-body::-webkit-scrollbar{
+  background-color: transparent;  
+  width: 5px;
+}
+
+.vagas-section .card-body::-webkit-scrollbar:hover{
+    width: 10px;
+}
+
+.vagas-section .card-body::-webkit-scrollbar-thumb{
+    background-color: var(--bgcolor2);
+    border-radius: 15px;
+    
+}
+
+.vagas-section .card-body button{
+    margin: 20px auto 0px auto ;
+    display: block;
+}
+
+.vagas-section .card-body p{
+    margin: 5px 5px 0px 0px;
+}
+
+
+.vagas-section .card-body::-webkit-scrollbar-thumb:hover{
+    background-color: var(--cor03);
+}
+
+.vagas-section .card-footer p{
+    color:  white;
+    cursor: pointer;
+    margin: 0px;
+}
+
+.vagas-section .card-footer p:hover{
+    color:  var(--cor03);
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+
+
+
+.welcome-section{
+    height: 30vh;
+    background-color: var(--cor02);
+    border-radius: 14px;
+}
+
+.welcome-section h1{
+    margin: 0px;
+    font-size: 3.6em;
+}
+
+.welcome-section p{
+    font-size: 2.2em;
+}
+
+.welcome-img{
+    width: 230px;
+}
+
+.agenda-section{
+    background-color: var(--bgcolor);
+    border-radius: 14px;
+    height: 100vh; 
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+
+    .welcome-section h1{
+        margin: 0px;
+        font-size: 1.8em;
+    }
+    
+    .welcome-section p{
+        font-size: 1.2em;
+    }
+
+    .agenda-section{
+        
+        max-height: 250px;
+    }
+
+    .vagas-section h3{
+        font-size: 1.3em;
+
+    }
+
+    .vagas-section{
+        background-color: var(--bgcolor);
+        border-radius: 14px;
+        height: 600px;
+    }
+
+    .vagas-section .card-footer{  
+        height: 30px;
+    }
+
+    .vagas-section{
+        margin-bottom: 10px;
+    }
+    
+
+    
+
+    
+}
