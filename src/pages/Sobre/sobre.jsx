@@ -4,6 +4,7 @@ import missao from "../../../src/assets/image/missao.png";
 import visao from "../../../src/assets/image/visao.png"
 import valores from "../../../src/assets/image/valores.png"
 import sobrenos from "../../../src/assets/image/sobrenos.png"
+// IMAGENS DA EQUIPE
 import franca from "../../../src/assets/image/franca.png"
 import almeida from "../../../src/assets/image/almeida.png"
 import iago from "../../../src/assets/image/iago.png"
@@ -12,12 +13,11 @@ import cami from "../../../src/assets/image/cami.png"
 import noelia from "../../../src/assets/image/noelia.png"
 import lucas from "../../../src/assets/image/lucas.png"
 import rian from "../../../src/assets/image/rian.png"
-
-
 import { FaGithub } from 'react-icons/fa'
 import { FaLinkedin } from 'react-icons/fa'
 
 import NavBarLogo2 from "../../components/Header/NavBarLogo2";
+import Footer from "../../components/Footer";
 
 function Sobre() {
     return (
@@ -36,7 +36,7 @@ function Sobre() {
 
                     <div className="col-md-6">
 
-                        <img src={sobrenos} alt="Imagem da equipe" className="img-equipe" />
+                        <img src={sobrenos} alt="Imagem da equipe" className="img-equipe  img-fluid" />
 
                     </div>
 
@@ -88,15 +88,18 @@ function Sobre() {
 
                     <h2 className="text-center sub-equipe">Equipe</h2>
 
-
-                    <div className="col-lg-3 col-md-4">
+                    <div className="linha-equipe">
+                    <hr/>
+                    </div>
+                    
+                    <div className="col-lg-3 col-md-4 col-6">
 
                         <div className="imagem-equipe">
 
                             <div className=" text-center">
-                                <img src={rian} alt="Logo" className=" imagem-equipe mt-5" />
+                                <img src={rian} alt="Logo" />
                             </div>
-                            <p className="px-3">Rian Paiva</p>
+                            <p>Rian Paiva</p>
 
                             <a className="lista" target="blank" href="https://github.com/RianPaiva">
                                 <li><FaGithub /></li>
@@ -111,14 +114,14 @@ function Sobre() {
                         </div>
                     </div>
 
-                    <div className="col-lg-3 col-md-4">
+                    <div className="col-lg-3 col-md-4 col-6">
 
                         <div className="imagem-equipe">
 
                             <div className=" text-center">
-                                <img src={almeida} alt="Logo" className=" imagem-equipe mt-5" />
+                                <img src={almeida} alt="Logo" />
                             </div>
-                            <p className="px-3">Matheus Almeida</p>
+                            <p >Matheus Almeida</p>
                             <a className="lista" target="blank" href="https://github.com/MTHS-ALMD/">
                                 <li><FaGithub /></li>
                             </a>
@@ -129,14 +132,14 @@ function Sobre() {
 
                         </div>
                     </div>
-                    <div className="col-lg-3 col-md-4">
+                    <div className="col-lg-3 col-md-4 col-6">
 
                         <div className="imagem-equipe">
 
                             <div className=" text-center">
-                                <img src={franca} alt="Logo" className=" imagem-equipe mt-5" />
+                                <img src={franca} alt="Logo" />
                             </div>
-                            <p className="px-3">Matheus França</p>
+                            <p >Matheus França</p>
                             <a className="lista" target="blank" href="https://github.com/MatheusFCardoso">
                                 <li><FaGithub /></li>
                             </a>
@@ -149,14 +152,14 @@ function Sobre() {
 
                         </div>
                     </div>
-                    <div className="col-lg-3 col-md-4">
+                    <div className="col-lg-3 col-md-4 col-6">
 
                         <div className="imagem-equipe">
 
                             <div className=" text-center">
-                                <img src={cami} alt="Logo" className=" imagem-equipe mt-5" />
+                                <img src={cami} alt="Logo" />
                             </div>
-                            <p className="px-3">Camilly Cruz</p>
+                            <p >Camilly Cruz</p>
 
                             <a className="lista" target="blank" href="https://github.com/camily-cs">
                                 <li><FaGithub /></li>
@@ -170,14 +173,14 @@ function Sobre() {
 
                         </div>
                     </div>
-                    <div className="col-lg-3 col-md-4">
+                    <div className="col-lg-3 col-md-4 col-6">
 
                         <div className="imagem-equipe">
 
                             <div className=" text-center">
-                                <img src={iago} alt="Logo" className=" imagem-equipe mt-5" />
+                                <img src={iago} alt="Logo" />
                             </div>
-                            <p className="px-3">Iago Paiva</p>
+                            <p >Iago Paiva</p>
 
                             <a className="lista" target="blank" href="https://github.com/IagoPaiva19">
                                 <li><FaGithub /></li>
@@ -192,14 +195,14 @@ function Sobre() {
                         </div>
                     </div>
 
-                    <div className="col-lg-3 col-md-4">
+                    <div className="col-lg-3 col-md-4 col-6">
 
                         <div className="imagem-equipe">
 
                             <div className=" text-center">
-                                <img src={sara} alt="Logo" className=" imagem-equipe mt-5" />
+                                <img src={sara} alt="Logo" />
                             </div>
-                            <p className="px-3">Sara Morais</p>
+                            <p >Sara Morais</p>
 
                             <a className="lista" target="blank" href="https://github.com/saram0rais">
                                 <li><FaGithub /></li>
@@ -215,14 +218,14 @@ function Sobre() {
 
                         </div>
                     </div>
-                    <div className="col-lg-3 col-md-4">
+                    <div className="col-lg-3 col-md-4 col-6">
 
                         <div className="imagem-equipe">
 
                             <div className=" text-center">
-                                <img src={noelia} alt="Logo" className=" imagem-equipe mt-5" />
+                                <img src={noelia} alt="Logo"/>
                             </div>
-                            <p className="px-3">Noelia Mariana</p>
+                            <p >Noelia Mariana</p>
 
                             <a className="lista" target="blank" href="https://github.com/noeliamariana">
                                 <li><FaGithub /></li>
@@ -232,18 +235,16 @@ function Sobre() {
                                 <li><FaLinkedin /></li>
                             </a>
 
-
-
                         </div>
                     </div>
-                    <div className="col-lg-3 col-md-4">
+                    <div className="col-lg-3 col-md-4 col-6">
 
                         <div className="imagem-equipe">
 
                             <div className=" text-center">
-                                <img src={lucas} alt="Logo" className=" imagem-equipe mt-5" />
+                                <img src={lucas} alt="Logo" />
                             </div>
-                            <p className="px-3">Lucas Alencar</p>
+                            <p >Lucas Alencar</p>
 
                             <a className="lista" target="blank" href="https://github.com/Lusquinhasoa">
                                 <li><FaGithub /></li>
@@ -261,6 +262,7 @@ function Sobre() {
 
                 </div>
             </div>
+            <Footer/>
 
         </>
     );
