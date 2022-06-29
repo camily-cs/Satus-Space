@@ -1,5 +1,6 @@
 import React from "react";
-import NavBarLogo from "../../components/Header/NavBarLogo";
+
+import NavBarFixed from "../../components/Header/NavBarFixed";
 
 
 
@@ -9,7 +10,7 @@ function CadAluno(){
             <main className="upperPart">
 
                 {/* <!--Barra de Navegação--> */}
-                <NavBarLogo/>
+                <NavBarFixed/>
 
                 <div className="container-fluid">
 

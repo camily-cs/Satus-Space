@@ -1,3 +1,44 @@
+.vagas-detalhe{
+    background-color: var(--bgcolor) ;
+    color: var(--cor08);
+    height: 100vh;
+    padding: 0px;
+    border-radius: 15px;
+}
+.padding-row{
+    padding: 0px;
+}
+
+.vagas-detalhe .card-header{
+    width: 100%;
+}
+
+.vagas-detalhe .card-body{
+    overflow-y: scroll;
+    height: 90%;
+    
+}
+
+.vagas-detalhe .card-body::-webkit-scrollbar{
+    background-color: transparent;  
+    width: 5px;
+  }
+  
+.vagas-detalhe .card-body::-webkit-scrollbar:hover{
+      width: 10px;
+  }
+  
+.vagas-detalhe .card-body::-webkit-scrollbar-thumb{
+      background-color: var(--bgcolor2);
+      border-radius: 15px;
+      
+}
+  
+.vagas-detalhe .card-body::-webkit-scrollbar-thumb:hover{
+      background-color: var(--cor03);
+}
+
+
 
 .containerDetVaga{
         color: white;

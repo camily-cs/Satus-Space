@@ -1,5 +1,5 @@
 import React from "react";
-import NavBarLogo from "../../components/Header/NavBarLogo";
+import NavBarFixed from "../../components/Header/NavBarFixed";
 import { Link } from "react-router-dom";
 
 import "./style.css";
@@ -8,7 +8,7 @@ function LoginAluno() {
     return (
         <>
             <main className="upperPart">
-                <NavBarLogo />
+                <NavBarFixed />
                 <div className="container-fluid">
                     <div className="row">
 

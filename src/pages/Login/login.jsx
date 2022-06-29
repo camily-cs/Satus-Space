@@ -1,5 +1,5 @@
 import React from "react";
-import NaveBarLogo from "../../components/Header/NavBarLogo";
+import NavBarFixed from "../../components/Header/NavBarFixed";
 import estudante from "../../../src/assets/image/student.png"
 import empresa from "../../../src/assets/image/empresa.png";
 
@@ -14,7 +14,7 @@ function Login() {
             {/* Login Noelia  */}
 
             <div className="upperPart">
-                <NaveBarLogo />
+                <NavBarFixed />
                 <div className="container">
 
                     <div className="vh-forms text-white d-flex justify-content-center align-items-center">

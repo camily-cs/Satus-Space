@@ -64,9 +64,14 @@ function App() {
           <Route path='/Bootcamp/Andamento' exact element={<BootcampsAndamento/>}/>
           <Route path='/Bootcamp/Explorar' exact element={<ExploreBootcamps/>}/>
 
+          {/* Páginas do usuario  */}
+          <Route path='/Perfil' exact element={<Perfil/>}/>
+          <Route path='/User/Area' exact element={<UserArea/>}/>
+
+
           <Route path='/Video' exact element={<VideoAula/>}/>
 
-          <Route path='/Perfil' exact element={<Perfil/>}/>
+          
 
           <Route path='/Empresa' exact element={<Empresa/>}/>
 
@@ -75,8 +80,6 @@ function App() {
           <Route path='/Vagas' exact element={<Vagas/>}/>
 
           <Route path='/DetalheVaga' exact element={<DetalheVaga/>}/>
-
-          <Route path='/User/Area' exact element={<UserArea/>}/>
 
           <Route path= '/Mensagens' exact element={<Mensagens/>}/>
 

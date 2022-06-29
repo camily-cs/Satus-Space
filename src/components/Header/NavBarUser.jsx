@@ -11,7 +11,7 @@ function NavBarUser() {
 
     return (
         /* <!--Barra de Navegação--> */
-        <nav class="navbar navbar-expand nav-bar-top d-md-none mb-2 px-3">
+        <nav class="navbar navbar-expand nav-bar-top d-lg-none mb-2 px-3">
 
             <Logo/>
 

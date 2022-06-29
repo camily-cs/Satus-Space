@@ -55,6 +55,10 @@
     text-decoration: none;
 }
 
+.side-bar-nav2 a:hover{
+    color: white;
+}
+
 .side-bar-nav2 ul li:hover{
     font-weight: bold;
 }

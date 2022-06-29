@@ -38,7 +38,7 @@ function UserArea() {
                 <div className="row gx-2 gy-2">
                     <Sidebar />
 
-                    <div className="col-lg-8 col-md-9">
+                    <div className="col-lg-8 col-md-8">
 
                         <div className="row gx-2 gy-2 ">
 
@@ -54,12 +54,12 @@ function UserArea() {
                                         <img src={userArea} className=" ms-md-5 img-fluid welcome-img" alt="" srcset="" />
                                     </div>
 
-                                    {/* Falta a img */}
+                                    
                                 </div>
                             </div>
 
 
-                            {/*  Seção vagas */}
+                            {/*  Seção bootcamps */}
                             <div className="col-lg-12 bootcamp-section ">
 
                                 <div className="bootcamp-section">
@@ -142,7 +142,7 @@ function UserArea() {
 
                     </div>
 
-                    <div className="col-lg-2 col-md-3 ">
+                    <div className="col-lg-2 col-md-4 ">
 
                         <div className="agenda-section px-1">
                             <div className="card-header">

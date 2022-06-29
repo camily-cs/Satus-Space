@@ -14,7 +14,14 @@
     
 }
 
+.transparent .nav-link{
+    color: white;
+}
 
+.transparent .nav-link:hover{
+    font-weight: bold ;
+    color: var(--cor08);
+}
 
 .navbar-dark .navbar-nav .nav-link {
     color: white;
@@ -33,12 +40,21 @@
 .nav-bar-top .nav-link:hover{
     font-weight: bold ;
     color: var(--cor08);
-    /* A DEFINIR */
 }
 
 .logo-nav-bar-top{
     position: absolute;
     left: 10px;
     
+}
+
+.navbar svg{
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.navbar svg:hover{
+    transform: scale(1.07);
+    transition: all 0.3s ease;
 }
 

@@ -7,19 +7,24 @@ import { MdRoom } from "react-icons/md";
 import { MdOutlinePaid } from "react-icons/md";
 import VagaBox from "../../components/VagaBox";
 
+import NavBarUser from "../../components/Header/NavBarUser";
+
 
 
 
 function Vagas() {
   return (
     <>
+
+      <NavBarUser/>
+
       <div className="container-fluid">
         <div className="row">
           <Sidebar />
-          <div className="col-md-10 vagas-main text-white">
+          <div className="col-lg-10 col-md-12  vagas-main text-white">
             <div className="card-header">
               <h3>Vagas</h3>
-              <div className="inputs">
+              {/* <div className="inputs">
                 <div className="input">
                   <div className="svgBackground">
                     <BsSearch />
@@ -77,7 +82,7 @@ function Vagas() {
                   </select>
                 </div>
                 <button>Pesquisar</button>
-              </div>
+              </div> */}
             </div>
             <div className="card-body">
               <VagaBox />
