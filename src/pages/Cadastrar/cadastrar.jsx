@@ -26,7 +26,7 @@ function Cadastrar() {
                             <div className="col-md-5">
 
 
-                                <Link className="link" to='/login/aluno'>
+                                <Link className="link" to='/cadastrar/aluno'>
                                     <div className="d-flex align-items-center justify-content-center button-cadastro">
 
                                         <div>
@@ -40,7 +40,7 @@ function Cadastrar() {
 
 
                             <div className="col-md-5">
-                                <Link className="link" to='/login/empresa'>
+                                <Link className="link" to='/cadastrar/empresa'>
                                     <div className="d-flex align-items-center justify-content-center button-cadastro">
 
                                         <div>

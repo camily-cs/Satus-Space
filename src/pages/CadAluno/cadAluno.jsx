@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import NavBarFixed from "../../components/Header/NavBarFixed";
 
@@ -33,7 +34,11 @@ function CadAluno(){
                             <label className="form-label mt-2" htmlFor="">Confirmar senha:</label>
                             <input className="form-control" type="password" name="" id="" />
                             
-                            <button className="d-block mx-auto mt-3 btn-form">Entrar</button>
+
+                            <Link className="link" to="/user/area">
+                                <button className="d-block mx-auto mt-3 btn-form">Entrar</button>
+                            </Link>
+                            
 
                         </form>
 
