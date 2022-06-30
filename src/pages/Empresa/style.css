@@ -19,13 +19,11 @@
 }
 
 
-/* .text-center{
-
+.img-empresa{
     padding-top: 414px;
-} */
+} 
 
 .empresa .nome-empresa{
-
     font-size: 30px;
     font-weight: 175px;
 }
@@ -76,7 +74,6 @@
 }
 
 .arrow-down{
-
   margin:0 auto;
 }
 
