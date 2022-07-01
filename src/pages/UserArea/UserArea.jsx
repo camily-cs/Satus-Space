@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import "./style.css";
 
 import Sidebar from "../../components/SideBar";
@@ -10,6 +11,10 @@ import NavBarUser from "../../components/Header/NavBarUser";
 
 
 import { RiSuitcaseLine } from "react-icons/ri"
+import { ImBook } from "react-icons/im"
+
+import {BsSun} from "react-icons/bs"
+import {BsFillMoonFill} from "react-icons/bs"
 
 import userArea from "../../../src/assets/image/user-area.png"
 
@@ -30,13 +35,53 @@ function UserArea() {
 
     ])
 
-    return (
-        <>
-            <NavBarUser/>
+    const [agendaDados] = useState([
+        {
+            data: "30/06/2022",
+            dado: "Entrevista",
+            tipo: <RiSuitcaseLine />
+        },
 
-            <div className="container-fluid text-white">
+
+    ])
+
+    
+
+    const [escuro, setEscuro] = useState(false)
+
+    const temaBg = {
+        backgroundColor: escuro ? "var(--cor50)" : "var(--bgcolor3)",
+        color: escuro ? "white" : "black"
+    }
+
+    const extraButton = escuro ? <Link to="#" onClick={mudarTema}> <BsFillMoonFill className="mx-2" /> Alterar Tema</Link> : <Link to="#" onClick={mudarTema}>< BsSun className="mx-2" /> Alterar Tema</Link>
+
+
+    const temaCard = {
+        backgroundColor: escuro ? "var(--bgcolor)" : "var(--bgcolor4)",
+        color: escuro ? "white" : "black"
+    }
+
+    function mudarTema() {
+        setEscuro(!escuro)
+    }
+
+    return (
+        <div className="App" style={temaBg}>
+            
+            <NavBarUser
+            
+            extraButton={extraButton}
+            
+            />
+
+            <div className="container-fluid" >
                 <div className="row gx-2 gy-2">
-                    <Sidebar />
+                    <Sidebar
+                    
+                    extraButton={extraButton}
+
+                    />
 
                     <div className="col-lg-8 col-md-8">
 
@@ -54,13 +99,13 @@ function UserArea() {
                                         <img src={userArea} className=" ms-md-5 img-fluid welcome-img" alt="" srcset="" />
                                     </div>
 
-                                    
+
                                 </div>
                             </div>
 
 
                             {/*  Seção bootcamps */}
-                            <div className="col-lg-12 bootcamp-section ">
+                            <div className="col-lg-12 bootcamp-section " style={temaCard}>
 
                                 <div className="bootcamp-section">
                                     <div className="d-flex justify-content-between card-header">
@@ -75,7 +120,7 @@ function UserArea() {
 
                                         {bootcampDados.map((bootcamp) => (
                                             <BootcampCard
-
+                                                styleComponent={temaCard}
                                                 curso={bootcamp.curso}
                                                 concluido={bootcamp.concluido}
                                                 empresa={bootcamp.empresa}
@@ -87,7 +132,7 @@ function UserArea() {
 
                                         {bootcampDados.map((bootcamp) => (
                                             <BootcampCard
-
+                                                styleComponent={temaCard}
                                                 curso={bootcamp.curso}
                                                 concluido={bootcamp.concluido}
                                                 empresa={bootcamp.empresa}
@@ -144,7 +189,7 @@ function UserArea() {
 
                     <div className="col-lg-2 col-md-4 ">
 
-                        <div className="agenda-section px-1">
+                        <div className="agenda-section px-1" style={temaCard}>
                             <div className="card-header">
                                 <h3>Minha Agenda</h3>
                             </div>
@@ -152,8 +197,15 @@ function UserArea() {
                                 <div className="row gx-2">
 
                                     {/* Componetizar */}
-                                    <AgendaBox />
-                                    <AgendaBox />
+                                    {agendaDados.map((agenda) => (
+                                        <AgendaBox
+                                            
+                                            data={agenda.data}
+                                            dado={agenda.dado}
+                                            tipo={agenda.tipo}
+
+                                        />))}
+
 
 
                                 </div>
@@ -171,9 +223,11 @@ function UserArea() {
                 </div>
             </div>
 
-            <Footer/>
+            <Footer
+                styleComponent={temaBg}
+            />
 
-        </>
+        </div>
     )
 }
 

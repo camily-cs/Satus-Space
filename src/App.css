@@ -6,9 +6,7 @@
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-body{
-    background-color: var(--cor50);
-}
+
 
 :root{
     --cor01: #01105D;
@@ -20,11 +18,19 @@ body{
     --cor07: #21185E;
     --cor08: #FFF;
     --cor50: #121214;
+
     --bgcolor: #202024;
     --bgcolor2: #34343E;
 
+    --bgcolor3: #EDF1F3;
+    --bgcolor4: #FFFFFF;
+
     --fontcolor: #A7A4A4;
     
+}
+
+.App{
+    transition: background-color 0.8s ease, color 0.5s ease,
 }
 
 /* css components */

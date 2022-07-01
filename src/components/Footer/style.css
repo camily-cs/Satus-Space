@@ -5,6 +5,7 @@ body{
 footer{
     margin-top: 50px;
     background-color: var(--cor50);
+    transition: background-color 0.8s ease, color 0.5s ease
 }
 
 .logo-img-footer{
@@ -38,7 +39,7 @@ footer{
     padding: 0px;
 }
 
-.ul-footer-icons a{
+/* .ul-footer-icons a{
     color: white;
     
 }
@@ -46,7 +47,7 @@ footer{
 .ul-footer-icons a:hover{
     color: white;
     
-}
+} */
 
 .ul-footer-icons svg{
     transition: all 0.3s ease;

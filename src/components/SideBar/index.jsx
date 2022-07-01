@@ -20,7 +20,7 @@ import { HiOutlineLogout } from "react-icons/hi"
 import {BsFillPersonFill} from "react-icons/bs"
 
 
-function Sidebar() {
+function Sidebar({extraButton}) {
     return (
         <>
             <div className="d-none d-lg-flex col-lg-2">
@@ -72,6 +72,9 @@ function Sidebar() {
                                 <BsGear className="mx-2" />
                                 Configurações
                             </Link>
+                        </li>
+                        <li className="">
+                            {extraButton}
                         </li>
                     </ul>
 

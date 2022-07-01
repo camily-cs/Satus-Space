@@ -5,7 +5,7 @@ import {GiHamburgerMenu} from "react-icons/gi"
 import HidenSideBar from "../HidenSideBar";
 import Logo from "../Logo";
 
-function NavBarUser() {
+function NavBarUser({extraButton}) {
 
     const [isSideBarVisible, setIsSideBarVisible] = useState(false)
 
@@ -15,8 +15,8 @@ function NavBarUser() {
 
             <Logo/>
 
-            <GiHamburgerMenu onClick={() => setIsSideBarVisible(true)} className="nav-icon ms-auto" />
-            {isSideBarVisible ? (<HidenSideBar onClose={() => setIsSideBarVisible(false)}> </HidenSideBar>) : null}
+            <GiHamburgerMenu  onClick={() => setIsSideBarVisible(true)} className="nav-icon ms-auto" />
+            {isSideBarVisible ? (<HidenSideBar extraButton={extraButton} onClose={() => setIsSideBarVisible(false)}> </HidenSideBar>) : null}
 
 
         </nav>

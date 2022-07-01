@@ -5,7 +5,7 @@
 
 
 .bootcamp-section{
-    background-color: var(--bgcolor);
+    /* background-color: var(--bgcolor); */
     border-radius: 14px;
     height: 70vh;
 }
@@ -35,7 +35,6 @@
 }
 
 .bootcamp-section .card-footer p{
-    color:  white;
     cursor: pointer;
     margin: 0px;
 }
@@ -60,6 +59,7 @@
 
 .welcome-section p{
     font-size: 2.2em;
+    color: var(--cor08);
 }
 
 .welcome-img{
@@ -101,7 +101,7 @@
     }
 
     .bootcamp-section{
-        background-color: var(--bgcolor);
+        
         border-radius: 14px;
         height: 600px;
     }

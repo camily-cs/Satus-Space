@@ -27,11 +27,37 @@ import { BsFillPersonFill } from "react-icons/bs";
 import { IoIosArrowForward } from "react-icons/io";
 import { BiPencil } from "react-icons/bi";
 
+import { BsSun } from "react-icons/bs"
+import { BsFillMoonFill } from "react-icons/bs"
+
 
 
 
 
 function Perfil() {
+
+
+    const [escuro, setEscuro] = useState(false)
+
+    const temaBg = {
+        backgroundColor: escuro ? "var(--cor50)" : "var(--bgcolor3)",
+        color: escuro ? "white" : "black"
+    }
+
+
+    const temaBord = {
+        borderColor: escuro ? "white" : "black",
+        color: escuro ? "white" : "white"
+    }
+
+    const temaCard = {
+        backgroundColor: escuro ? "var(--bgcolor)" : "var(--bgcolor4)",
+        color: escuro ? "white" : "black"
+    }
+
+    function mudarTema() {
+        setEscuro(!escuro)
+    }
 
     const [levelDados] = useState([
         {
@@ -39,28 +65,43 @@ function Perfil() {
         }
     ])
 
+    const buttonTheme = escuro ? <BsFillMoonFill/> : <BsSun/>
+
 
 
     return (
-        <>
+        <div className="App" style={temaBg}>
+
+
 
             <PerfilBar />
 
 
             <div className="perfil">
-                <div className="text-center">
-                    <img src="https://media-exp2.licdn.com/dms/image/C4D03AQERFmUysyUMXQ/profile-displayphoto-shrink_800_800/0/1569545019530?e=1661385600&v=beta&t=pctslMBGgaLu4Ng5r7a9qQ5APo-1YLzHz0OnK4rjBQg" alt="matheus" />
+                <div className="text-center mt-5">
+                    <img src="https://media-exp2.licdn.com/dms/image/C4D03AQERFmUysyUMXQ/profile-displayphoto-shrink_800_800/0/1569545019530?e=1661385600&v=beta&t=pctslMBGgaLu4Ng5r7a9qQ5APo-1YLzHz0OnK4rjBQg" alt="Aurora" />
+
                     <strong className="mt-2 d-block" >Aurora Maria Seles</strong>
                     <p>Inscrito desde Fevereiro de 2022</p>
+
+                    <div className="alterar-modo-button" onClick={mudarTema} style={temaBg}>
+                        {buttonTheme}
+                    </div>
+
                 </div>
+
+
+
             </div>
+
+            
 
             <div className="container text-white ">
 
                 <div className="row justify-content-center gx-2 gy-2">
 
                     <section className="col-lg-10">
-                        <div className="section-perfil">
+                        <div className="section-perfil" style={temaCard}>
 
                             <div className="card-header px-4">
                                 <h3>Sobre mim</h3>
@@ -76,7 +117,7 @@ function Perfil() {
 
                                     <div className="col-md-3 col-5 card-icon">
 
-                                        <div className="circle-icon">
+                                        <div className="circle-icon" style={temaBord}>
                                             <BsFillPersonFill />
                                         </div>
 
@@ -94,7 +135,7 @@ function Perfil() {
                     </section>
 
                     <section className="col-lg-10">
-                        <div className="section-perfil">
+                        <div className="section-perfil" style={temaCard}>
 
                             <div className="card-header px-4">
                                 <h3>Sobre mim</h3>
@@ -102,13 +143,13 @@ function Perfil() {
 
                             <div className="card-body px-4">
                                 <div className="row">
-                                    <div className="col-12 medal-icons">
-                                        
-                                        <HtmlMedal/>
-                                        <JavaMedal/>
-                                        <CssMedal/>
-                                        <JsMedal/>
-                                        <ReactMedal/>
+                                    <div className="col-12 medal-icons" >
+
+                                        <HtmlMedal />
+                                        <JavaMedal />
+                                        <CssMedal />
+                                        <JsMedal />
+                                        <ReactMedal />
 
                                     </div>
                                 </div>
@@ -124,7 +165,7 @@ function Perfil() {
                     </section>
 
                     <section className="col-lg-5">
-                        <div className="section-perfil">
+                        <div className="section-perfil" style={temaCard}>
 
                             <div className="card-header">
                                 <h3>Personalização</h3>
@@ -138,7 +179,7 @@ function Perfil() {
                                     </div>
 
                                     <div className="col-md-6 col-5 card-icon">
-                                        <div className="circle-icon">
+                                        <div className="circle-icon" style={temaBord}>
                                             <BiPencil />
                                         </div>
                                     </div>
@@ -153,7 +194,7 @@ function Perfil() {
                     </section>
 
                     <section className="col-lg-5">
-                        <div className="section-perfil">
+                        <div className="section-perfil" style={temaCard}>
 
                             <div className="card-header">
                                 <h3>Nível de Perfil</h3>
@@ -167,7 +208,7 @@ function Perfil() {
 
                                     {levelDados.map((nivel) => (
                                         <PerfilLevel
-
+                                            styleComponent={temaBord}
                                             level={nivel.nivel}
 
                                         />
@@ -190,7 +231,7 @@ function Perfil() {
 
                     <section className="col-lg-5">
 
-                        <div className="section-perfil">
+                        <div className="section-perfil" style={temaCard}>
 
                             <div className="card-header">
                                 <h3> Candidaturas</h3>
@@ -215,7 +256,7 @@ function Perfil() {
 
                     <section className="col-lg-5">
 
-                        <div className="section-perfil">
+                        <div className="section-perfil" style={temaCard}>
 
                             <div className="card-header">
                                 <h3>Minhas Redes</h3>
@@ -243,7 +284,7 @@ function Perfil() {
                     </section>
 
                     <section className="col-lg-5">
-                        <div className="section-perfil">
+                        <div className="section-perfil" style={temaCard}>
 
                             <div className="card-header">
                                 <h3>Bootcamps em Andamento</h3>
@@ -263,7 +304,7 @@ function Perfil() {
                     </section>
 
                     <section className="col-lg-5">
-                        <div className="section-perfil">
+                        <div className="section-perfil" style={temaCard}>
 
                             <div className="card-header">
                                 <h3>Bootcamps Realizados</h3>
@@ -284,18 +325,18 @@ function Perfil() {
 
 
                     <section className="col-lg-10">
-                        <div className="section-perfil info mb-5">
+                        <div className="section-perfil info mb-5" style={temaCard}>
 
                             <div className="card-header">
                                 <h3>Mais informações</h3>
                             </div>
                             <div className="card-body">
                                 <div className="more-info">
-                                    <Link className="link" to="/vagas">
-                                        <div>
-                                            <FiSearch className="" /><h4>Procurar Vagas</h4>
-                                        </div>
-                                    </Link>
+
+                                    <div>
+                                        <FiSearch className="" /><h4>Procurar Vagas</h4>
+                                    </div>
+
 
 
                                     <IoIosArrowForward className="ms-auto" />
@@ -321,8 +362,12 @@ function Perfil() {
 
             </div>
 
-            <Footer />
-        </>
+            <Footer
+
+                styleComponent={temaBg}
+
+            />
+        </div>
     )
 }
 

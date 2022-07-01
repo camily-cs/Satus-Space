@@ -4,7 +4,8 @@ import "./style.css";
 
 import { RiSuitcaseLine } from "react-icons/ri"
 
-function AgendaBox() {
+
+function AgendaBox({data,dado,tipo}) {
     return (
         <>
 
@@ -17,14 +18,14 @@ function AgendaBox() {
                     <div className="col-3 d-flex justify-content-center">
 
                         <div className="agenda-icon">
-                            <RiSuitcaseLine />
+                            {tipo}
                         </div>
 
                     </div>
 
                     <div className="col-9">
-                        <p>Entrevista Empresa X</p>
-                        <p>20 Julho - 9:30</p>
+                        <p>{data}</p>
+                        <p>{dado}</p>
                     </div>
 
 

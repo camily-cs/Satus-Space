@@ -1,9 +1,9 @@
 import React from "react";
 
-function BootcampCard({curso , concluido , empresa , vaga , prof, button}) {
+function BootcampCard({curso , concluido , empresa , vaga , prof, button, styleComponent}) {
     return (
         <>
-            <div className="row d-flex justify-content-center">
+            <div className="row d-flex justify-content-center" style={styleComponent}>
 
                 <div className="col-lg-5 col-md-5 p-2 py-4 bootcamp">
                     <img src="https://i.ytimg.com/vi/Ejkb_YpuHWs/maxresdefault.jpg?v=5f8061fa" className="img-fluid" alt="" srcset="" />

@@ -9,17 +9,17 @@ import { FaLinkedin } from 'react-icons/fa'
 import { FaInstagram } from 'react-icons/fa'
 import { SiLinktree } from 'react-icons/si'
 
-function Footer() {
+function Footer({styleComponent}) {
     return (
-        <footer className="container line">
-            <div className="row py-5 text-white">
+        <footer className="container line" style={styleComponent} >
+            <div className="row py-5">
 
                 <div className="col-lg-3 col-sm-6 col-12 my-lg-5 my-1 text-center">
                     <h3>Contato</h3>
                     <ul className="ul-footer">
                         <li>Termos de Uso</li>
                         <li>Fale Conosco</li>
-                        <li>Sobre Nós</li>
+                        <li> <Link style={styleComponent} to="/sobre" >Sobre Nós</Link> </li>
                     </ul>
                 </div>
 
