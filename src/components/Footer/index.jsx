@@ -46,7 +46,7 @@ function Footer({styleComponent}) {
                         <a target="bank" href="https://linktr.ee/satusspace">
                             <li><SiLinktree /></li>
                         </a>
-                        <li><FaLinkedin /></li>
+                        
 
                     </ul>
                 </div>

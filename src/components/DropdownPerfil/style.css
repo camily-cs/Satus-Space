@@ -1,0 +1,47 @@
+.drop-down-container{
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0
+}
+
+.drop-down-perfil{
+    display: flex;
+    
+    flex-direction: column;
+    position: fixed;
+    top: 85px;
+    left: calc(100% - 160px);
+    list-style: none;
+    width: 150px;
+    z-index: 300;
+    border-radius: 15px;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    animation-duration: 0.6s;
+    animation-name: showsDropDown ;
+}
+
+.drop-down-perfil li{
+    
+    margin: 12px 0px;
+    font-weight: bold;
+    border-bottom: 1px solid grey;
+    transition: all 0.3s ease;
+}
+
+.drop-down-perfil li svg{
+    margin: 2px ;
+}
+
+.drop-down-perfil li:hover{
+    border-bottom: 3px solid var(--cor03);
+}
+
+.drop-down-perfil a{
+    text-decoration: none;
+    
+}

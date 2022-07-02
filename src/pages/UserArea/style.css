@@ -8,6 +8,8 @@
     /* background-color: var(--bgcolor); */
     border-radius: 14px;
     height: 70vh;
+    transition: background-color 0.8s ease, color 0.5s ease;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .bootcamp-section .card-body{
@@ -50,6 +52,7 @@
     height: 30vh;
     background-color: var(--cor02);
     border-radius: 14px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .welcome-section h1{
@@ -64,12 +67,15 @@
 
 .welcome-img{
     width: 230px;
+    
 }
 
 .agenda-section{
     background-color: var(--bgcolor);
     border-radius: 14px;
     height: 100vh; 
+    transition: background-color 0.8s ease, color 0.5s ease;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 
