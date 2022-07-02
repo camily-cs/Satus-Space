@@ -1,7 +1,8 @@
 import React from "react";
 import "./style.css";
 import PerfilBar from "../../components/PerfilBar/index.jsx";
-import { RiArrowDownSLine } from "react-icons/ri"
+import { RiArrowDownSLine } from "react-icons/ri";
+
 
 function Empresa() {
     return (
@@ -26,12 +27,7 @@ function Empresa() {
                     <div className="sobre-empresa">
                         <strong className="mt-2 d-block titulo">Sobre Nós</strong>
                         <div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce volutpat posuere dolor,
-                                quis dictum nisi molestie sed. Donec augue dui, accumsan congue convallis sed, iaculis sed nisi.
-                                Proin sed dapibus ante, a convallis odio. Aenean tellus est, sollicitudin eu nulla quis, scelerisque malesuada nisl.
-                                Suspendisse non finibus leo. Suspendisse vitae molestie nisi. Donec ac luctus tortor, vitae lacinia augue.
-                                Duis a enim interdum, mollis nulla vitae, fermentum ante. Vestibulum euismod tortor sed velit ornare,
-                                in commodo sem luctus. Morbi et egestas nisi. Nullam tempor sagittis facilisis.</p>
+                            <p>Desde 1946, somos a instituição de ensino que conecta você às inovações e ao mercado. Aqui, pessoas de todas as idades são incentivadas a desenvolver seu potencial para expandir suas possibilidades de futuro. É assim que formamos profissionais que sabem fazer grandes ideias virarem realidade.</p>
                         </div>
                         <hr />
                         <div >
@@ -39,10 +35,12 @@ function Empresa() {
                         </div>                      
 
                     </div>
+                    <div className="grid-container">
                     <div class="row row-cols-2 grid-empresa">
                             <div class="col">
 
                                 <strong className="mt-2 d-block titulo-table" >Bootcamps</strong>
+                             
                                 
                             </div>
                             <div class="col">
@@ -56,8 +54,9 @@ function Empresa() {
                                 <strong className="mt-2 d-block titulo-table" >Vagas</strong>
                             </div>
                             <div class="col">
-                                <strong className="mt-2 d-block titulo-table" >Nossas Vagas</strong>
+                                <strong className="mt-2 d-block titulo-table" >Redes Sociais</strong>
                             </div>
+                    </div>
                     </div>
                 </div>
 
