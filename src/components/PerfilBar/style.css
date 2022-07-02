@@ -5,6 +5,12 @@
     color: black;
 }
 
+.logo-fixed{
+    position: fixed;
+    left: 10px;
+    top: 4px;
+}
+
 .nav-icon{
     font-size: 2.2em;
 }

@@ -46,7 +46,10 @@
 
 .section-perfil{
     border-radius: 14px;
-    transition: background-color 0.8s ease, color 0.5s ease
+    transition: background-color 0.8s ease, color 0.5s ease;
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+    /* box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; */
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     
 }
 

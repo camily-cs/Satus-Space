@@ -74,7 +74,7 @@ function Perfil() {
 
 
 
-            <PerfilBar />
+            <PerfilBar styleComponent={temaCard} />
 
 
             <div className="perfil">

@@ -107,7 +107,7 @@ function UserArea() {
                             {/*  Seção bootcamps */}
                             <div className="col-lg-12 bootcamp-section " style={temaCard}>
 
-                                <div className="bootcamp-section">
+                                
                                     <div className="d-flex justify-content-between card-header">
 
                                         <h3>Bootcamps em andamento</h3>
@@ -177,7 +177,7 @@ function UserArea() {
 
                                         <p className="text-center" >Encontre mais Bootcamps</p>
 
-                                    </div>
+                                    
                                 </div>
 
 
