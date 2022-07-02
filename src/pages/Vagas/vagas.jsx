@@ -5,17 +5,14 @@ import Vaga from "../../components/VagaBox";
 import { BsSearch } from "react-icons/bs";
 import { MdRoom } from "react-icons/md";
 import { MdOutlinePaid } from "react-icons/md";
-import VagaBox from "../../components/VagaBox";
-
 import NavBarUser from "../../components/Header/NavBarUser";
-
+import { BootcampBox } from "../../components/BootcampBox";
 
 
 
 function Vagas() {
   return (
-    <>
-
+    <div>
       <NavBarUser/>
 
       <div className="container-fluid">
@@ -23,7 +20,7 @@ function Vagas() {
           <Sidebar />
           <div className="col-lg-10 col-md-12  vagas-main text-white">
             <div className="card-header">
-              <h3>Vagas</h3>
+              <h3>Bootcamps</h3>
               {/* <div className="inputs">
                 <div className="input">
                   <div className="svgBackground">
@@ -85,28 +82,12 @@ function Vagas() {
               </div> */}
             </div>
             <div className="card-body">
-              <VagaBox />
-              <VagaBox />
-              <VagaBox />
-              <VagaBox />
-              <VagaBox />
-              <VagaBox />
-              <VagaBox />
-              <VagaBox />
-              <VagaBox />
-              <VagaBox />
+              <BootcampBox />
             </div>
-
-
-
-
           </div>
         </div>
       </div>
-
-
-
-    </>
+    </div>
   );
 }
 
