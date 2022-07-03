@@ -4,6 +4,8 @@ import {
   Route
 } from "react-router-dom";
 
+import VLibras from "@djpfs/react-vlibras";
+
 /* pages */
 import Index from './pages/Index/index';
 
@@ -47,6 +49,9 @@ function App() {
     <Router>
 
       <div className="App">
+
+        <VLibras/>
+
         <Routes>
 
           <Route path='/' exact element={<Index/>}/>
