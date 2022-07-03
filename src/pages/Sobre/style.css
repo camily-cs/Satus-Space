@@ -3,8 +3,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #050840;
+    background-image: url("../../../src/assets/image/backgroungSobre.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
     color: var(--cor08);
+
 }
 .sobre h1{
     text-align: center;

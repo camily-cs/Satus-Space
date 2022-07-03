@@ -21,7 +21,7 @@ import Footer from "../../components/Footer";
 
 function Sobre() {
     return (
-        <>
+        <div className="App">
             <NavBarLogo2 />
             <div className="container-fluid">
 
@@ -264,7 +264,7 @@ function Sobre() {
             </div>
             <Footer/>
 
-        </>
+        </div>
     );
 };
 
