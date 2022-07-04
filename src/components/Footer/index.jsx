@@ -16,7 +16,7 @@ function Footer({styleComponent, fonte, logo }) {
                 <div className="col-lg-3 col-sm-6 col-12 my-lg-5 my-1 text-center">
                     <h3>Contato</h3>
                     <ul className="ul-footer">
-                        <li>Termos de Uso</li>
+                        <li><Link style={styleComponent} to="/termos/uso" >Termos de Uso</Link></li>
                         <li>Fale Conosco</li>
                         <li> <Link style={styleComponent} to="/sobre" >Sobre Nós</Link> </li>
                     </ul>

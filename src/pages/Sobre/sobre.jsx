@@ -61,7 +61,7 @@ function Sobre() {
 
                     <div className="col-lg-3 col-md-4">
 
-                        <div className="mvv-cont">
+                        <div className="mvv-cont" >
 
                             <div className=" text-center">
                                 <img src={missao} alt="Logo" className="mvv mt-5" />
