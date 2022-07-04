@@ -9,6 +9,11 @@
     color: var(--cor01);
 }
 
-/* .termos h1, h2{
+ .termos h1{
     color: var(--cor01);
-} */
+    margin: 0;
+} 
+
+.termos h2{
+    color: var(--cor01);
+}

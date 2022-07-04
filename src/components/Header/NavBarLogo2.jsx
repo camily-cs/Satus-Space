@@ -30,7 +30,7 @@ function NavBarLogo2() {
                     </Link>
 
 
-                    <div class="navbar-nav mx-lg-auto d-none d-md-flex">
+                    <div class="navbar-nav mx-lg-auto ms-md-auto d-none d-md-flex ">
 
                         {/* <!--Botões de Navegação--> */}
                         <Link className="nav-link button-a px-lg-4 px-md-4 px-sm-2" to='/' >Home</Link>
