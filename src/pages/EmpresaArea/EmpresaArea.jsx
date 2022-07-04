@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import "./style.css";
 
 import Sidebar from "../../components/SideBar";
@@ -9,8 +10,16 @@ import Footer from "../../components/Footer/index"
 import NavBarUser from "../../components/Header/NavBarUser";
 import EmpresaVaga from "../../components/EmpresaVaga";
 
+import {BsSun} from "react-icons/bs"
+import {BsFillMoonFill} from "react-icons/bs"
 
 import { RiSuitcaseLine } from "react-icons/ri"
+
+//Footer dark e light mode
+import logoAzul from "../../assets/image/logoAzul.png";
+import fonteAzul from "../../assets/image/fonteAzul.png"
+import logoBranco from "../../assets/image/logo.png";
+import fonteBranco from "../../assets/image/fonteBranco.png"
 
 import userArea from "../../../src/assets/image/user-area.png"
 
@@ -36,15 +45,41 @@ function EmpresaArea() {
 
     ])
 
+    const [escuro, setEscuro] = useState(false)
+
+    const temaBg = {
+        backgroundColor: escuro ? "var(--cor50)" : "var(--bgcolor3)",
+        color: escuro ? "white" : "black"
+    }
+
+    const extraButton = escuro ? <Link to="#" onClick={mudarTema}> <BsFillMoonFill className="mx-2" /> Alterar Tema</Link> : <Link to="#" onClick={mudarTema}>< BsSun className="mx-2" /> Alterar Tema</Link>
+
+
+    const temaCard = {
+        backgroundColor: escuro ? "var(--bgcolor)" : "var(--bgcolor4)",
+        color: escuro ? "white" : "black"
+    }
+
+    const logo = escuro ?  logoBranco : logoAzul
+    const fonte = escuro ?  fonteBranco : fonteAzul
+
+    function mudarTema() {
+        setEscuro(!escuro)
+    }
+
     
 
     return (
-        <>
+        <div style={temaBg}>
             <NavBarUser/>
 
             <div className="container-fluid text-white">
                 <div className="row gx-2 gy-2">
-                    <Sidebar />
+                <Sidebar
+                    
+                    extraButton={extraButton}
+
+                    />
 
                     <div className="col-lg-8 col-md-8">
 
@@ -167,9 +202,15 @@ function EmpresaArea() {
                 </div>
             </div>
 
-            <Footer/>
+            <Footer
+            
+                styleComponent={temaBg}
+                fonte={fonte}
+                logo={logo}
+            
+            />
 
-        </>
+        </div>
     )
 }
 

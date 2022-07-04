@@ -61,9 +61,9 @@
     margin-top: 15px;
     font: bold 16px "Neo Sans", sans-serif
 }
-.imagem-equipe a{
+/* .imagem-equipe a{
     color: var(--cor08);
-}
+} */
 
 .imagem-equipe a:hover{
     color: var(--cor08);
@@ -75,16 +75,17 @@
     border-color: #ececf5;
     border-style: solid; 
     height: 500px;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .sub-equipe{
    font: bold 50px;
-   color: rgb(255, 255, 255);
    text-transform: uppercase;
 }
 
 .linha-equipe hr{
-    background-color: #ffffff;
+    /* background-color: #ffffff; */
     height: 2px;
     border: none;
     margin-top: 25px;

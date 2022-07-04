@@ -16,12 +16,25 @@ import rian from "../../../src/assets/image/rian.png"
 import { FaGithub } from 'react-icons/fa'
 import { FaLinkedin } from 'react-icons/fa'
 
+//IMAGENS DO FOOTER
+import logo from "../../assets/image/logoAzul.png";
+import fonte from "../../assets/image/fonteAzul.png"
+
 import NavBarLogo2 from "../../components/Header/NavBarLogo2";
 import Footer from "../../components/Footer";
 
 function Sobre() {
+
+
+
+    const temaBg = {
+        backgroundColor:  "var(--bgcolor3)",
+        color:  "black"
+    }
+
+
     return (
-        <div className="App">
+        <div className="App" style={temaBg}>
             <NavBarLogo2 />
             <div className="container-fluid">
 
@@ -43,7 +56,7 @@ function Sobre() {
 
                 </div>
             </div>
-            <div className="container mt-5 mt-md-1 text-white ">
+            <div className="container mt-5 mt-md-1">
                 <div className="row sobre-section g-4">
 
                     <div className="col-lg-3 col-md-4">
@@ -88,7 +101,7 @@ function Sobre() {
 
                     <h2 className="text-center sub-equipe">Equipe</h2>
 
-                    <div className="linha-equipe">
+                    <div className="linha-equipe" style={temaBg}>
                     <hr/>
                     </div>
                     
@@ -262,7 +275,13 @@ function Sobre() {
 
                 </div>
             </div>
-            <Footer/>
+            <Footer
+            
+                styleComponent={temaBg}
+                fonte={fonte}
+                logo={logo}
+            
+            />
 
         </div>
     );

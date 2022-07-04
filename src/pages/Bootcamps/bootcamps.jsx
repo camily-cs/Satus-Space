@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+
 import SearchBar from "../../components/SearchBar/index";
 import BootcampCard from "../../components/BootcampCard";
 import Footer from "../../components/Footer";
@@ -11,6 +12,12 @@ import "./style.css";
 import { AiOutlineLeft } from "react-icons/ai"
 import { BsSun } from "react-icons/bs"
 import { BsFillMoonFill } from "react-icons/bs"
+
+//Footer dark e light mode
+import logoAzul from "../../assets/image/logoAzul.png";
+import fonteAzul from "../../assets/image/fonteAzul.png"
+import logoBranco from "../../assets/image/logo.png";
+import fonteBranco from "../../assets/image/fonteBranco.png"
 
 
 function Bootcamp() {
@@ -33,6 +40,9 @@ function Bootcamp() {
         backgroundColor: escuro ? "var(--bgcolor)" : "var(--bgcolor4)",
         color: escuro ? "white" : "black"
     }
+
+    const logo = escuro ?  logoBranco : logoAzul
+    const fonte = escuro ?  fonteBranco : fonteAzul
 
     function mudarTema() {
         setEscuro(!escuro)
@@ -95,7 +105,9 @@ function Bootcamp() {
 
             <Footer
             
-                    styleComponent={temaBg}
+                styleComponent={temaBg}
+                fonte={fonte}
+                logo={logo}
             
             />
 

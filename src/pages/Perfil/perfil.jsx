@@ -30,6 +30,12 @@ import { BiPencil } from "react-icons/bi";
 import { BsSun } from "react-icons/bs"
 import { BsFillMoonFill } from "react-icons/bs"
 
+//Footer dark e light mode
+import logoAzul from "../../assets/image/logoAzul.png";
+import fonteAzul from "../../assets/image/fonteAzul.png"
+import logoBranco from "../../assets/image/logo.png";
+import fonteBranco from "../../assets/image/fonteBranco.png"
+
 
 
 
@@ -54,6 +60,9 @@ function Perfil() {
         backgroundColor: escuro ? "var(--bgcolor)" : "var(--bgcolor4)",
         color: escuro ? "white" : "black"
     }
+
+    const logo = escuro ?  logoBranco : logoAzul
+    const fonte = escuro ?  fonteBranco : fonteAzul
 
     function mudarTema() {
         setEscuro(!escuro)
@@ -363,9 +372,11 @@ function Perfil() {
             </div>
 
             <Footer
-
+            
                 styleComponent={temaBg}
-
+                fonte={fonte}
+                logo={logo}
+            
             />
         </div>
     )

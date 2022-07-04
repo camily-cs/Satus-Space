@@ -1,6 +1,5 @@
 import React from "react";
-import logo from "../../assets/image/logo.png";
-import fonte from "../../assets/image/fonteBranco.png"
+
 import "./style.css";
 import { Link } from "react-router-dom";
 
@@ -9,7 +8,7 @@ import { FaLinkedin } from 'react-icons/fa'
 import { FaInstagram } from 'react-icons/fa'
 import { SiLinktree } from 'react-icons/si'
 
-function Footer({styleComponent}) {
+function Footer({styleComponent, fonte, logo }) {
     return (
         <footer className="container line" style={styleComponent} >
             <div className="row py-5">
