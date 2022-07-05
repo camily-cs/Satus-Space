@@ -20,6 +20,8 @@ import logoAzul from "../../assets/image/logoAzul.png";
 import fonteAzul from "../../assets/image/fonteAzul.png"
 import logoBranco from "../../assets/image/logo.png";
 import fonteBranco from "../../assets/image/fonteBranco.png"
+import bootHtmlCss from "../../assets/image/bootcamp-HTML-CSS.png"
+import bootJava from "../../assets/image/bootcamp-JAVA-SPRING.png"
 
 import userArea from "../../../src/assets/image/user-area.png"
 
@@ -27,23 +29,6 @@ import userArea from "../../../src/assets/image/user-area.png"
 
 function EmpresaArea() {
 
-    const [vagaDados] = useState([
-        {
-            bootcamp: "HTML&CSS",
-            thumbnail: "https://yata.s3-object.locaweb.com.br/47c6a809ff608e05601dbb15c862ee1e73063ff1657895739b9298f82bc0a53e",
-            prof: "Gustavo Guanabara",
-            quant: "150"
-        },
-
-        {
-            bootcamp: "HTML&CSS",
-            thumbnail: "https://yata.s3-object.locaweb.com.br/47c6a809ff608e05601dbb15c862ee1e73063ff1657895739b9298f82bc0a53e",
-            prof: "Gustavo Guanabara",
-            quant: "150"
-        }
-
-
-    ])
 
     const [escuro, setEscuro] = useState(false)
 
@@ -117,15 +102,26 @@ function EmpresaArea() {
 
                                         <div className="row">
 
-                                            {vagaDados.map((bootcamp) => (
-                                                <EmpresaVaga
+                                            <div className="col-md-6 px-4 bootcamp-empresa">
+                                                <img src={bootHtmlCss} className="img-fluid imgVaga" alt="" />
+                                                <p>BootCamp HTML & CSS</p>
+                                                <p>Professor: <span>Gabriel Augusto</span></p>
+                                                <p>Quantidade de Inscritos: <span>150</span></p>
+                                                <button>
+                                                    Mais informações
+                                                </button>
+                                            </div>
 
-                                                    bootcamp={bootcamp.bootcamp}
-                                                    prof={bootcamp.prof}
-                                                    thumbnail={bootcamp.thumbnail}
-                                                    quant={bootcamp.quant}
+                                            <div className="col-md-6 px-4 bootcamp-empresa">
+                                                <img src={bootJava} className="img-fluid imgVaga" alt="" />
+                                                <p>BootCamp JAVA & SPRINGBOOT</p>
+                                                <p>Professor: <span>Jailson Costa</span></p>
+                                                <p>Quantidade de Inscritos: <span>150</span></p>
+                                                <button>
+                                                    Mais informações
+                                                </button>
+                                            </div>
 
-                                                />))}
 
                                         </div>
 
