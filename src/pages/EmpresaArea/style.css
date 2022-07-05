@@ -46,7 +46,6 @@
 }
 
 .vagas-section .card-footer p{
-    color:  white;
     cursor: pointer;
     margin: 0px;
 }
@@ -80,7 +79,6 @@
 }
 
 .agenda-section{
-    background-color: var(--bgcolor);
     border-radius: 14px;
     height: 100vh; 
 }

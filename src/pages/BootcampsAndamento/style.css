@@ -1,0 +1,13 @@
+.bootcamps-andamento{
+    height: 100vh;
+}
+
+.bootcamps-andamento a{
+ text-decoration: none;
+ display: flex;
+ transition: background-color 0.8s ease, color 0.5s ease;
+}
+
+.bootcamp-body{
+    height: 100vh;
+}

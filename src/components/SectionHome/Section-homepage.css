@@ -1,12 +1,4 @@
-:root{
-    --cor01: #01105D;
-    --cor02: #050840;
-    --cor03: #0713F2;
-    --cor04: #F2C307;
-    --cor05: #a68400;
-    --cor06: #081282;
-    --cor07: #21185E;
-}
+
 
 .section{
     background-image: linear-gradient(to bottom, var(--cor06) , black 100% );

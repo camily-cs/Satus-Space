@@ -1,6 +1,5 @@
 import React from "react";
-import logo from "../../assets/image/logo.png";
-import fonte from "../../assets/image/fonteBranco.png"
+
 import "./style.css";
 import { Link } from "react-router-dom";
 
@@ -9,7 +8,7 @@ import { FaLinkedin } from 'react-icons/fa'
 import { FaInstagram } from 'react-icons/fa'
 import { SiLinktree } from 'react-icons/si'
 
-function Footer({styleComponent}) {
+function Footer({styleComponent, fonte, logo }) {
     return (
         <footer className="container line" style={styleComponent} >
             <div className="row py-5">
@@ -17,7 +16,7 @@ function Footer({styleComponent}) {
                 <div className="col-lg-3 col-sm-6 col-12 my-lg-5 my-1 text-center">
                     <h3>Contato</h3>
                     <ul className="ul-footer">
-                        <li>Termos de Uso</li>
+                        <li><Link style={styleComponent} to="/termos/uso" >Termos de Uso</Link></li>
                         <li>Fale Conosco</li>
                         <li> <Link style={styleComponent} to="/sobre" >Sobre Nós</Link> </li>
                     </ul>

@@ -1,25 +1,22 @@
 import React from "react";
 import "./style.css";
 import Sidebar from "../../components/SideBar";
-import Vaga from "../../components/VagaBox";
 import { BsSearch } from "react-icons/bs";
 import { MdRoom } from "react-icons/md";
 import { MdOutlinePaid } from "react-icons/md";
 import NavBarUser from "../../components/Header/NavBarUser";
-import BootcampCard from "../../components/BootcampCard";
 import { useState } from "react";
 import {BsFillMoonFill} from 'react-icons/bs';
 import {BsSun} from 'react-icons/bs';
 import { Link } from "react-router-dom";
+import BootcampBox from "../../components/BootcampBox";
 
 function Vagas() {
   const [bootcampDados] = useState([
     {
-      curso: "Curso de HTML e CSS",
-      concluido: 55,
-      empresa: "Satus Space",
-      vaga: "desenvolvedor web",
-      prof: "Gustavo Guanabara",
+      bootcamp: "Desenvolvedor web Jr",
+      empresa: "Satus Space e TOTVS",
+      tecnologias: "HTML5, CSS3 e JavaScript",
       button: "Continuar",
     },
   ]);
@@ -56,19 +53,31 @@ function Vagas() {
           <Sidebar 
             extraButton={extraButton}
           />
-          <div className="col-lg-10 col-md-12  vagas-main " style={temaCard}>
+          <div className="col-lg-10 col-md-12 bootcampsMain" style={temaCard}>
             <div className="card-header">
               <h3>Bootcamps</h3>
-              <div className="inputs">
-                <div className="input">
+              <div className="inputs container-fluid row ">
+                <div className="input col-3">
                   <div className="svgBackground">
                     <BsSearch />
                   </div>
                   <input type="search" placeholder="Cargo" />
                 </div>
 
+                <div className="input col-3">
+                  <div className="svgBackground">
+                    <MdOutlinePaid />
+                  </div>
+                  <select>
+                    <option>Faixa salarial</option>
+                    <option value="1">De R$ 1.000,00 á R$ 2.000,00</option>
+                    <option value="1">De R$ 2.000,00 á R$ 3.000,00</option>
+                    <option value="1">De R$ 3.000,00 á R$ 3.500,00</option>
+                    <option value="1">Acima de R$ 3.500,00 </option>
+                  </select>
+                </div>
 
-                <div className="input">
+                <div className="input col-3">
                   <div className="svgBackground">
                     <MdRoom />
                   </div>
@@ -104,38 +113,55 @@ function Vagas() {
                   </select>
                 </div>
 
-                <div className="input">
-                  <div className="svgBackground">
-                    <MdOutlinePaid />
-                  </div>
-                  <select>
-                    <option>Faixa salarial</option>
-                    <option value="1">De R$ 1.000,00 á R$ 2.000,00</option>
-                    <option value="1">De R$ 2.000,00 á R$ 3.000,00</option>
-                    <option value="1">De R$ 3.000,00 á R$ 3.500,00</option>
-                    <option value="1">Acima de R$ 3.500,00 </option>
-                  </select>
+                <div className="col-1">
+                  <button>Pesquisar</button>
                 </div>
-                <button>Pesquisar</button>
+                
               </div> 
             </div>
             <div className="card-body">
+              <div>
+                {bootcampDados.map((bootcamp) => (
+                  <BootcampBox
+                  
+                    styleComponent={temaCard}
 
-              {bootcampDados.map((bootcamp) => (
-                <BootcampCard
-                  /* dark e light mode */
-                  styleComponent={temaCard}
+                    bootcamp={bootcamp.bootcamp}
+                    concluido={bootcamp.concluido}
+                    empresa={bootcamp.empresa}
+                    tecnologias={bootcamp.tecnologias}
+                    button={bootcamp.button}
+                  />
+                ))}
+              </div>
+              <div>
+                {bootcampDados.map((bootcamp) => (
+                  <BootcampBox
+                  
+                    styleComponent={temaCard}
 
-                  /* dados do curso */
-                  curso={bootcamp.curso}
-                  concluido={bootcamp.concluido}
-                  empresa={bootcamp.empresa}
-                  vaga={bootcamp.vaga}
-                  prof={bootcamp.prof}
-                  button={bootcamp.button}
-                />
-              ))}
+                    bootcamp={bootcamp.bootcamp}
+                    concluido={bootcamp.concluido}
+                    empresa={bootcamp.empresa}
+                    tecnologias={bootcamp.tecnologias}
+                    button={bootcamp.button}
+                  />
+                ))}
+              </div>
+              <div>
+                {bootcampDados.map((bootcamp) => (
+                  <BootcampBox
+                  
+                    styleComponent={temaCard}
 
+                    bootcamp={bootcamp.bootcamp}
+                    concluido={bootcamp.concluido}
+                    empresa={bootcamp.empresa}
+                    tecnologias={bootcamp.tecnologias}
+                    button={bootcamp.button}
+                  />
+                ))}
+              </div>
             </div>
           </div>
         </div>

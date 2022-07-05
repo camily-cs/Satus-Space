@@ -3,8 +3,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #050840;
+    background-image: url("../../../src/assets/image/backgroungSobre.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
     color: var(--cor08);
+
 }
 .sobre h1{
     text-align: center;
@@ -57,9 +61,9 @@
     margin-top: 15px;
     font: bold 16px "Neo Sans", sans-serif
 }
-.imagem-equipe a{
+/* .imagem-equipe a{
     color: var(--cor08);
-}
+} */
 
 .imagem-equipe a:hover{
     color: var(--cor08);
@@ -67,20 +71,21 @@
 
 .mvv-cont{
     margin-top: 100px;
-    background-color:#202024;
-    border-color: #ececf5;
+    background-color: #000045;
+    color: white;
     border-style: solid; 
     height: 500px;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .sub-equipe{
    font: bold 50px;
-   color: rgb(255, 255, 255);
    text-transform: uppercase;
 }
 
 .linha-equipe hr{
-    background-color: #ffffff;
+    /* background-color: #ffffff; */
     height: 2px;
     border: none;
     margin-top: 25px;

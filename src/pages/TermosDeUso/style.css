@@ -1,0 +1,19 @@
+.termos{
+    display: flex;
+    justify-content: center;
+}
+
+.termos h3{
+    font-size: 23px;
+    font-weight: 600;
+    color: var(--cor01);
+}
+
+ .termos h1{
+    color: var(--cor01);
+    margin: 0;
+} 
+
+.termos h2{
+    color: var(--cor01);
+}
