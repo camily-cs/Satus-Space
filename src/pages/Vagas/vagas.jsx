@@ -17,7 +17,7 @@ function Vagas() {
       bootcamp: "Desenvolvedor web Jr",
       empresa: "Satus Space e TOTVS",
       tecnologias: "HTML5, CSS3 e JavaScript",
-      button: "Continuar",
+      button: "Saiba Mais",
     },
   ]);
 

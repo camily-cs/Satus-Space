@@ -11,14 +11,14 @@ import HidenSideBar2 from "../HidenSideBar2";
 import "./Nav.css"
 
 
-function NavBarLogo2() {
+function NavBarLogoColor() {
 
     const [isSideBarVisible, setIsSideBarVisible] = useState(false)
 
     return (
         <>
             {/* Barra de Navegação */}
-            <nav class="navbar navbar-expand transparent align-self-start justify-content-center">
+            <nav class="navbar navbar-expand nav-bar-top align-self-start justify-content-center">
 
 
                 <div class="container-fluid">
@@ -41,6 +41,8 @@ function NavBarLogo2() {
 
                         <Link className="nav-link button-a px-lg-4 px-md-4 px-sm-2" to='/Cadastrar'>Cadastrar-se</Link>
 
+                        
+
                     </div>
 
                     <GiHamburgerMenu onClick={() => setIsSideBarVisible(true)} className="nav-icon ms-auto d-md-none" />
@@ -55,4 +57,4 @@ function NavBarLogo2() {
     )
 }
 
-export default NavBarLogo2;
+export default NavBarLogoColor;

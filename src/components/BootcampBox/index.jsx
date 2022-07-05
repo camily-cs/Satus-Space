@@ -12,9 +12,8 @@ function BootcampBox({bootcamp , empresa , tecnologias ,  button, styleComponent
         <div className="d-flex justify-content-center align-items-center  col-lg-7 col-md-7 py-4 ">
           <div>
             <h4>{bootcamp}</h4>
-            <progress value="70" max="100" className="barraProgresso">70 %</progress>
             <p>{bootcamp}, {empresa}, {tecnologias}</p>
-            <Link to='/DetalheVaga'></Link><button className="mx-auto d-block">{button}</button>
+            <Link to='/DetalheVaga' className="link"><button className="mx-auto d-block">{button}</button></Link>
           </div>
         </div>
       </div>

@@ -27,11 +27,15 @@
     color: white;
 }
 
+
+
 .nav-bar-top{
     background-color: var(--cor02) ;
     height: 80px;
     color: white;
 }
+
+
 
 .nav-bar-top .nav-link{
     color: white;

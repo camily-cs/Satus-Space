@@ -16,9 +16,9 @@ function Footer({styleComponent, fonte, logo }) {
                 <div className="col-lg-3 col-sm-6 col-12 my-lg-5 my-1 text-center">
                     <h3>Contato</h3>
                     <ul className="ul-footer">
-                        <li><Link style={styleComponent} to="/termos/uso" >Termos de Uso</Link></li>
+                        <li><Link style={styleComponent} to="/termos/uso" className="link" >Termos de Uso</Link></li>
                         <li>Fale Conosco</li>
-                        <li> <Link style={styleComponent} to="/sobre" >Sobre Nós</Link> </li>
+                        <li> <Link style={styleComponent} to="/sobre" className="link">Sobre Nós</Link> </li>
                     </ul>
                 </div>
 
@@ -35,15 +35,15 @@ function Footer({styleComponent, fonte, logo }) {
                     <ul className="ul-footer-icons">
 
                         <a target="blank" href="https://github.com/Satus-Space">
-                            <li><FaGithub /></li>
+                            <li className="black"><FaGithub /></li>
                         </a>
 
                         <a target="blank" href="https://instagram.com/satus_space?igshid=YmMyMTA2M2Y=">
-                            <li><FaInstagram /></li>
+                            <li className="black"><FaInstagram /></li>
                         </a>
 
                         <a target="bank" href="https://linktr.ee/satusspace">
-                            <li><SiLinktree /></li>
+                            <li className="black"><SiLinktree /></li>
                         </a>
                         
 
@@ -53,16 +53,12 @@ function Footer({styleComponent, fonte, logo }) {
                 <div className="col-3 col-lg-3 col-sm-6 col-12">
 
                     <Link to="/">
-                        <img src={logo} className='logo-img-footer d-block py-1 mx-auto' alt="Logo" />
+                        <img src={logo} className='logo-img-footer d-block py-1 mx-auto ' alt="Logo" />
 
                         <img src={fonte} className='fonte-img-footer d-block py-1 mx-auto' alt="Fonte" />
                     </Link>
 
-
-
-
-
-                    <p className="text-justify">Satus Space é uma plataforma de aprendizado na área de tecnologia para pessoas com mais de 40 anos.{/*  Para que elas possam iniciar o sonho de trabalhar no ramo de tecnologia. Somos o seu espaço para um novo começo. */}</p>
+                    <p>Satus Space é uma plataforma de aprendizado na área de tecnologia para pessoas com mais de 40 anos.{/*  Para que elas possam iniciar o sonho de trabalhar no ramo de tecnologia. Somos o seu espaço para um novo começo. */}</p>
                 </div>
 
             </div>

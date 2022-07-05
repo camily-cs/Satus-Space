@@ -1,14 +1,27 @@
 import React from "react";
 import "./style.css";
 
+//IMAGENS DO FOOTER
+import logo from "../../assets/image/logoAzul.png";
+import fonte from "../../assets/image/fonteAzul.png"
+
 import NavBarLogo2 from "../../components/Header/NavBarLogo2";
 import Footer from "../../components/Footer";
+import NavBarLogoColor from "../../components/Header/NavBarLogoColor";
 function TermosDeUso() {
+
+
+    const temaBg = {
+        backgroundColor:  "var(--bgcolor3)",
+        color:  "black"
+    }
+
+
     return (
-        <div>
+        <div style={temaBg}>
             
-            <NavBarLogo2 />
-            <div className="container">
+            <NavBarLogoColor />
+            <div className="container" >
                 <div className="row termos">
                     <div className="col-md-12">
 
@@ -98,7 +111,13 @@ function TermosDeUso() {
                 </div>
             </div>
             
-            <Footer />
+            <Footer
+            
+                styleComponent={temaBg}
+                fonte={fonte}
+                logo={logo}
+            
+            />
         </div>
 
     )

@@ -12,7 +12,7 @@ import fonteBranco from "../../../src/assets/image/fonteBranco.png"
 import "./style.css"
 
 import { AiFillHome } from "react-icons/ai"
-import { RiSuitcaseLine } from "react-icons/ri"
+import { FiBook } from "react-icons/fi"
 import { FaRegCompass } from "react-icons/fa"
 import { HiOutlineMail } from "react-icons/hi"
 import { BsGear } from "react-icons/bs"
@@ -49,14 +49,8 @@ function Sidebar({extraButton}) {
                         </li>
                         <li className="">
                             <Link to="/vagas">
-                                <RiSuitcaseLine className="mx-2" />
-                                Vagas
-                            </Link>
-                        </li>
-                        <li className="">
-                            <Link to="/">
-                                <FaRegCompass className="mx-2" />
-                                Explorar
+                                <FiBook className="mx-2" />
+                                Bootcamps
                             </Link>
                         </li>
                         <li className="">

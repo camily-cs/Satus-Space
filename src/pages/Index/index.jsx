@@ -21,7 +21,10 @@ function Index(){
 
     return (
         <div>
-            <main className="upperPart">  <NavBar/> <MainHomepage/>   </main>            
+            <main className="upperPart">
+                <NavBar /> 
+                <MainHomepage />
+            </main>            
             <SectionHomepage/>
             <div className="background-index"></div>
             <Footer

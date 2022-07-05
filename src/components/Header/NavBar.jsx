@@ -12,19 +12,19 @@ function NavBar() {
 
   return (
     /* <!--Barra de Navegação--> */
-    <nav class="navbar navbar-expand navbar-dark transparent px-3 ">
+    <nav class="navbar navbar-expand transparent px-3 ">
 
 
       <div class="navbar-nav mx-lg-auto d-none d-md-flex">
 
         {/* <!--Botões de Navegação--> */}
-        <Link className="nav-link button-a px-lg-4 px-md-4 px-sm-2 nav" to='/' >Home</Link>
+        <Link className="nav-link button-a px-lg-4 px-md-4 px-sm-2 " to='/' >Home</Link>
 
-        <Link className="nav-link button-a px-lg-4 px-md-4 px-sm-2 nav" to='/Sobre' >Sobre Nós</Link>
+        <Link className="nav-link button-a px-lg-4 px-md-4 px-sm-2 " to='/Sobre' >Sobre Nós</Link>
 
-        <Link className="nav-link button-a px-lg-4 px-md-4 px-sm-2 nav" to='/Login' >Entrar</Link>
+        <Link className="nav-link button-a px-lg-4 px-md-4 px-sm-2 " to='/Login' >Entrar</Link>
 
-        <Link className="nav-link button-a px-lg-4 px-md-4 px-sm-2 nav" to='/Cadastrar'>Cadastrar-se</Link>
+        <Link className="nav-link button-a px-lg-4 px-md-4 px-sm-2 " to='/Cadastrar'>Cadastrar-se</Link>
 
 
 

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./style.css";
 
 
@@ -19,14 +20,15 @@ function MainHomepage(){
                         <img src={logo} className="my-2 img-fluid logo-main d-block mx-auto" alt="Logo da Satus Space"/>
                         <img src={fonte} className="img-fluid fonte-main d-block mx-auto" alt="Satus Space"/>
                     </div>
-
-                    <p>"Se você pensa que não tem mais idade para certas coisas, queremos te dizer que talvez este seja o melhor momento para fazer algumas escolhas."</p>
+                    
+                    <p>Tecnologia para todas as idades</p>
+                    {/* <p>"Se você pensa que não tem mais idade para certas coisas, queremos te dizer que talvez este seja o melhor momento para fazer algumas escolhas."</p> */}
 
                     <p className="text-white text-center responsive-font "></p>
 
-                    <a className="link" href="#section">
-                        <button className="d-block mx-auto button my-2">Confira</button>
-                    </a>
+                    <Link to="/Cadastrar">
+                        <button className="d-block mx-auto button my-4">Cadastre-se</button>
+                    </Link>
                    
 
                 </div>

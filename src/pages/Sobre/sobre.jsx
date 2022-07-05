@@ -19,7 +19,6 @@ import { FaLinkedin } from 'react-icons/fa'
 //IMAGENS DO FOOTER
 import logo from "../../assets/image/logoAzul.png";
 import fonte from "../../assets/image/fonteAzul.png"
-
 import NavBarLogo2 from "../../components/Header/NavBarLogo2";
 import Footer from "../../components/Footer";
 
@@ -28,17 +27,18 @@ function Sobre() {
 
 
     const temaBg = {
-        backgroundColor:  "var(--bgcolor3)",
-        color:  "black"
+        backgroundColor: "var(--bgcolor3)",
+        color: "black"
     }
 
 
     return (
         <div className="App" style={temaBg}>
-            <NavBarLogo2 />
+
             <div className="container-fluid">
 
                 <div className="row sobre">
+                    <NavBarLogo2 />
 
                     <div className="col-md-6">
                         <h1>Sobre nós</h1>
@@ -91,7 +91,15 @@ function Sobre() {
 
                                 <h2>Valores</h2>
                             </div>
-                            <p className="px-3">Inclusão digital, comprometimento, pessoas, inovação, educação, diversidade, ética, transparência.</p>
+                            <ul>
+                                <li>Inclusão digital</li>
+                                <li>Comprometimento</li>
+                                <li>Inovação</li>
+                                <li>Educação</li>
+                                <li>Diversidade</li>
+                                <li>Ética</li>
+                                <li>Transparência</li>
+                            </ul>
                         </div>
 
                     </div>
@@ -102,9 +110,9 @@ function Sobre() {
                     <h2 className="text-center sub-equipe">Equipe</h2>
 
                     <div className="linha-equipe" style={temaBg}>
-                    <hr/>
+                        <hr />
                     </div>
-                    
+
                     <div className="col-lg-3 col-md-4 col-6">
 
                         <div className="imagem-equipe">
@@ -117,7 +125,7 @@ function Sobre() {
                             <a className="lista" target="blank" href="https://github.com/RianPaiva">
                                 <li><FaGithub /></li>
                             </a>
-                            
+
                             <a className="lista" target="blank" href="https://www.linkedin.com/in/paivarian/">
                                 <li><FaLinkedin /></li>
                             </a>
@@ -236,7 +244,7 @@ function Sobre() {
                         <div className="imagem-equipe">
 
                             <div className=" text-center">
-                                <img src={noelia} alt="Logo"/>
+                                <img src={noelia} alt="Logo" />
                             </div>
                             <p >Noelia Mariana</p>
 
@@ -276,11 +284,11 @@ function Sobre() {
                 </div>
             </div>
             <Footer
-            
+
                 styleComponent={temaBg}
                 fonte={fonte}
                 logo={logo}
-            
+
             />
 
         </div>

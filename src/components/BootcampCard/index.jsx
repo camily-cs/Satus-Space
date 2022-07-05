@@ -13,7 +13,8 @@ function BootcampCard({curso , concluido , empresa , vaga , prof, button, styleC
                 <div className="d-flex justify-content-center align-items-center  col-lg-7 col-md-7 py-4 ">
                     <div>
                         <h4>{curso}</h4>
-                        <p>{concluido}%</p>
+                        {/* <p>{concluido}%</p> */}
+                        <progress value="70" max="100" className="barraProgresso">70 %</progress>
                         <p>{empresa}, {vaga}, {curso} e {prof}</p>
                         <button className="mx-auto d-block">{button}</button>
                     </div>

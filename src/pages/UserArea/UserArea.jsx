@@ -68,6 +68,11 @@ function UserArea() {
         color: escuro ? "white" : "black"
     }
 
+    const temaCard2 = {
+        backgroundColor: escuro ? "var(--bgcolor)" : "#dcdcdc",
+        color: escuro ? "white" : "black"
+    }
+
     const logo = escuro ?  logoBranco : logoAzul
     const fonte = escuro ?  fonteBranco : fonteAzul
 
@@ -117,10 +122,10 @@ function UserArea() {
                             <div className="col-lg-12 bootcamp-section " style={temaCard}>
 
                                 
-                                    <div className="d-flex justify-content-between card-header">
+                                    <div className="card-header">
 
                                         <h3>Bootcamps em andamento</h3>
-                                        <button className="">Filtro</button>
+                                        
 
                                     </div>
 
@@ -129,7 +134,7 @@ function UserArea() {
 
                                         {bootcampDados.map((bootcamp) => (
                                             <BootcampCard
-                                                styleComponent={temaCard}
+                                                styleComponent={temaCard2}
                                                 curso={bootcamp.curso}
                                                 concluido={bootcamp.concluido}
                                                 empresa={bootcamp.empresa}
@@ -196,7 +201,7 @@ function UserArea() {
 
                     </div>
 
-                    <div className="col-lg-2 col-md-4 ">
+                    <div className="col-lg-2 col-md-4">
 
                         <div className="agenda-section px-1" style={temaCard}>
                             <div className="card-header">
@@ -219,7 +224,6 @@ function UserArea() {
 
                                 </div>
                             </div>
-
 
                         </div>
 
