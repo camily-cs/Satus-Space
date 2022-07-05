@@ -1,10 +1,25 @@
 import React from "react";
 import "./style.css";
+import { useState } from "react";
 import PerfilBar from "../../components/PerfilBar/index.jsx";
 import { RiArrowDownSLine } from "react-icons/ri";
-
+import BootcampCard from "../../components/BootcampCard";
 
 function Empresa() {
+
+    const [bootcampDados] = useState([
+        {
+            curso: "Curso de HTML e CSS",
+            concluido: 55,
+            empresa: "Satus Space",
+            vaga: "desenvolvedor web",
+            prof: "Gustavo Guanabara",
+            button: "Continuar"
+        },
+
+
+    ])
+
     return (
         <>
 
@@ -32,31 +47,66 @@ function Empresa() {
                         <hr />
                         <div >
                             <RiArrowDownSLine className="arrow-down" />
-                        </div>                      
+                        </div>
 
                     </div>
                     <div className="grid-container">
-                    <div class="row row-cols-2 grid-empresa">
+                        <div class="row row-cols-2 grid-empresa">
                             <div class="col">
 
                                 <strong className="mt-2 d-block titulo-table" >Bootcamps</strong>
-                             
-                                
+                                <div className="card-body">
+
+
+                                    {bootcampDados.map((bootcamp) => (
+                                        <BootcampCard
+                                           
+                                            curso={bootcamp.curso}
+                                            concluido={bootcamp.concluido}
+                                            empresa={bootcamp.empresa}
+                                            vaga={bootcamp.vaga}
+                                            prof={bootcamp.prof}
+                                            button={bootcamp.button}
+
+                                        />))}
+
+                                    {bootcampDados.map((bootcamp) => (
+                                        <BootcampCard
+                                           
+                                            curso={bootcamp.curso}
+                                            concluido={bootcamp.concluido}
+                                            empresa={bootcamp.empresa}
+                                            vaga={bootcamp.vaga}
+                                            prof={bootcamp.prof}
+                                            button={bootcamp.button}
+
+                                        />))}
+
+
+
+
+                                    {/* Componentizar */}
+
+
+
+                                </div>
+
+
                             </div>
                             <div class="col">
 
-                                 <strong className="mt-2 d-block titulo-table" >Eventos</strong>
+                                <strong className="mt-2 d-block titulo-table" >Eventos</strong>
 
                             </div>
-                    </div>
-                    <div class="row row-cols-2 grid-empresa">                            
+                        </div>
+                        <div class="row row-cols-2 grid-empresa">
                             <div class="col">
                                 <strong className="mt-2 d-block titulo-table" >Vagas</strong>
                             </div>
                             <div class="col">
                                 <strong className="mt-2 d-block titulo-table" >Redes Sociais</strong>
                             </div>
-                    </div>
+                        </div>
                     </div>
                 </div>
 
