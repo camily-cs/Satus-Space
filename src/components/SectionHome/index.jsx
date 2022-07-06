@@ -2,11 +2,11 @@ import React from "react";
 import "./style.css";
 
 
-function SectionHomepage(){
+function SectionHomepage({styleComponent}){
     return(
-        <section className="container-fluid section-index" id="section">
+        <section className="container-fluid section-index" id="section" style={styleComponent}>
             <div className="">
-                <p className="text-center section-text py-5">Somos seres em constante <strong>aprendizado,<br/></strong> não tenha medo de <strong>começar</strong> algo novo </p>
+                <p className="section-text py-5">Somos seres em constante <strong>aprendizado,<br/></strong> não tenha medo de <strong>começar</strong> algo novo </p>
 
                 <div className="mx-auto section-circle my-4">
                     <div>

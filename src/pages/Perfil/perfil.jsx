@@ -61,6 +61,10 @@ function Perfil() {
         color: escuro ? "white" : "black"
     }
 
+    const fonteColor = {
+        color : escuro ?  "var(--cor04)" : "var(--cor03)" 
+    }
+
     const logo = escuro ?  logoBranco : logoAzul
     const fonte = escuro ?  fonteBranco : fonteAzul
 
@@ -83,12 +87,15 @@ function Perfil() {
 
 
 
-            <PerfilBar styleComponent={temaCard} />
+            
 
 
             <div className="perfil">
-                <div className="text-center mt-5">
-                    <img src="https://media-exp2.licdn.com/dms/image/C4D03AQERFmUysyUMXQ/profile-displayphoto-shrink_800_800/0/1569545019530?e=1661385600&v=beta&t=pctslMBGgaLu4Ng5r7a9qQ5APo-1YLzHz0OnK4rjBQg" alt="Aurora" />
+
+            <PerfilBar styleComponent={temaCard} />
+
+                <div className="perfil-section">
+                    <img className="img-perfil" src="https://media-exp2.licdn.com/dms/image/C4D03AQERFmUysyUMXQ/profile-displayphoto-shrink_800_800/0/1569545019530?e=1661385600&v=beta&t=pctslMBGgaLu4Ng5r7a9qQ5APo-1YLzHz0OnK4rjBQg" alt="Aurora" />
 
                     <strong className="mt-2 d-block" >Aurora Maria Seles</strong>
                     <p>Inscrito desde Fevereiro de 2022</p>
@@ -136,18 +143,18 @@ function Perfil() {
                             </div>
 
                             <div className="card-footer px-4">
-                                <h4>Editar dados</h4>
+                                <h4 style={fonteColor} >Editar dados</h4>
                             </div>
 
                         </div>
 
                     </section>
 
-                    <section className="col-lg-10">
+                    {/* <section className="col-lg-10">
                         <div className="section-perfil" style={temaCard}>
 
                             <div className="card-header px-4">
-                                <h3>Sobre mim</h3>
+                                <h3>Competências</h3>
                             </div>
 
                             <div className="card-body px-4">
@@ -165,13 +172,11 @@ function Perfil() {
 
                             </div>
 
-                            <div className="card-footer px-4">
-                                <h4>Editar dados</h4>
-                            </div>
+                            
 
                         </div>
 
-                    </section>
+                    </section> */}
 
                     <section className="col-lg-5">
                         <div className="section-perfil" style={temaCard}>
@@ -196,7 +201,7 @@ function Perfil() {
                             </div>
 
                             <div className="card-footer">
-                                <h4>Personalizar perfil</h4>
+                                <h4 style={fonteColor} >Personalizar perfil</h4>
                             </div>
 
                         </div>
@@ -231,7 +236,7 @@ function Perfil() {
                             </div>
 
                             <div className="card-footer">
-                                <h4>Aumente seu nível</h4>
+                                <h4 style={fonteColor} >Aumente seu nível</h4>
                             </div>
 
 
@@ -304,7 +309,7 @@ function Perfil() {
                             </div>
                             <Link className="link" to="/Bootcamp/Andamento">
                                 <div className="card-footer">
-                                    <h4>Acessar</h4>
+                                    <h4 style={fonteColor} >Acessar</h4>
                                 </div>
                             </Link>
 
@@ -324,7 +329,7 @@ function Perfil() {
                             </div>
                             <Link className="link" to="/Bootcamp">
                                 <div className="card-footer">
-                                    <h4>Acessar</h4>
+                                    <h4 style={fonteColor} >Acessar</h4>
                                 </div>
                             </Link>
 

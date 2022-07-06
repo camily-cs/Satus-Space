@@ -16,10 +16,10 @@ function PerfilBar({styleComponent}) {
 
     return (
         <>
-            <nav class="navbar  fixed-top d-flex transparent  pt-1">
+            <nav class="navbar-perfil  pt-1">
 
                 <Link to="/user/area">
-                    <div className="logo-fixed d-flex">
+                    <div className="py-2 ps-2 d-flex">
                         <Logo />
                     </div>
                 </Link>

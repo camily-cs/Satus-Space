@@ -2,6 +2,20 @@
     background-color: #29299e;
     
 } */
+
+.chat-mensagem{
+    height: 100vh;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+
+.header-page a{
+    text-decoration: none;
+    display: flex;
+    transition: background-color 0.8s ease, color 0.5s ease;
+}
+
 .card {
     color: #139257;
     background: #34343E;
@@ -44,7 +58,7 @@
     left: 0;
     top: 0;
     padding: 20px;
-    z-index: 7;
+    /* z-index: 7; */
     background-color: #202024;
     border-radius: 6px;
 }

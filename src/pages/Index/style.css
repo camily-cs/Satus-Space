@@ -1,7 +1,3 @@
-body{
-    background-color: black;
-}
-
 .upperPart{
     background-image: url("../../../src/assets/image/background.png");
     background-position: left center;
@@ -22,6 +18,33 @@ body{
 
 .nav{
     font-weight: bold;
+}
+
+
+.index-alterar-modo-button svg{
+    font-size: 1.5em;
+}
+
+.index-alterar-modo-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3.4em;
+    height: 3.4em;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    left: calc(100% - 100px);
+    top: -135px;
+    margin: 0px;
+    transition: background-color 0.8s ease, color 0.5s ease, transform 0.9s ease, box-shadow 0.95s;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.26);
+    
+}
+
+.index-alterar-modo-button:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 0px 15px rgb(0, 0, 0);
 }
 
 @media only screen and (max-width: 768px) {

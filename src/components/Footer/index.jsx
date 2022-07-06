@@ -34,16 +34,16 @@ function Footer({styleComponent, fonte, logo }) {
                     <h3>Redes Sociais</h3>
                     <ul className="ul-footer-icons">
 
-                        <a target="blank" href="https://github.com/Satus-Space">
-                            <li className="black"><FaGithub /></li>
+                        <a target="blank" href="https://github.com/Satus-Space" style={styleComponent}>
+                            <li><FaGithub /></li>
                         </a>
 
-                        <a target="blank" href="https://instagram.com/satus_space?igshid=YmMyMTA2M2Y=">
-                            <li className="black"><FaInstagram /></li>
+                        <a target="blank" href="https://instagram.com/satus_space?igshid=YmMyMTA2M2Y=" style={styleComponent}>
+                            <li><FaInstagram /></li>
                         </a>
 
-                        <a target="bank" href="https://linktr.ee/satusspace">
-                            <li className="black"><SiLinktree /></li>
+                        <a target="bank" href="https://linktr.ee/satusspace" style={styleComponent}>
+                            <li><SiLinktree /></li>
                         </a>
                         
 

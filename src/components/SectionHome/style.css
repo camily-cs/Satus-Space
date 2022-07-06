@@ -1,14 +1,15 @@
-.section-index{
+/* .section-index{
     background-image: linear-gradient(to bottom, var(--cor06) , var(--bgcolor4) 40% );
     height: 80vh;
     position: relative;
-}
+} */
 
 
 
 .section-text{
-    color: white;
+    font-weight: 700;
     font-size: 1.4em;
+    text-align: center;
 }
 
 .section-index strong{

@@ -1,7 +1,7 @@
 import React from "react";
 
 import { Link } from "react-router-dom";
-import Logo from "../Logo";
+import LogoDinamica from "../LogoDinamica";
 import DropdownPerfil from "../DropdownPerfil";
 
 import { FaSearch } from "react-icons/fa";
@@ -10,7 +10,7 @@ import { FaSearch } from "react-icons/fa";
 import "./style.css"
 import { useState } from "react";
 
-function SearchBar({styleComponent, extraButton}) {
+function SearchBar({styleComponent, extraButton, logo, fonte}) {
 
     const [isDropDownVisible, setDropDownVisible] = useState(false)
     
@@ -20,7 +20,11 @@ function SearchBar({styleComponent, extraButton}) {
 
 
                 <div className="ms-3 d-flex align-items-center">
-                    <Logo />
+                    <LogoDinamica
+                        fonte={fonte}
+                        logo={logo}
+                    
+                    />
                     <input className="ms-5 d-none d-md-flex" placeholder="Pesquisar..." type="text" />
                 </div>
 

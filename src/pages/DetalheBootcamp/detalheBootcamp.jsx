@@ -3,14 +3,42 @@ import "./style.css";
 
 import Sidebar from "../../components/SideBar";
 import Footer from "../../components/Footer";
-import { MdArrowBackIosNew } from "react-icons/md";
 import NavBarUser from "../../components/Header/NavBarUser";
+import { MdArrowBackIosNew } from "react-icons/md";
+import useState from "react";
+import { Link } from "react-router-dom";
+import {BsFillMoonFill} from 'react-icons/bs';
+import {BsSun} from 'react-icons/bs';
 
 
-function DetalheVaga() {
+function DetalheBootcamp() {
+
+    /*inicio light e dark mode */
+  const [escuro, setEscuro] = useState(false)
+
+  const temaBg = {
+      backgroundColor: escuro ? "var(--cor50)" : "var(--bgcolor3)",
+      color: escuro ? "white" : "black"
+  }
+
+  const extraButton = escuro ? <Link to="#" onClick={mudarTema}> <BsFillMoonFill className="mx-2" /> Alterar Tema</Link> : <Link to="#" onClick={mudarTema}>< BsSun className="mx-2" /> Alterar Tema</Link>
+
+
+  const temaCard = {
+      backgroundColor: escuro ? "var(--bgcolor)" : "var(--bgcolor4)",
+      color: escuro ? "white" : "black"
+  }
+
+  function mudarTema() {
+      setEscuro(!escuro)
+  }
+/*fim light e dark mode */
+
+
+
     return (
 
-        <div>
+        <div style={temaBg}>
             <NavBarUser />
             <div className="container-fluid">
                 <div className="row">
@@ -18,16 +46,16 @@ function DetalheVaga() {
                     <div className="vagas-detalhe col-lg-10 col-md-12">
 
                         <div className="card-header" >
-                            <h3>Detalhes da Vaga</h3>
+                            <h3>Detalhes do bootcamp</h3>
                         </div>
                         <div className="card-body">
                             <h2 className="titleDesc">Analista de dados</h2>
 
                             <p>Empresa D</p>
                             <p>São Paulo - SP</p>
-                            <p>R$ 2000,00 a R$ 2700,00 (Bruto mensal)</p>
+                            {/* <p>R$ 2000,00 a R$ 2700,00 (Bruto mensal)</p> */}
                             <p><span className="bold">Número de vagas:</span> 2</p>
-                            <p><span className="bold">Tipo de contrato:</span> Efetivo - CLT - Período integral</p>
+                            {/* <p><span className="bold">Tipo de contrato:</span> Efetivo - CLT - Período integral</p> */}
 
                             <h4 className="titleDesc">Descrição</h4>
                             <p>t is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
@@ -118,4 +146,4 @@ function DetalheVaga() {
     )
 }
 
-export default DetalheVaga;
+export default DetalheBootcamp;

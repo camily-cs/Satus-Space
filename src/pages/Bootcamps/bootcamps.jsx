@@ -41,8 +41,8 @@ function Bootcamp() {
         color: escuro ? "white" : "black"
     }
 
-    const logo = escuro ?  logoBranco : logoAzul
-    const fonte = escuro ?  fonteBranco : fonteAzul
+    const logo = escuro ? logoBranco : logoAzul
+    const fonte = escuro ? fonteBranco : fonteAzul
 
     function mudarTema() {
         setEscuro(!escuro)
@@ -70,8 +70,10 @@ function Bootcamp() {
         <div style={temaBg}>
             <SearchBar
 
-                extraButton={extraButton}
                 styleComponent={temaCard}
+                extraButton={extraButton}
+                logo={logo}
+                fonte={fonte}
 
             />
 
@@ -84,7 +86,7 @@ function Bootcamp() {
                     </Link>
                 </div>
 
-        
+
                 {bootcampDados.map((bootcamp) => (
                     <BootcampCard
 
@@ -98,17 +100,17 @@ function Bootcamp() {
 
                     />))}
 
-                    
+
 
 
             </div>
 
             <Footer
-            
+
                 styleComponent={temaBg}
                 fonte={fonte}
                 logo={logo}
-            
+
             />
 
         </div>

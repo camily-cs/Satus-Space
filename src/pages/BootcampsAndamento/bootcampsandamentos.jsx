@@ -43,8 +43,8 @@ function BootcampsAndamento() {
         color: escuro ? "white" : "black"
     }
 
-    const logo = escuro ?  logoBranco : logoAzul
-    const fonte = escuro ?  fonteBranco : fonteAzul
+    const logo = escuro ? logoBranco : logoAzul
+    const fonte = escuro ? fonteBranco : fonteAzul
 
     function mudarTema() {
         setEscuro(!escuro)
@@ -52,7 +52,7 @@ function BootcampsAndamento() {
 
 
 
-    const extraButton = escuro? <li onClick={mudarTema} style={temaCard}><BsFillMoonFill/>Alterar Tema</li> : <li onClick={mudarTema} style={temaCard}><BsSun/> Alterar Tema</li>
+    const extraButton = escuro ? <li onClick={mudarTema} style={temaCard}><BsFillMoonFill />Alterar Tema</li> : <li onClick={mudarTema} style={temaCard}><BsSun /> Alterar Tema</li>
 
     const [bootcampDados] = useState([
         {
@@ -65,12 +65,16 @@ function BootcampsAndamento() {
 
     return (
         <div className="App" style={temaBg}>
+
             <SearchBar
-            
-            extraButton={extraButton}
-            styleComponent={temaCard}
+
+                styleComponent={temaCard}
+                extraButton={extraButton}
+                logo={logo}
+                fonte={fonte}
 
             />
+            
             <div className="container bootcamps-andamento">
 
                 <div className="d-flex my-5">
@@ -95,11 +99,11 @@ function BootcampsAndamento() {
             </div>
 
             <Footer
-            
+
                 styleComponent={temaBg}
                 fonte={fonte}
                 logo={logo}
-            
+
             />
 
         </div>

@@ -32,7 +32,7 @@ import VideoAula from "./pages/VideoAula/videoAula";
 import Perfil from "./pages/Perfil/perfil";
 import Sobre from "./pages/Sobre/sobre";
 import Vagas from "./pages/Vagas/vagas";
-import DetalheVaga from "./pages/DetalheVaga/detalheVaga";
+import DetalheBootcamp from "./pages/DetalheBootcamp/detalheBootcamp";
 
 import Empresa from "./pages/Empresa/empresa";
 import EmpresaArea from "./pages/EmpresaArea/EmpresaArea";
@@ -90,7 +90,7 @@ function Rotas() {
 
                     <Route path='/Vagas' exact element={<Vagas />} />
 
-                    <Route path='/DetalheVaga' exact element={<DetalheVaga />} />
+                    <Route path='/DetalheBootcamp' exact element={<DetalheBootcamp />} />
 
                     <Route path='/Mensagens' exact element={<Mensagens />} />
                     

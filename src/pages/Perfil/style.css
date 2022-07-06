@@ -1,7 +1,6 @@
 .perfil{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
     height: 60vh;
     background-image: url("../../../src/assets/image/background.png");
     background-position: left center;
@@ -11,11 +10,23 @@
     color: white;
 }
 
-.perfil img{
+.perfil .img-perfil{
     border-radius: 50%;
     height: 160px;
     border: 4px solid white;
 }
+
+.perfil-section{
+    display: flex;
+    align-items: center;
+    align-self: center;
+    justify-self: center;
+    flex-direction: column;
+    justify-content: center  ;
+    margin: auto 0;
+    width: 300px;
+}
+
 
 .alterar-modo-button{
     display: flex;
@@ -26,7 +37,7 @@
     border-radius: 50%;
     cursor: pointer;
     position: relative;
-    left: 260px;
+    left: 130px;
     top: -135px;
     margin: 0px;
     transition: background-color 0.8s ease, color 0.5s ease, transform 0.9s ease, box-shadow 0.95s;
@@ -166,7 +177,6 @@
 } 
 
 .card-footer > h4{
-    color: var(--cor03);
     cursor: pointer;
 }
 
