@@ -13,7 +13,7 @@ function BootcampBox({bootcamp , empresa , tecnologias ,  button, styleComponent
           <div>
             <h4>{bootcamp}</h4>
             <p>{bootcamp}, {empresa}, {tecnologias}</p>
-            <Link to='/DetalheVaga' className="link"><button className="mx-auto d-block">{button}</button></Link>
+            <Link to='/DetalheBootcamp' className="link"><button className="mx-auto d-block">{button}</button></Link>
           </div>
         </div>
       </div>

@@ -11,10 +11,11 @@ import {BsSun} from 'react-icons/bs';
 import { Link } from "react-router-dom";
 import BootcampBox from "../../components/BootcampBox";
 
+
 function Vagas() {
   const [bootcampDados] = useState([
     {
-      bootcamp: "Desenvolvedor web Jr",
+      bootcamp: "Desenvolvedor Front-End Jr",
       empresa: "Satus Space e TOTVS",
       tecnologias: "HTML5, CSS3 e JavaScript",
       button: "Saiba Mais",
@@ -47,6 +48,7 @@ function Vagas() {
     
     <div className="App" style={temaBg}>
       <NavBarUser />
+      
 
       <div className="container-fluid">
         <div className="row">

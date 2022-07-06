@@ -14,7 +14,7 @@ import {BsSun} from 'react-icons/bs';
 function DetalheBootcamp() {
 
     /*inicio light e dark mode */
-  const [escuro, setEscuro] = useState(false)
+/*   const [escuro, setEscuro] = useState(false)
 
   const temaBg = {
       backgroundColor: escuro ? "var(--cor50)" : "var(--bgcolor3)",
@@ -31,14 +31,14 @@ function DetalheBootcamp() {
 
   function mudarTema() {
       setEscuro(!escuro)
-  }
+  } */
 /*fim light e dark mode */
 
 
 
     return (
 
-        <div style={temaBg}>
+        <div>
             <NavBarUser />
             <div className="container-fluid">
                 <div className="row">
@@ -49,35 +49,33 @@ function DetalheBootcamp() {
                             <h3>Detalhes do bootcamp</h3>
                         </div>
                         <div className="card-body">
-                            <h2 className="titleDesc">Analista de dados</h2>
+                            <h4 className="titleDesc">Desenvolvedor Front-End Jr</h4>
 
-                            <p>Empresa D</p>
-                            <p>São Paulo - SP</p>
+                            <p >Satus Space e Garimp</p>
+                            <p><span className="bold">Formato aulas:</span> Remoto</p>
                             {/* <p>R$ 2000,00 a R$ 2700,00 (Bruto mensal)</p> */}
-                            <p><span className="bold">Número de vagas:</span> 2</p>
+                            <p><span className="bold">Número de vagas:</span> 20</p>
                             {/* <p><span className="bold">Tipo de contrato:</span> Efetivo - CLT - Período integral</p> */}
 
                             <h4 className="titleDesc">Descrição</h4>
-                            <p>t is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+                            <p>O bootcamp Desenvolvedor front-End Jr tem como objetivo capacitá-lo para ser um profissional de tecnologia. Nesse bootcamp você irá conhecer as principais tecnologias para iniciar na programação, e além disso, irá desenvolver suas Soft Skills conosco. Ao fim desse bootcamp você dominará:</p>
 
                             <ul>
-                                <li>requisito1</li>
-                                <li>requisito1</li>
-                                <li>requisito1</li>
-                                <li>requisito1</li>
-                                <li>requisito1</li>
+                                <li>HTML5</li>
+                                <li>CSS3</li>
+                                <li>JavaScript</li>
+                                <li>Metodologias ágeis - Scrum</li>
                             </ul>
 
                             <ul>
-                                <li>beneficio1</li>
-                                <li>beneficio1</li>
-                                <li>beneficio1</li>
-                                <li>beneficio1</li>
-                                <li>beneficio1</li>
+                                <li>Comunicação</li>
+                                <li>Trabalho em equipe</li>
+                                <li>Gestão do tempo</li>
+                                
                             </ul>
 
-                            <h4 className="titleDesc">Bootcamp</h4>
-                            <p>t is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.</p>
+                            <h4 className="titleDesc">A Empresa - </h4>
+                            <p>A Garimp é </p>
 
                         </div>
 
